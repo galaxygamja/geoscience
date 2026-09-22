@@ -1,0 +1,68 @@
+{
+  "source": "Korea Meteorological Administration ASOS hourly observations; user-provided exports",
+  "station": "112 Incheon",
+  "files": [
+    {
+      "filename": "2025년_시간단위_전체데이터.csv",
+      "bytes": 2914276,
+      "sha256": "2572c3bcdf0782427c389674c994d8ee9aacc036cc7c555ea24554c8712ae9a6",
+      "encoding": "cp949",
+      "rows": 26208,
+      "station_rows": {
+        "102": 8736,
+        "112": 8736,
+        "201": 8736
+      },
+      "first_timestamp": "2025-01-01 01:00",
+      "last_timestamp": "2025-12-31 00:00"
+    },
+    {
+      "filename": "1-2월_온도-강수량-풍속-습도-일사.csv",
+      "bytes": 174928,
+      "sha256": "c2372afa1c8a5fd9827b90e9096271a1da2a03b9733ce5df198cd6aa7e3c943f",
+      "encoding": "cp949",
+      "rows": 4248,
+      "station_rows": {
+        "102": 1416,
+        "112": 1416,
+        "201": 1416
+      },
+      "first_timestamp": "2025-01-01 00:00",
+      "last_timestamp": "2025-02-28 23:00"
+    },
+    {
+      "filename": "7-8월_온도-강수량-풍속-습도-일사.csv",
+      "bytes": 190939,
+      "sha256": "c7241c5b8bdcabf1917cdc2ca5530fe850213007c126fcf4a70578ae072ed840",
+      "encoding": "cp949",
+      "rows": 4464,
+      "station_rows": {
+        "102": 1488,
+        "112": 1488,
+        "201": 1488
+      },
+      "first_timestamp": "2025-07-01 00:00",
+      "last_timestamp": "2025-08-31 23:00"
+    }
+  ],
+  "overlap_checks": {
+    "winter": {
+      "overlap_rows_incheon": 1415,
+      "mismatch_count": 0,
+      "mismatch_examples": []
+    },
+    "summer": {
+      "overlap_rows_incheon": 1488,
+      "mismatch_count": 0,
+      "mismatch_examples": []
+    }
+  },
+  "processing": "cp949 -> UTF-8; QC-preserving; KST; period-ending convention provisional",
+  "day_catalog_summary": {
+    "candidate_days": 121,
+    "full_meteorology_days": 0,
+    "observed_positive_rain_days": 31,
+    "unresolved_rain_days": 90,
+    "snow_positive_days": 14
+  }
+}

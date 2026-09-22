@@ -9,3 +9,5 @@
 날짜 선정, 06시 급수 절차, 3×3 요인 비교, 평가 지표와 심화 분석은 [수치실험 설계](docs/experiment-design.md)에 자세히 기술했습니다.
 
 현재 입력 자료는 실제 기상 관측값을 포함하며, 인천 112의 기본 시뮬레이션에 사용할 수 있습니다. 계절 자료 점검은 [`docs/initial-review.md`](docs/initial-review.md), 2025년 연간 시간자료 점검은 [`docs/annual-data-review.md`](docs/annual-data-review.md)에 정리되어 있습니다.
+
+1·2단계 진행 기록: [전처리 규칙과 현재 판정](docs/preprocessing-rules.md), [선행연구·방정식 감사표](docs/model-literature.md), [원본 해시 목록](data/source_manifest.json). 전처리 코드는 `src/geoscience/preprocess.py`에 있으며, 생성되는 시간별 자료와 날짜 후보표는 로컬 `outputs/preprocessed/`에만 둡니다. 강수·적설과 황혼 시간 일사, 일부 물성·경계조건이 아직 미확정이므로 시뮬레이션 결과를 산출한 단계는 아닙니다.

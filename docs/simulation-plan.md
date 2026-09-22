@@ -1,6 +1,6 @@
 # 반사·증발 복합 포장 시뮬레이션 실행 계획
 
-작성일: 2026-09-22. 상태: 실행 계획 수립, 시뮬레이션 미실행.
+작성일: 2026-09-22. 2026-09-23 진행: 단계 1 전처리 코드·초기 후보표 작성, 단계 2 선행연구 감사표 작성. 강수·일사 판정과 물성·경계조건은 미확정, 시뮬레이션 미실행.
 
 ## 1. 연구 질문과 범위
 
@@ -45,7 +45,7 @@
 
 ### 산출물과 완료 기준
 
-- `data/source_manifest.json`, `data/processed/incheon_2025_hourly.csv`, `data/processed/day_catalog.csv`
+- `data/source_manifest.json` 및 로컬 전용 `outputs/preprocessed/incheon_2025_hourly.csv`, `outputs/preprocessed/day_catalog.csv`
 - `docs/data-dictionary.md`, `docs/preprocessing-rules.md`, 전처리 모듈과 검사 코드
 - 중복 0건, 설명되지 않은 시간 이동 0건, 모든 변경값에 사유 존재, 계절 파일과 겹치는 5개 변수 불일치 0건.
 - 일사 재분배 전후 시간별 에너지 오차는 부동소수점 허용오차 이내. 제외일과 원인을 모두 공개한다.
