@@ -12,4 +12,4 @@
 
 1·2단계 진행 기록: [전처리 규칙과 현재 판정](docs/preprocessing-rules.md), [선행연구·방정식 감사표](docs/model-literature.md), [원본 해시 목록](data/source_manifest.json). 전처리 코드는 `src/geoscience/preprocess.py`에 있으며, 생성되는 시간별 자료와 날짜 후보표는 로컬 `outputs/preprocessed/`에만 둡니다. 강수·적설과 황혼 시간 일사, 일부 물성·경계조건이 아직 미확정이므로 시뮬레이션 결과를 산출한 단계는 아닙니다.
 
-2026-09-25: [핵심 방정식과 논문별 근거](docs/core-equations.md)를 사용자 검토용으로 작성했습니다. 후속 검토에서는 0–5 cm 타일과 5–30 cm 아래층, 그리고 각 층의 물을 따로 추적하는 네 상태 후보를 설명했습니다. 깊이와 수분 구조는 아직 미확정입니다. [열수지 유도 부록](docs/equation-derivation.md)에서 물의 열용량·증발 잠열·급수 에너지의 결합을 확인할 수 있습니다. 물성 수치 확정은 방정식 검토 다음 순서입니다.
+2026-09-25: [핵심 방정식과 논문별 근거](docs/core-equations.md)를 사용자 검토용으로 작성했습니다. 수식이 깨지면 [조판된 PDF](output/pdf/core-equations.pdf)를 읽고, 수정 가능한 [LaTeX 원본](docs/core-equations.tex)을 사용할 수 있습니다. 후속 검토에서는 0–5 cm 타일과 5–30 cm 아래층, 그리고 각 층의 물을 따로 추적하는 네 상태 후보를 설명했습니다. 깊이와 수분 구조는 아직 미확정입니다. [열수지 유도 부록](docs/equation-derivation.md)에서 물의 열용량·증발 잠열·급수 에너지의 결합을 확인할 수 있습니다. 물성 수치 확정은 방정식 검토 다음 순서입니다.
