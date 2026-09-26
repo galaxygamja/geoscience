@@ -1,0 +1,5088 @@
+{
+  "source_sha256": {
+    "results/raw/convergence.json.gz": "b66e2bd5c63b6edbd0c46cda057ebff8b01d56426d439a14b16244aca19ea8f5",
+    "results/raw/initialization.json.gz": "2f5f3941520580ce53e0f297b56a995eea5aa1c0875ead2478de51b32383d97d"
+  },
+  "config_sha256": "b2224ae298589bb607657f28cce465ca2acb776883844c208c0510c9716769fb",
+  "checker_sha256": "10f2b92fb07c96031e434edbc1245b0aafe378fb43d419cefc2531b266133cd1",
+  "numerical_tolerance_k": 0.05,
+  "initial_state_tolerance_k": 0.05,
+  "initial_watering_effect_tolerance_k_h": 1.2,
+  "convergence": {
+    "step_20.0_to_step_10.0": {
+      "common_dates": [
+        "2025-02-28 06:00",
+        "2025-07-03 06:00",
+        "2025-07-04 06:00",
+        "2025-07-05 06:00",
+        "2025-07-06 06:00",
+        "2025-07-07 06:00",
+        "2025-07-08 06:00",
+        "2025-07-09 06:00",
+        "2025-07-10 06:00",
+        "2025-07-11 06:00",
+        "2025-07-12 06:00",
+        "2025-07-13 06:00",
+        "2025-07-14 06:00",
+        "2025-07-15 06:00",
+        "2025-07-16 06:00",
+        "2025-07-17 06:00",
+        "2025-07-18 06:00",
+        "2025-07-19 06:00",
+        "2025-07-20 06:00",
+        "2025-07-21 06:00",
+        "2025-07-22 06:00",
+        "2025-07-23 06:00",
+        "2025-07-24 06:00",
+        "2025-07-25 06:00",
+        "2025-07-26 06:00",
+        "2025-07-27 06:00",
+        "2025-07-28 06:00",
+        "2025-07-29 06:00",
+        "2025-07-30 06:00",
+        "2025-07-31 06:00",
+        "2025-08-01 06:00",
+        "2025-08-02 06:00",
+        "2025-08-03 06:00",
+        "2025-08-04 06:00",
+        "2025-08-05 06:00",
+        "2025-08-06 06:00",
+        "2025-08-07 06:00",
+        "2025-08-08 06:00",
+        "2025-08-09 06:00",
+        "2025-08-10 06:00",
+        "2025-08-11 06:00",
+        "2025-08-12 06:00",
+        "2025-08-13 06:00",
+        "2025-08-14 06:00",
+        "2025-08-15 06:00",
+        "2025-08-16 06:00",
+        "2025-08-17 06:00",
+        "2025-08-18 06:00",
+        "2025-08-19 06:00",
+        "2025-08-20 06:00",
+        "2025-08-21 06:00",
+        "2025-08-22 06:00",
+        "2025-08-23 06:00",
+        "2025-08-24 06:00",
+        "2025-08-25 06:00",
+        "2025-08-31 06:00"
+      ],
+      "left_only_dates": [],
+      "right_only_dates": [],
+      "compared_hourly_temperatures": 12600,
+      "maximum_surface_difference_k": 0.010884884152559948,
+      "maximum_watering_effect_difference_k_h": 0.0028835472174932875,
+      "worst_temperature": {
+        "date": "2025-08-15 06:00",
+        "albedo": 0.1,
+        "fraction": 0.0,
+        "endpoint_hour": 9
+      },
+      "worst_effect": {
+        "date": "2025-07-12 06:00",
+        "albedo": 0.1,
+        "fraction": 1.0
+      },
+      "days": [
+        {
+          "date": "2025-02-28 06:00",
+          "maximum_surface_difference_k": 0.009429903806893236,
+          "maximum_watering_effect_difference_k_h": 0.0012158174807979094,
+          "left_initial": {
+            "base_c": 2.6058531884405753,
+            "base_water": 0.0,
+            "surface_c": 2.1840185104737095,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 2.6060872124556913,
+            "base_water": 0.0,
+            "surface_c": 2.182986622184047,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-03 06:00",
+          "maximum_surface_difference_k": 0.00862508206913759,
+          "maximum_watering_effect_difference_k_h": 0.00019191554642361552,
+          "left_initial": {
+            "base_c": 26.37200041015616,
+            "base_water": 1.7713287198665885e-07,
+            "surface_c": 25.409787702426005,
+            "surface_water": 0.00018954806975609543
+          },
+          "right_initial": {
+            "base_c": 26.372230788975628,
+            "base_water": 8.865348209939271e-08,
+            "surface_c": 25.409731236434574,
+            "surface_water": 0.0001898150575633984
+          }
+        },
+        {
+          "date": "2025-07-04 06:00",
+          "maximum_surface_difference_k": 0.005242790028475497,
+          "maximum_watering_effect_difference_k_h": 0.00046586838446671663,
+          "left_initial": {
+            "base_c": 26.40511394068505,
+            "base_water": 2.7817329457814936e-09,
+            "surface_c": 24.590283601370114,
+            "surface_water": 2.9767006664953587e-06
+          },
+          "right_initial": {
+            "base_c": 26.40537598749156,
+            "base_water": 1.393393506504736e-09,
+            "surface_c": 24.590339014878477,
+            "surface_water": 2.9833788690304813e-06
+          }
+        },
+        {
+          "date": "2025-07-05 06:00",
+          "maximum_surface_difference_k": 0.008853265147465095,
+          "maximum_watering_effect_difference_k_h": 0.0006039403219233463,
+          "left_initial": {
+            "base_c": 25.528304559975222,
+            "base_water": 0.0,
+            "surface_c": 24.86436482554143,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 25.528472144450028,
+            "base_water": 0.0,
+            "surface_c": 24.86421318976367,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-06 06:00",
+          "maximum_surface_difference_k": 0.007065644470422683,
+          "maximum_watering_effect_difference_k_h": 0.0005502210609051872,
+          "left_initial": {
+            "base_c": 26.89679144259728,
+            "base_water": 0.0,
+            "surface_c": 25.314922952565986,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 26.897059651554997,
+            "base_water": 0.0,
+            "surface_c": 25.314923763842167,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-07 06:00",
+          "maximum_surface_difference_k": 0.010817906955551848,
+          "maximum_watering_effect_difference_k_h": 0.00017286245082459573,
+          "left_initial": {
+            "base_c": 27.39632153318235,
+            "base_water": 0.0,
+            "surface_c": 25.63033136594688,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.396641686333304,
+            "base_water": 0.0,
+            "surface_c": 25.630368567035198,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-08 06:00",
+          "maximum_surface_difference_k": 0.009081215348651028,
+          "maximum_watering_effect_difference_k_h": 0.0014286142333901353,
+          "left_initial": {
+            "base_c": 27.01253221013473,
+            "base_water": 0.0,
+            "surface_c": 24.700262859771183,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.01283192814573,
+            "base_water": 0.0,
+            "surface_c": 24.700368286136246,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-09 06:00",
+          "maximum_surface_difference_k": 0.007488352061706394,
+          "maximum_watering_effect_difference_k_h": 0.0013550711328917942,
+          "left_initial": {
+            "base_c": 29.035231067518747,
+            "base_water": 0.35525493439194716,
+            "surface_c": 27.06765238624512,
+            "surface_water": 0.5447938757175463
+          },
+          "right_initial": {
+            "base_c": 29.035547072202725,
+            "base_water": 0.35485655565583374,
+            "surface_c": 27.067708266583175,
+            "surface_water": 0.5447926828302536
+          }
+        },
+        {
+          "date": "2025-07-10 06:00",
+          "maximum_surface_difference_k": 0.007195178707945615,
+          "maximum_watering_effect_difference_k_h": 0.0009239456836951376,
+          "left_initial": {
+            "base_c": 28.842545529853016,
+            "base_water": 7.981887789832863e-06,
+            "surface_c": 25.842983195001743,
+            "surface_water": 0.00854126764739436
+          },
+          "right_initial": {
+            "base_c": 28.842923598405946,
+            "base_water": 3.9920361671630315e-06,
+            "surface_c": 25.843357997127367,
+            "surface_water": 0.008547273210197026
+          }
+        },
+        {
+          "date": "2025-07-11 06:00",
+          "maximum_surface_difference_k": 0.007225573050057221,
+          "maximum_watering_effect_difference_k_h": 0.0016537782136651913,
+          "left_initial": {
+            "base_c": 28.742276712779457,
+            "base_water": 1.0538224970822683e-07,
+            "surface_c": 24.171587217363026,
+            "surface_water": 0.00011276641319020518
+          },
+          "right_initial": {
+            "base_c": 28.742741820403023,
+            "base_water": 5.2753866683770034e-08,
+            "surface_c": 24.171840001674077,
+            "surface_water": 0.00011294973373542014
+          }
+        },
+        {
+          "date": "2025-07-12 06:00",
+          "maximum_surface_difference_k": 0.008130202487798499,
+          "maximum_watering_effect_difference_k_h": 0.0028835472174932875,
+          "left_initial": {
+            "base_c": 28.571108202485238,
+            "base_water": 0.0,
+            "surface_c": 23.685751111315582,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.571551086879026,
+            "base_water": 0.0,
+            "surface_c": 23.686254247023765,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-13 06:00",
+          "maximum_surface_difference_k": 0.006753966700081548,
+          "maximum_watering_effect_difference_k_h": 0.0010632325276844767,
+          "left_initial": {
+            "base_c": 28.544477698823787,
+            "base_water": 0.0,
+            "surface_c": 25.035165732458253,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.544923732683042,
+            "base_water": 0.0,
+            "surface_c": 25.03527438071162,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-14 06:00",
+          "maximum_surface_difference_k": 0.004152924800997937,
+          "maximum_watering_effect_difference_k_h": 0.001256219942334269,
+          "left_initial": {
+            "base_c": 25.941677503386828,
+            "base_water": 1.1278105671173476e-05,
+            "surface_c": 21.39603426426495,
+            "surface_water": 0.012068590770997239
+          },
+          "right_initial": {
+            "base_c": 25.941989011609095,
+            "base_water": 5.638389898004348e-06,
+            "surface_c": 21.39658714366479,
+            "surface_water": 0.012072301322768016
+          }
+        },
+        {
+          "date": "2025-07-15 06:00",
+          "maximum_surface_difference_k": 0.009119945590519762,
+          "maximum_watering_effect_difference_k_h": 0.00016506388993775545,
+          "left_initial": {
+            "base_c": 24.331011875582234,
+            "base_water": 9.925463800394017,
+            "surface_c": 21.47614108007082,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 24.33120261830521,
+            "base_water": 9.925605914423455,
+            "surface_c": 21.476137372101253,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-16 06:00",
+          "maximum_surface_difference_k": 0.0007238927002823914,
+          "maximum_watering_effect_difference_k_h": 4.496460468317309e-05,
+          "left_initial": {
+            "base_c": 24.75582045509408,
+            "base_water": 14.748297996868313,
+            "surface_c": 23.43761394112045,
+            "surface_water": 3.7306768137083597
+          },
+          "right_initial": {
+            "base_c": 24.755906428379383,
+            "base_water": 14.748695214763657,
+            "surface_c": 23.437680390140194,
+            "surface_water": 3.730410257614006
+          }
+        },
+        {
+          "date": "2025-07-17 06:00",
+          "maximum_surface_difference_k": 0.005138863677700556,
+          "maximum_watering_effect_difference_k_h": 1.1523391378887027e-06,
+          "left_initial": {
+            "base_c": 23.459198135395617,
+            "base_water": 26.562746809116863,
+            "surface_c": 22.210310674691314,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 23.459263960868654,
+            "base_water": 26.563344014439988,
+            "surface_c": 22.21031915238517,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-18 06:00",
+          "maximum_surface_difference_k": 0.005485841249893042,
+          "maximum_watering_effect_difference_k_h": 0.00018805671690813597,
+          "left_initial": {
+            "base_c": 23.978141256224863,
+            "base_water": 23.551703893984634,
+            "surface_c": 22.588071942191153,
+            "surface_water": 5.911136979531032
+          },
+          "right_initial": {
+            "base_c": 23.978181719035238,
+            "base_water": 23.55221847419199,
+            "surface_c": 22.588136074221172,
+            "surface_water": 5.911163465297635
+          }
+        },
+        {
+          "date": "2025-07-19 06:00",
+          "maximum_surface_difference_k": 0.0021585876833398743,
+          "maximum_watering_effect_difference_k_h": 0.00010094842929930792,
+          "left_initial": {
+            "base_c": 24.472457539605777,
+            "base_water": 29.453076112824913,
+            "surface_c": 22.02392973514699,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 24.47251074881558,
+            "base_water": 29.45405388679752,
+            "surface_c": 22.02399829821596,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-20 06:00",
+          "maximum_surface_difference_k": 0.007593835949705863,
+          "maximum_watering_effect_difference_k_h": 0.00016587698368653037,
+          "left_initial": {
+            "base_c": 24.62808224788899,
+            "base_water": 27.775102438214823,
+            "surface_c": 24.54663946996431,
+            "surface_water": 5.335618633631603
+          },
+          "right_initial": {
+            "base_c": 24.628119766984454,
+            "base_water": 27.776761699616443,
+            "surface_c": 24.54655380999023,
+            "surface_water": 5.335791914952852
+          }
+        },
+        {
+          "date": "2025-07-21 06:00",
+          "maximum_surface_difference_k": 0.007565568472024609,
+          "maximum_watering_effect_difference_k_h": 0.000733633538658296,
+          "left_initial": {
+            "base_c": 26.786235070092093,
+            "base_water": 19.580003473408294,
+            "surface_c": 25.41228344840988,
+            "surface_water": 1.858804733651108
+          },
+          "right_initial": {
+            "base_c": 26.78640864856386,
+            "base_water": 19.580759973908577,
+            "surface_c": 25.4116524285906,
+            "surface_water": 1.8589105720118821
+          }
+        },
+        {
+          "date": "2025-07-22 06:00",
+          "maximum_surface_difference_k": 0.007759337263479438,
+          "maximum_watering_effect_difference_k_h": 0.0012859354383749633,
+          "left_initial": {
+            "base_c": 27.452458975257823,
+            "base_water": 6.540832033544639,
+            "surface_c": 25.810390596710917,
+            "surface_water": 0.6496392416997094
+          },
+          "right_initial": {
+            "base_c": 27.452711148136732,
+            "base_water": 6.541368724994108,
+            "surface_c": 25.810386594609465,
+            "surface_water": 0.6496930244903814
+          }
+        },
+        {
+          "date": "2025-07-23 06:00",
+          "maximum_surface_difference_k": 0.008821772201628164,
+          "maximum_watering_effect_difference_k_h": 0.0016981781660945217,
+          "left_initial": {
+            "base_c": 27.951305586839734,
+            "base_water": 1.5057973752421356e-07,
+            "surface_c": 25.439078074754217,
+            "surface_water": 0.00016113371730776648
+          },
+          "right_initial": {
+            "base_c": 27.95163472479424,
+            "base_water": 7.536381028522279e-08,
+            "surface_c": 25.439146866635323,
+            "surface_water": 0.00016136062025952626
+          }
+        },
+        {
+          "date": "2025-07-24 06:00",
+          "maximum_surface_difference_k": 0.009674058964542098,
+          "maximum_watering_effect_difference_k_h": 0.001273961037583149,
+          "left_initial": {
+            "base_c": 28.54205923686988,
+            "base_water": 2.2220594055456917e-09,
+            "surface_c": 25.862793112694217,
+            "surface_water": 2.37780090147238e-06
+          },
+          "right_initial": {
+            "base_c": 28.54242706959855,
+            "base_water": 1.113082952014616e-09,
+            "surface_c": 25.862927194617292,
+            "surface_water": 2.3832094038556335e-06
+          }
+        },
+        {
+          "date": "2025-07-25 06:00",
+          "maximum_surface_difference_k": 0.008262004965637004,
+          "maximum_watering_effect_difference_k_h": 0.0016989985701627575,
+          "left_initial": {
+            "base_c": 28.166972662843918,
+            "base_water": 0.0,
+            "surface_c": 24.45404528529725,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.167384187691848,
+            "base_water": 0.0,
+            "surface_c": 24.45419444317728,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-26 06:00",
+          "maximum_surface_difference_k": 0.009677671084183714,
+          "maximum_watering_effect_difference_k_h": 0.0011905007646362264,
+          "left_initial": {
+            "base_c": 29.226940729753654,
+            "base_water": 0.0,
+            "surface_c": 27.072880808929913,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.227294374598717,
+            "base_water": 0.0,
+            "surface_c": 27.072978511781898,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-27 06:00",
+          "maximum_surface_difference_k": 0.007476137938631666,
+          "maximum_watering_effect_difference_k_h": 0.001046023281134012,
+          "left_initial": {
+            "base_c": 29.62939509790223,
+            "base_water": 0.0,
+            "surface_c": 26.87061866286385,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.629773706083796,
+            "base_water": 0.0,
+            "surface_c": 26.870907607573262,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-28 06:00",
+          "maximum_surface_difference_k": 0.006782547462904631,
+          "maximum_watering_effect_difference_k_h": 0.0013613446958800068,
+          "left_initial": {
+            "base_c": 29.815878474986903,
+            "base_water": 0.0,
+            "surface_c": 26.07121338130999,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.816297857506974,
+            "base_water": 0.0,
+            "surface_c": 26.071580446249207,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-29 06:00",
+          "maximum_surface_difference_k": 0.007687640220112257,
+          "maximum_watering_effect_difference_k_h": 0.001737064759140594,
+          "left_initial": {
+            "base_c": 29.425356672884824,
+            "base_water": 0.0,
+            "surface_c": 25.53688988529177,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.425783203243352,
+            "base_water": 0.0,
+            "surface_c": 25.53716319935504,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-30 06:00",
+          "maximum_surface_difference_k": 0.0067008075299170855,
+          "maximum_watering_effect_difference_k_h": 0.0012855614999978116,
+          "left_initial": {
+            "base_c": 29.949532966832532,
+            "base_water": 0.0,
+            "surface_c": 26.955925435200854,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.949896880075997,
+            "base_water": 0.0,
+            "surface_c": 26.956266958293828,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-31 06:00",
+          "maximum_surface_difference_k": 0.009695966424381197,
+          "maximum_watering_effect_difference_k_h": 0.0009387940487499691,
+          "left_initial": {
+            "base_c": 30.163170383653657,
+            "base_water": 0.0,
+            "surface_c": 28.931419453280594,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 30.163439542080354,
+            "base_water": 0.0,
+            "surface_c": 28.93167307089057,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-01 06:00",
+          "maximum_surface_difference_k": 0.007700730758010366,
+          "maximum_watering_effect_difference_k_h": 0.0012910979786795451,
+          "left_initial": {
+            "base_c": 29.312721879580813,
+            "base_water": 0.0,
+            "surface_c": 27.61749037552759,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.312996620417433,
+            "base_water": 0.0,
+            "surface_c": 27.61769782427798,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-02 06:00",
+          "maximum_surface_difference_k": 0.0085159090413498,
+          "maximum_watering_effect_difference_k_h": 0.001495458152618312,
+          "left_initial": {
+            "base_c": 29.22534898728228,
+            "base_water": 0.0,
+            "surface_c": 27.26571994082102,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.225635414176264,
+            "base_water": 0.0,
+            "surface_c": 27.26580662874864,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-03 06:00",
+          "maximum_surface_difference_k": 0.009813378950141782,
+          "maximum_watering_effect_difference_k_h": 0.0009440901286694725,
+          "left_initial": {
+            "base_c": 29.70342811101168,
+            "base_water": 0.0,
+            "surface_c": 27.311173744589958,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.703760760647594,
+            "base_water": 0.0,
+            "surface_c": 27.311366735645137,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-04 06:00",
+          "maximum_surface_difference_k": 0.008507902712203474,
+          "maximum_watering_effect_difference_k_h": 0.0013234098196903687,
+          "left_initial": {
+            "base_c": 27.441799528800086,
+            "base_water": 1.5758667201892997,
+            "surface_c": 24.351897373311225,
+            "surface_water": 1.6192151935769823
+          },
+          "right_initial": {
+            "base_c": 27.442096984329275,
+            "base_water": 1.575515658071408,
+            "surface_c": 24.35202043695156,
+            "surface_water": 1.6191452909475532
+          }
+        },
+        {
+          "date": "2025-08-05 06:00",
+          "maximum_surface_difference_k": 0.008067668387489846,
+          "maximum_watering_effect_difference_k_h": 0.0007155318901652663,
+          "left_initial": {
+            "base_c": 28.335559859888882,
+            "base_water": 0.5834570464857786,
+            "surface_c": 24.589281854950897,
+            "surface_water": 0.1154594583017881
+          },
+          "right_initial": {
+            "base_c": 28.335911003329237,
+            "base_water": 0.583062768361421,
+            "surface_c": 24.589067219249543,
+            "surface_water": 0.1154406280470989
+          }
+        },
+        {
+          "date": "2025-08-06 06:00",
+          "maximum_surface_difference_k": 0.004595081504049858,
+          "maximum_watering_effect_difference_k_h": 8.55824555401341e-05,
+          "left_initial": {
+            "base_c": 29.112563732177172,
+            "base_water": 0.00022010753862928818,
+            "surface_c": 27.465352320093405,
+            "surface_water": 0.23553412488603498
+          },
+          "right_initial": {
+            "base_c": 29.11285057282001,
+            "base_water": 0.00010998661945454552,
+            "surface_c": 27.46533085788485,
+            "surface_water": 0.2354908710255937
+          }
+        },
+        {
+          "date": "2025-08-07 06:00",
+          "maximum_surface_difference_k": 0.008258081607763756,
+          "maximum_watering_effect_difference_k_h": 0.0013758212486720822,
+          "left_initial": {
+            "base_c": 27.08315875857183,
+            "base_water": 4.4677925491835895,
+            "surface_c": 25.040831352290688,
+            "surface_water": 0.854179627215359
+          },
+          "right_initial": {
+            "base_c": 27.083360621907357,
+            "base_water": 4.467254270977285,
+            "surface_c": 25.040849540178385,
+            "surface_water": 0.8543206064276679
+          }
+        },
+        {
+          "date": "2025-08-08 06:00",
+          "maximum_surface_difference_k": 0.00846166025257844,
+          "maximum_watering_effect_difference_k_h": 0.0011572075019898875,
+          "left_initial": {
+            "base_c": 28.122338213669504,
+            "base_water": 2.5465567776656677,
+            "surface_c": 23.61882091181252,
+            "surface_water": 0.2817751518607865
+          },
+          "right_initial": {
+            "base_c": 28.122677340183206,
+            "base_water": 2.546189078924987,
+            "surface_c": 23.61911708497747,
+            "surface_water": 0.2817473596073139
+          }
+        },
+        {
+          "date": "2025-08-09 06:00",
+          "maximum_surface_difference_k": 0.003989417933503603,
+          "maximum_watering_effect_difference_k_h": 0.00010569181453234933,
+          "left_initial": {
+            "base_c": 27.945626356143084,
+            "base_water": 0.2643373247845562,
+            "surface_c": 25.683847301335,
+            "surface_water": 0.07218084004771605
+          },
+          "right_initial": {
+            "base_c": 27.945903690684187,
+            "base_water": 0.2639656538079561,
+            "surface_c": 25.684023848057777,
+            "surface_water": 0.07214678159164639
+          }
+        },
+        {
+          "date": "2025-08-10 06:00",
+          "maximum_surface_difference_k": 0.007766285984679655,
+          "maximum_watering_effect_difference_k_h": 0.0017499169508141676,
+          "left_initial": {
+            "base_c": 25.820538826331326,
+            "base_water": 0.0,
+            "surface_c": 21.56834648739098,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 25.82083259754124,
+            "base_water": 0.0,
+            "surface_c": 21.5683494988495,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-11 06:00",
+          "maximum_surface_difference_k": 0.005153106753169823,
+          "maximum_watering_effect_difference_k_h": 0.00014170486373643598,
+          "left_initial": {
+            "base_c": 27.785056552272305,
+            "base_water": 0.0,
+            "surface_c": 25.426565006398206,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.785340641160655,
+            "base_water": 0.0,
+            "surface_c": 25.426689746655615,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-12 06:00",
+          "maximum_surface_difference_k": 0.008226630843530813,
+          "maximum_watering_effect_difference_k_h": 0.0018609534834297392,
+          "left_initial": {
+            "base_c": 26.22075071155277,
+            "base_water": 0.0,
+            "surface_c": 21.48740719691534,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 26.221057009742793,
+            "base_water": 0.0,
+            "surface_c": 21.48783203526235,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-13 06:00",
+          "maximum_surface_difference_k": 0.00410237625676757,
+          "maximum_watering_effect_difference_k_h": 4.1148793464174105e-05,
+          "left_initial": {
+            "base_c": 28.138028613234745,
+            "base_water": 0.8722571488651246,
+            "surface_c": 25.006790032076683,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 28.13821611785,
+            "base_water": 0.873171078232526,
+            "surface_c": 25.006794813603776,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-08-14 06:00",
+          "maximum_surface_difference_k": 0.00484177612639769,
+          "maximum_watering_effect_difference_k_h": 3.8766501930354025e-05,
+          "left_initial": {
+            "base_c": 25.55124562515106,
+            "base_water": 16.676314208301218,
+            "surface_c": 24.330649405230204,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 25.55135986584566,
+            "base_water": 16.677072408635905,
+            "surface_c": 24.330516304114802,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-08-15 06:00",
+          "maximum_surface_difference_k": 0.010884884152559948,
+          "maximum_watering_effect_difference_k_h": 0.00018005998497017117,
+          "left_initial": {
+            "base_c": 25.512368065724992,
+            "base_water": 21.180743598706986,
+            "surface_c": 23.65963894446358,
+            "surface_water": 2.1111543016299628
+          },
+          "right_initial": {
+            "base_c": 25.512461918786524,
+            "base_water": 21.181297969706517,
+            "surface_c": 23.659632323049625,
+            "surface_water": 2.111311736614412
+          }
+        },
+        {
+          "date": "2025-08-16 06:00",
+          "maximum_surface_difference_k": 0.007139941499609392,
+          "maximum_watering_effect_difference_k_h": 0.0003465835997076283,
+          "left_initial": {
+            "base_c": 26.43940049560196,
+            "base_water": 23.134227932212607,
+            "surface_c": 25.16331585922985,
+            "surface_water": 2.341679485363886
+          },
+          "right_initial": {
+            "base_c": 26.439467429283592,
+            "base_water": 23.135388528014595,
+            "surface_c": 25.163001449371084,
+            "surface_water": 2.3419236931087783
+          }
+        },
+        {
+          "date": "2025-08-17 06:00",
+          "maximum_surface_difference_k": 0.007155685615963137,
+          "maximum_watering_effect_difference_k_h": 0.0009328385457365584,
+          "left_initial": {
+            "base_c": 27.610851773970165,
+            "base_water": 8.160491051887806,
+            "surface_c": 25.553072739030043,
+            "surface_water": 0.7908886053104884
+          },
+          "right_initial": {
+            "base_c": 27.611087318957075,
+            "base_water": 8.162157997447613,
+            "surface_c": 25.55311976838012,
+            "surface_water": 0.7910417504603023
+          }
+        },
+        {
+          "date": "2025-08-18 06:00",
+          "maximum_surface_difference_k": 0.009018102410507822,
+          "maximum_watering_effect_difference_k_h": 0.00043577378363579555,
+          "left_initial": {
+            "base_c": 28.04979035948162,
+            "base_water": 0.9190293240708932,
+            "surface_c": 26.808760003699486,
+            "surface_water": 0.13194816823502295
+          },
+          "right_initial": {
+            "base_c": 28.050009480122046,
+            "base_water": 0.9198404176198427,
+            "surface_c": 26.808895654780915,
+            "surface_water": 0.13202123529739507
+          }
+        },
+        {
+          "date": "2025-08-19 06:00",
+          "maximum_surface_difference_k": 0.006492842184840697,
+          "maximum_watering_effect_difference_k_h": 0.000400686630285918,
+          "left_initial": {
+            "base_c": 27.935938706214603,
+            "base_water": 0.0,
+            "surface_c": 25.903642334832913,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.936213338820576,
+            "base_water": 0.0,
+            "surface_c": 25.90349517215053,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-20 06:00",
+          "maximum_surface_difference_k": 0.0068210884171975295,
+          "maximum_watering_effect_difference_k_h": 0.0007410352406509446,
+          "left_initial": {
+            "base_c": 28.296265921920625,
+            "base_water": 0.0,
+            "surface_c": 26.37055607862423,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.29651666460262,
+            "base_water": 0.0,
+            "surface_c": 26.370746752692487,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-21 06:00",
+          "maximum_surface_difference_k": 0.008695712032682934,
+          "maximum_watering_effect_difference_k_h": 0.00048120687196728795,
+          "left_initial": {
+            "base_c": 28.56328942125074,
+            "base_water": 0.0,
+            "surface_c": 26.417326757113152,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.56357018543602,
+            "base_water": 0.0,
+            "surface_c": 26.417342881853013,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-22 06:00",
+          "maximum_surface_difference_k": 0.0063268965549170275,
+          "maximum_watering_effect_difference_k_h": 0.000633367574323529,
+          "left_initial": {
+            "base_c": 28.753508604996973,
+            "base_water": 0.0,
+            "surface_c": 25.930612590239555,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.75382342445716,
+            "base_water": 0.0,
+            "surface_c": 25.930833895915697,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-23 06:00",
+          "maximum_surface_difference_k": 0.00850276351127377,
+          "maximum_watering_effect_difference_k_h": 0.00033987470669671893,
+          "left_initial": {
+            "base_c": 28.658932096995073,
+            "base_water": 0.0,
+            "surface_c": 26.307511191787743,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.659262345632474,
+            "base_water": 0.0,
+            "surface_c": 26.30752646452358,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-24 06:00",
+          "maximum_surface_difference_k": 0.007678340854475607,
+          "maximum_watering_effect_difference_k_h": 0.001098854304274255,
+          "left_initial": {
+            "base_c": 28.65969772969502,
+            "base_water": 0.0,
+            "surface_c": 26.53774135082307,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.660010177913893,
+            "base_water": 0.0,
+            "surface_c": 26.537583899332187,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-25 06:00",
+          "maximum_surface_difference_k": 0.008164692511797966,
+          "maximum_watering_effect_difference_k_h": 0.0010022581189303992,
+          "left_initial": {
+            "base_c": 28.951392301832648,
+            "base_water": 0.0,
+            "surface_c": 26.629653535522426,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.95171133792779,
+            "base_water": 0.0,
+            "surface_c": 26.62961456052509,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-31 06:00",
+          "maximum_surface_difference_k": 0.00912210612911224,
+          "maximum_watering_effect_difference_k_h": 0.0009775949353070246,
+          "left_initial": {
+            "base_c": 28.266538749885328,
+            "base_water": 3.3078156667954425e-05,
+            "surface_c": 25.446721504975397,
+            "surface_water": 0.03539660271977828
+          },
+          "right_initial": {
+            "base_c": 28.266826175715398,
+            "base_water": 1.653107295438291e-05,
+            "surface_c": 25.446941696845744,
+            "surface_water": 0.0353945133142487
+          }
+        }
+      ],
+      "pass": true
+    },
+    "step_10.0_to_step_5.0": {
+      "common_dates": [
+        "2025-02-28 06:00",
+        "2025-07-03 06:00",
+        "2025-07-04 06:00",
+        "2025-07-05 06:00",
+        "2025-07-06 06:00",
+        "2025-07-07 06:00",
+        "2025-07-08 06:00",
+        "2025-07-09 06:00",
+        "2025-07-10 06:00",
+        "2025-07-11 06:00",
+        "2025-07-12 06:00",
+        "2025-07-13 06:00",
+        "2025-07-14 06:00",
+        "2025-07-15 06:00",
+        "2025-07-16 06:00",
+        "2025-07-17 06:00",
+        "2025-07-18 06:00",
+        "2025-07-19 06:00",
+        "2025-07-20 06:00",
+        "2025-07-21 06:00",
+        "2025-07-22 06:00",
+        "2025-07-23 06:00",
+        "2025-07-24 06:00",
+        "2025-07-25 06:00",
+        "2025-07-26 06:00",
+        "2025-07-27 06:00",
+        "2025-07-28 06:00",
+        "2025-07-29 06:00",
+        "2025-07-30 06:00",
+        "2025-07-31 06:00",
+        "2025-08-01 06:00",
+        "2025-08-02 06:00",
+        "2025-08-03 06:00",
+        "2025-08-04 06:00",
+        "2025-08-05 06:00",
+        "2025-08-06 06:00",
+        "2025-08-07 06:00",
+        "2025-08-08 06:00",
+        "2025-08-09 06:00",
+        "2025-08-10 06:00",
+        "2025-08-11 06:00",
+        "2025-08-12 06:00",
+        "2025-08-13 06:00",
+        "2025-08-14 06:00",
+        "2025-08-15 06:00",
+        "2025-08-16 06:00",
+        "2025-08-17 06:00",
+        "2025-08-18 06:00",
+        "2025-08-19 06:00",
+        "2025-08-20 06:00",
+        "2025-08-21 06:00",
+        "2025-08-22 06:00",
+        "2025-08-23 06:00",
+        "2025-08-24 06:00",
+        "2025-08-25 06:00",
+        "2025-08-31 06:00"
+      ],
+      "left_only_dates": [],
+      "right_only_dates": [],
+      "compared_hourly_temperatures": 12600,
+      "maximum_surface_difference_k": 0.005434192915863889,
+      "maximum_watering_effect_difference_k_h": 0.0014404708163624491,
+      "worst_temperature": {
+        "date": "2025-08-15 06:00",
+        "albedo": 0.1,
+        "fraction": 0.0,
+        "endpoint_hour": 9
+      },
+      "worst_effect": {
+        "date": "2025-07-12 06:00",
+        "albedo": 0.1,
+        "fraction": 1.0
+      },
+      "days": [
+        {
+          "date": "2025-02-28 06:00",
+          "maximum_surface_difference_k": 0.004708646599901556,
+          "maximum_watering_effect_difference_k_h": 0.0006069396611820821,
+          "left_initial": {
+            "base_c": 2.6060872124556913,
+            "base_water": 0.0,
+            "surface_c": 2.182986622184047,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 2.606204149479897,
+            "base_water": 0.0,
+            "surface_c": 2.182471532127361,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-03 06:00",
+          "maximum_surface_difference_k": 0.0043069682361718264,
+          "maximum_watering_effect_difference_k_h": 9.652840998342072e-05,
+          "left_initial": {
+            "base_c": 26.372230788975628,
+            "base_water": 8.865348209939271e-08,
+            "surface_c": 25.409731236434574,
+            "surface_water": 0.0001898150575633984
+          },
+          "right_initial": {
+            "base_c": 26.37234593997457,
+            "base_water": 4.4348510009871135e-08,
+            "surface_c": 25.409703089739505,
+            "surface_water": 0.00018994864557230447
+          }
+        },
+        {
+          "date": "2025-07-04 06:00",
+          "maximum_surface_difference_k": 0.002617276485516129,
+          "maximum_watering_effect_difference_k_h": 0.0004428075902183082,
+          "left_initial": {
+            "base_c": 26.40537598749156,
+            "base_water": 1.393393506504736e-09,
+            "surface_c": 24.590339014878477,
+            "surface_water": 2.9833788690304813e-06
+          },
+          "right_initial": {
+            "base_c": 26.405506971810688,
+            "base_water": 6.973291447578801e-10,
+            "surface_c": 24.59036676031336,
+            "surface_water": 2.986722453912429e-06
+          }
+        },
+        {
+          "date": "2025-07-05 06:00",
+          "maximum_surface_difference_k": 0.004424287217652534,
+          "maximum_watering_effect_difference_k_h": 0.00030310045252690543,
+          "left_initial": {
+            "base_c": 25.528472144450028,
+            "base_water": 0.0,
+            "surface_c": 24.86421318976367,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 25.52855591398718,
+            "base_water": 0.0,
+            "surface_c": 24.864137503663542,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-06 06:00",
+          "maximum_surface_difference_k": 0.0035298948052115975,
+          "maximum_watering_effect_difference_k_h": 0.0002761139963354253,
+          "left_initial": {
+            "base_c": 26.897059651554997,
+            "base_water": 0.0,
+            "surface_c": 25.314923763842167,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 26.897193710915882,
+            "base_water": 0.0,
+            "surface_c": 25.31492427531624,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-07 06:00",
+          "maximum_surface_difference_k": 0.005402910533518934,
+          "maximum_watering_effect_difference_k_h": 8.621241546791225e-05,
+          "left_initial": {
+            "base_c": 27.396641686333304,
+            "base_water": 0.0,
+            "surface_c": 25.630368567035198,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.39680172508455,
+            "base_water": 0.0,
+            "surface_c": 25.630387101001283,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-08 06:00",
+          "maximum_surface_difference_k": 0.004537220252906593,
+          "maximum_watering_effect_difference_k_h": 0.0007140286250262307,
+          "left_initial": {
+            "base_c": 27.01283192814573,
+            "base_water": 0.0,
+            "surface_c": 24.700368286136246,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.012981752082556,
+            "base_water": 0.0,
+            "surface_c": 24.70042090580427,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-09 06:00",
+          "maximum_surface_difference_k": 0.0037418866602152434,
+          "maximum_watering_effect_difference_k_h": 0.0006767572790380427,
+          "left_initial": {
+            "base_c": 29.035547072202725,
+            "base_water": 0.35485655565583374,
+            "surface_c": 27.067708266583175,
+            "surface_water": 0.5447926828302536
+          },
+          "right_initial": {
+            "base_c": 29.03570501872288,
+            "base_water": 0.35465739785903294,
+            "surface_c": 27.067736396121916,
+            "surface_water": 0.5447920692487193
+          }
+        },
+        {
+          "date": "2025-07-10 06:00",
+          "maximum_surface_difference_k": 0.0035959997051406845,
+          "maximum_watering_effect_difference_k_h": 0.00046294218878983884,
+          "left_initial": {
+            "base_c": 28.842923598405946,
+            "base_water": 3.9920361671630315e-06,
+            "surface_c": 25.843357997127367,
+            "surface_water": 0.008547273210197026
+          },
+          "right_initial": {
+            "base_c": 28.843112584174847,
+            "base_water": 1.9962912060493934e-06,
+            "surface_c": 25.843545174531787,
+            "surface_water": 0.008550277103714908
+          }
+        },
+        {
+          "date": "2025-07-11 06:00",
+          "maximum_surface_difference_k": 0.003611035493968018,
+          "maximum_watering_effect_difference_k_h": 0.000827476515013359,
+          "left_initial": {
+            "base_c": 28.742741820403023,
+            "base_water": 5.2753866683770034e-08,
+            "surface_c": 24.171840001674077,
+            "surface_water": 0.00011294973373542014
+          },
+          "right_initial": {
+            "base_c": 28.742974309512665,
+            "base_water": 2.6392628782484088e-08,
+            "surface_c": 24.171966581221117,
+            "surface_water": 0.00011304148219925228
+          }
+        },
+        {
+          "date": "2025-07-12 06:00",
+          "maximum_surface_difference_k": 0.004061649074671436,
+          "maximum_watering_effect_difference_k_h": 0.0014404708163624491,
+          "left_initial": {
+            "base_c": 28.571551086879026,
+            "base_water": 0.0,
+            "surface_c": 23.686254247023765,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.571772466084276,
+            "base_water": 0.0,
+            "surface_c": 23.686505894111455,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-13 06:00",
+          "maximum_surface_difference_k": 0.0033740933434884823,
+          "maximum_watering_effect_difference_k_h": 0.0005308195046609399,
+          "left_initial": {
+            "base_c": 28.544923732683042,
+            "base_water": 0.0,
+            "surface_c": 25.03527438071162,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.545146684925157,
+            "base_water": 0.0,
+            "surface_c": 25.035328917109627,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-14 06:00",
+          "maximum_surface_difference_k": 0.0020711624322196087,
+          "maximum_watering_effect_difference_k_h": 0.0006268709698957764,
+          "left_initial": {
+            "base_c": 25.941989011609095,
+            "base_water": 5.638389898004348e-06,
+            "surface_c": 21.39658714366479,
+            "surface_water": 0.012072301322768016
+          },
+          "right_initial": {
+            "base_c": 25.94214473490164,
+            "base_water": 2.819029194969656e-06,
+            "surface_c": 21.396863586307486,
+            "surface_water": 0.012074156242603128
+          }
+        },
+        {
+          "date": "2025-07-15 06:00",
+          "maximum_surface_difference_k": 0.004552128019518875,
+          "maximum_watering_effect_difference_k_h": 4.946099869584941e-05,
+          "left_initial": {
+            "base_c": 24.33120261830521,
+            "base_water": 9.925605914423455,
+            "surface_c": 21.476137372101253,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 24.33129796520889,
+            "base_water": 9.925676865684045,
+            "surface_c": 21.47613559798534,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-16 06:00",
+          "maximum_surface_difference_k": 0.00036136154642463225,
+          "maximum_watering_effect_difference_k_h": 2.2426892206439675e-05,
+          "left_initial": {
+            "base_c": 24.755906428379383,
+            "base_water": 14.748695214763657,
+            "surface_c": 23.437680390140194,
+            "surface_water": 3.730410257614006
+          },
+          "right_initial": {
+            "base_c": 24.75594940003426,
+            "base_water": 14.748893643999784,
+            "surface_c": 23.437713535909687,
+            "surface_water": 3.7302770514522194
+          }
+        },
+        {
+          "date": "2025-07-17 06:00",
+          "maximum_surface_difference_k": 0.0025674470853545017,
+          "maximum_watering_effect_difference_k_h": 5.778005629508698e-07,
+          "left_initial": {
+            "base_c": 23.459263960868654,
+            "base_water": 26.563344014439988,
+            "surface_c": 22.21031915238517,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 23.459296863587312,
+            "base_water": 26.563642102075796,
+            "surface_c": 22.21032340519719,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-18 06:00",
+          "maximum_surface_difference_k": 0.002739069007965611,
+          "maximum_watering_effect_difference_k_h": 9.405368841441941e-05,
+          "left_initial": {
+            "base_c": 23.978181719035238,
+            "base_water": 23.55221847419199,
+            "surface_c": 22.588136074221172,
+            "surface_water": 5.911163465297635
+          },
+          "right_initial": {
+            "base_c": 23.978201934230995,
+            "base_water": 23.552474024674623,
+            "surface_c": 22.58816808592046,
+            "surface_water": 5.911176677385341
+          }
+        },
+        {
+          "date": "2025-07-19 06:00",
+          "maximum_surface_difference_k": 0.0010781649938067517,
+          "maximum_watering_effect_difference_k_h": 5.0444287190032355e-05,
+          "left_initial": {
+            "base_c": 24.47251074881558,
+            "base_water": 29.45405388679752,
+            "surface_c": 22.02399829821596,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 24.472537320133135,
+            "base_water": 29.454535749825336,
+            "surface_c": 22.02403267065166,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-20 06:00",
+          "maximum_surface_difference_k": 0.0037948276456845065,
+          "maximum_watering_effect_difference_k_h": 8.33572283625017e-05,
+          "left_initial": {
+            "base_c": 24.628119766984454,
+            "base_water": 27.776761699616443,
+            "surface_c": 24.54655380999023,
+            "surface_water": 5.335791914952852
+          },
+          "right_initial": {
+            "base_c": 24.628138513737827,
+            "base_water": 27.77759105899209,
+            "surface_c": 24.54651106424391,
+            "surface_water": 5.335878513982109
+          }
+        },
+        {
+          "date": "2025-07-21 06:00",
+          "maximum_surface_difference_k": 0.0037803615247327116,
+          "maximum_watering_effect_difference_k_h": 0.0003663719873259197,
+          "left_initial": {
+            "base_c": 26.78640864856386,
+            "base_water": 19.580759973908577,
+            "surface_c": 25.4116524285906,
+            "surface_water": 1.8589105720118821
+          },
+          "right_initial": {
+            "base_c": 26.78649536079186,
+            "base_water": 19.581133930796476,
+            "surface_c": 25.411337479096936,
+            "surface_water": 1.8589631143871477
+          }
+        },
+        {
+          "date": "2025-07-22 06:00",
+          "maximum_surface_difference_k": 0.0038742218563783126,
+          "maximum_watering_effect_difference_k_h": 0.0006425681522728155,
+          "left_initial": {
+            "base_c": 27.452711148136732,
+            "base_water": 6.541368724994108,
+            "surface_c": 25.810386594609465,
+            "surface_water": 0.6496930244903814
+          },
+          "right_initial": {
+            "base_c": 27.452837183875445,
+            "base_water": 6.54163636310032,
+            "surface_c": 25.810384608562245,
+            "surface_water": 0.6497198526120469
+          }
+        },
+        {
+          "date": "2025-07-23 06:00",
+          "maximum_surface_difference_k": 0.0044051718395721196,
+          "maximum_watering_effect_difference_k_h": 0.0008480533905128596,
+          "left_initial": {
+            "base_c": 27.95163472479424,
+            "base_water": 7.536381028522279e-08,
+            "surface_c": 25.439146866635323,
+            "surface_water": 0.00016136062025952626
+          },
+          "right_initial": {
+            "base_c": 27.95179924164673,
+            "base_water": 3.770039651806349e-08,
+            "surface_c": 25.439181342443423,
+            "surface_water": 0.0001614741503462749
+          }
+        },
+        {
+          "date": "2025-07-24 06:00",
+          "maximum_surface_difference_k": 0.004831331784046711,
+          "maximum_watering_effect_difference_k_h": 0.0006361247985182672,
+          "left_initial": {
+            "base_c": 28.54242706959855,
+            "base_water": 1.113082952014616e-09,
+            "surface_c": 25.862927194617292,
+            "surface_water": 2.3832094038556335e-06
+          },
+          "right_initial": {
+            "base_c": 28.542610932414316,
+            "base_water": 5.570553094939322e-10,
+            "surface_c": 25.862994309097424,
+            "surface_water": 2.385917326085529e-06
+          }
+        },
+        {
+          "date": "2025-07-25 06:00",
+          "maximum_surface_difference_k": 0.004128360490916805,
+          "maximum_watering_effect_difference_k_h": 0.0008487675829087493,
+          "left_initial": {
+            "base_c": 28.167384187691848,
+            "base_water": 0.0,
+            "surface_c": 24.45419444317728,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.16758989409482,
+            "base_water": 0.0,
+            "surface_c": 24.454269065313156,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-26 06:00",
+          "maximum_surface_difference_k": 0.004834586892556558,
+          "maximum_watering_effect_difference_k_h": 0.0005945680188972347,
+          "left_initial": {
+            "base_c": 29.227294374598717,
+            "base_water": 0.0,
+            "surface_c": 27.072978511781898,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.227471148198347,
+            "base_water": 0.0,
+            "surface_c": 27.07302739574556,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-27 06:00",
+          "maximum_surface_difference_k": 0.0037359766952178575,
+          "maximum_watering_effect_difference_k_h": 0.0005237131802005024,
+          "left_initial": {
+            "base_c": 29.629773706083796,
+            "base_water": 0.0,
+            "surface_c": 26.870907607573262,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.629962962985257,
+            "base_water": 0.0,
+            "surface_c": 26.87105199876865,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-28 06:00",
+          "maximum_surface_difference_k": 0.0033885264649100577,
+          "maximum_watering_effect_difference_k_h": 0.000680084653367885,
+          "left_initial": {
+            "base_c": 29.816297857506974,
+            "base_water": 0.0,
+            "surface_c": 26.071580446249207,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.816507491370963,
+            "base_water": 0.0,
+            "surface_c": 26.07176393625838,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-29 06:00",
+          "maximum_surface_difference_k": 0.0038418647905587022,
+          "maximum_watering_effect_difference_k_h": 0.0008679465166494538,
+          "left_initial": {
+            "base_c": 29.425783203243352,
+            "base_water": 0.0,
+            "surface_c": 25.53716319935504,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.425996414922515,
+            "base_water": 0.0,
+            "surface_c": 25.537299844095394,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-30 06:00",
+          "maximum_surface_difference_k": 0.0033470131880761755,
+          "maximum_watering_effect_difference_k_h": 0.0006418131594045917,
+          "left_initial": {
+            "base_c": 29.949896880075997,
+            "base_water": 0.0,
+            "surface_c": 26.956266958293828,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.950078794745362,
+            "base_water": 0.0,
+            "surface_c": 26.95643764104233,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-31 06:00",
+          "maximum_surface_difference_k": 0.00484135001492092,
+          "maximum_watering_effect_difference_k_h": 0.0004687353038548281,
+          "left_initial": {
+            "base_c": 30.163439542080354,
+            "base_water": 0.0,
+            "surface_c": 28.93167307089057,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 30.16357409297357,
+            "base_water": 0.0,
+            "surface_c": 28.93179974420663,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-01 06:00",
+          "maximum_surface_difference_k": 0.0038473361707787035,
+          "maximum_watering_effect_difference_k_h": 0.0006450224733782761,
+          "left_initial": {
+            "base_c": 29.312996620417433,
+            "base_water": 0.0,
+            "surface_c": 27.61769782427798,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.313133964422363,
+            "base_water": 0.0,
+            "surface_c": 27.617801468815216,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-02 06:00",
+          "maximum_surface_difference_k": 0.004254396502204827,
+          "maximum_watering_effect_difference_k_h": 0.0007471250516744021,
+          "left_initial": {
+            "base_c": 29.225635414176264,
+            "base_water": 0.0,
+            "surface_c": 27.26580662874864,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.225778586924367,
+            "base_water": 0.0,
+            "surface_c": 27.265850016247583,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-03 06:00",
+          "maximum_surface_difference_k": 0.004898934266179822,
+          "maximum_watering_effect_difference_k_h": 0.00047112604028143323,
+          "left_initial": {
+            "base_c": 29.703760760647594,
+            "base_water": 0.0,
+            "surface_c": 27.311366735645137,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.703927043087827,
+            "base_water": 0.0,
+            "surface_c": 27.311463222513087,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-04 06:00",
+          "maximum_surface_difference_k": 0.004251762266939352,
+          "maximum_watering_effect_difference_k_h": 0.0006618039716386193,
+          "left_initial": {
+            "base_c": 27.442096984329275,
+            "base_water": 1.575515658071408,
+            "surface_c": 24.35202043695156,
+            "surface_water": 1.6191452909475532
+          },
+          "right_initial": {
+            "base_c": 27.442245682834635,
+            "base_water": 1.575340123420938,
+            "surface_c": 24.352081953150694,
+            "surface_water": 1.6191103250913765
+          }
+        },
+        {
+          "date": "2025-08-05 06:00",
+          "maximum_surface_difference_k": 0.004031263816422381,
+          "maximum_watering_effect_difference_k_h": 0.00035855177821986217,
+          "left_initial": {
+            "base_c": 28.335911003329237,
+            "base_water": 0.583062768361421,
+            "surface_c": 24.589067219249543,
+            "surface_water": 0.1154406280470989
+          },
+          "right_initial": {
+            "base_c": 28.33608650880543,
+            "base_water": 0.5828656094483031,
+            "surface_c": 24.588960342677623,
+            "surface_water": 0.11543121418690559
+          }
+        },
+        {
+          "date": "2025-08-06 06:00",
+          "maximum_surface_difference_k": 0.0022955800802506587,
+          "maximum_watering_effect_difference_k_h": 4.2357059797382135e-05,
+          "left_initial": {
+            "base_c": 29.11285057282001,
+            "base_water": 0.00010998661945454552,
+            "surface_c": 27.46533085788485,
+            "surface_water": 0.2354908710255937
+          },
+          "right_initial": {
+            "base_c": 29.11299395157291,
+            "base_water": 5.4976533226560004e-05,
+            "surface_c": 27.46532019325276,
+            "surface_water": 0.23546924857308962
+          }
+        },
+        {
+          "date": "2025-08-07 06:00",
+          "maximum_surface_difference_k": 0.004123781078533284,
+          "maximum_watering_effect_difference_k_h": 0.0006869422725515051,
+          "left_initial": {
+            "base_c": 27.083360621907357,
+            "base_water": 4.467254270977285,
+            "surface_c": 25.040849540178385,
+            "surface_water": 0.8543206064276679
+          },
+          "right_initial": {
+            "base_c": 27.08346154416542,
+            "base_water": 4.4669858186281415,
+            "surface_c": 25.04085869803221,
+            "surface_water": 0.8543911315801123
+          }
+        },
+        {
+          "date": "2025-08-08 06:00",
+          "maximum_surface_difference_k": 0.00422627945576437,
+          "maximum_watering_effect_difference_k_h": 0.0005776594332189688,
+          "left_initial": {
+            "base_c": 28.122677340183206,
+            "base_water": 2.546189078924987,
+            "surface_c": 23.61911708497747,
+            "surface_water": 0.2817473596073139
+          },
+          "right_initial": {
+            "base_c": 28.122846859549057,
+            "base_water": 2.54600587797521,
+            "surface_c": 23.619265362345214,
+            "surface_water": 0.2817335248015023
+          }
+        },
+        {
+          "date": "2025-08-09 06:00",
+          "maximum_surface_difference_k": 0.0019916262585120137,
+          "maximum_watering_effect_difference_k_h": 5.2648939018240526e-05,
+          "left_initial": {
+            "base_c": 27.945903690684187,
+            "base_water": 0.2639656538079561,
+            "surface_c": 25.684023848057777,
+            "surface_water": 0.07214678159164639
+          },
+          "right_initial": {
+            "base_c": 27.946042332455782,
+            "base_water": 0.26377982884491996,
+            "surface_c": 25.68411205623394,
+            "surface_water": 0.07212975354232987
+          }
+        },
+        {
+          "date": "2025-08-10 06:00",
+          "maximum_surface_difference_k": 0.0038800097057318794,
+          "maximum_watering_effect_difference_k_h": 0.0008745694782703595,
+          "left_initial": {
+            "base_c": 25.82083259754124,
+            "base_water": 0.0,
+            "surface_c": 21.5683494988495,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 25.82097944270917,
+            "base_water": 0.0,
+            "surface_c": 21.56835125183103,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-11 06:00",
+          "maximum_surface_difference_k": 0.0025723979701552935,
+          "maximum_watering_effect_difference_k_h": 7.067133489613298e-05,
+          "left_initial": {
+            "base_c": 27.785340641160655,
+            "base_water": 0.0,
+            "surface_c": 25.426689746655615,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.785482645112733,
+            "base_water": 0.0,
+            "surface_c": 25.426752033975024,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-12 06:00",
+          "maximum_surface_difference_k": 0.004111210265200782,
+          "maximum_watering_effect_difference_k_h": 0.0009291986561663634,
+          "left_initial": {
+            "base_c": 26.221057009742793,
+            "base_water": 0.0,
+            "surface_c": 21.48783203526235,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 26.221210120361206,
+            "base_water": 0.0,
+            "surface_c": 21.48804446324807,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-13 06:00",
+          "maximum_surface_difference_k": 0.002048864253520577,
+          "maximum_watering_effect_difference_k_h": 2.048434745027805e-05,
+          "left_initial": {
+            "base_c": 28.13821611785,
+            "base_water": 0.873171078232526,
+            "surface_c": 25.006794813603776,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 28.138309919413715,
+            "base_water": 0.8736228124553344,
+            "surface_c": 25.006796339075144,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-08-14 06:00",
+          "maximum_surface_difference_k": 0.0024168504936454838,
+          "maximum_watering_effect_difference_k_h": 1.941772099200989e-05,
+          "left_initial": {
+            "base_c": 25.55135986584566,
+            "base_water": 16.677072408635905,
+            "surface_c": 24.330516304114802,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 25.551416930325047,
+            "base_water": 16.677447202091752,
+            "surface_c": 24.330449825733094,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-08-15 06:00",
+          "maximum_surface_difference_k": 0.005434192915863889,
+          "maximum_watering_effect_difference_k_h": 9.086296168447916e-05,
+          "left_initial": {
+            "base_c": 25.512461918786524,
+            "base_water": 21.181297969706517,
+            "surface_c": 23.659632323049625,
+            "surface_water": 2.111311736614412
+          },
+          "right_initial": {
+            "base_c": 25.51250881324007,
+            "base_water": 21.18157132006488,
+            "surface_c": 23.659629035322922,
+            "surface_water": 2.111390117690813
+          }
+        },
+        {
+          "date": "2025-08-16 06:00",
+          "maximum_surface_difference_k": 0.0035666977463506555,
+          "maximum_watering_effect_difference_k_h": 0.00017329468792581793,
+          "left_initial": {
+            "base_c": 26.439467429283592,
+            "base_water": 23.135388528014595,
+            "surface_c": 25.163001449371084,
+            "surface_water": 2.3419236931087783
+          },
+          "right_initial": {
+            "base_c": 26.43950083529817,
+            "base_water": 23.13596913801335,
+            "surface_c": 25.162844367417208,
+            "surface_water": 2.3420458268549416
+          }
+        },
+        {
+          "date": "2025-08-17 06:00",
+          "maximum_surface_difference_k": 0.0035738143406973677,
+          "maximum_watering_effect_difference_k_h": 0.00046583370749431197,
+          "left_initial": {
+            "base_c": 27.611087318957075,
+            "base_water": 8.162157997447613,
+            "surface_c": 25.55311976838012,
+            "surface_water": 0.7910417504603023
+          },
+          "right_initial": {
+            "base_c": 27.611205055700175,
+            "base_water": 8.162992035996382,
+            "surface_c": 25.553143258343333,
+            "surface_water": 0.7911183765934745
+          }
+        },
+        {
+          "date": "2025-08-18 06:00",
+          "maximum_surface_difference_k": 0.004504390875609943,
+          "maximum_watering_effect_difference_k_h": 0.0002184385776615727,
+          "left_initial": {
+            "base_c": 28.050009480122046,
+            "base_water": 0.9198404176198427,
+            "surface_c": 26.808895654780915,
+            "surface_water": 0.13202123529739507
+          },
+          "right_initial": {
+            "base_c": 28.050119013165578,
+            "base_water": 0.9202460965141219,
+            "surface_c": 26.808963409808534,
+            "surface_water": 0.13205778077131433
+          }
+        },
+        {
+          "date": "2025-08-19 06:00",
+          "maximum_surface_difference_k": 0.0032443877970251833,
+          "maximum_watering_effect_difference_k_h": 0.00020106013047893612,
+          "left_initial": {
+            "base_c": 27.936213338820576,
+            "base_water": 0.0,
+            "surface_c": 25.90349517215053,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.936350610289367,
+            "base_water": 0.0,
+            "surface_c": 25.903421894763675,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-20 06:00",
+          "maximum_surface_difference_k": 0.003406858540081714,
+          "maximum_watering_effect_difference_k_h": 0.00037125488057654366,
+          "left_initial": {
+            "base_c": 28.29651666460262,
+            "base_water": 0.0,
+            "surface_c": 26.370746752692487,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.296642009062577,
+            "base_water": 0.0,
+            "surface_c": 26.370841995240426,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-21 06:00",
+          "maximum_surface_difference_k": 0.004342118437179465,
+          "maximum_watering_effect_difference_k_h": 0.00024151593791543746,
+          "left_initial": {
+            "base_c": 28.56357018543602,
+            "base_water": 0.0,
+            "surface_c": 26.417342881853013,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.56371052239268,
+            "base_water": 0.0,
+            "surface_c": 26.417351161286028,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-22 06:00",
+          "maximum_surface_difference_k": 0.003161760775853395,
+          "maximum_watering_effect_difference_k_h": 0.0003160656966940678,
+          "left_initial": {
+            "base_c": 28.75382342445716,
+            "base_water": 0.0,
+            "surface_c": 25.930833895915697,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.75398079841495,
+            "base_water": 0.0,
+            "surface_c": 25.930944483797134,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-23 06:00",
+          "maximum_surface_difference_k": 0.0042463555244580675,
+          "maximum_watering_effect_difference_k_h": 0.00017025693591676827,
+          "left_initial": {
+            "base_c": 28.659262345632474,
+            "base_water": 0.0,
+            "surface_c": 26.30752646452358,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.659427431103236,
+            "base_water": 0.0,
+            "surface_c": 26.307534131624703,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-24 06:00",
+          "maximum_surface_difference_k": 0.0038355266752603256,
+          "maximum_watering_effect_difference_k_h": 0.0005488248316680711,
+          "left_initial": {
+            "base_c": 28.660010177913893,
+            "base_water": 0.0,
+            "surface_c": 26.537583899332187,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.660166359951706,
+            "base_water": 0.0,
+            "surface_c": 26.537505305630756,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-25 06:00",
+          "maximum_surface_difference_k": 0.004076778859470664,
+          "maximum_watering_effect_difference_k_h": 0.0005010003426519916,
+          "left_initial": {
+            "base_c": 28.95171133792779,
+            "base_water": 0.0,
+            "surface_c": 26.62961456052509,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.951870802240695,
+            "base_water": 0.0,
+            "surface_c": 26.629595322056577,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-31 06:00",
+          "maximum_surface_difference_k": 0.004552908851316317,
+          "maximum_watering_effect_difference_k_h": 0.0004878916511188436,
+          "left_initial": {
+            "base_c": 28.266826175715398,
+            "base_water": 1.653107295438291e-05,
+            "surface_c": 25.446941696845744,
+            "surface_water": 0.0353945133142487
+          },
+          "right_initial": {
+            "base_c": 28.266969857342396,
+            "base_water": 8.263541898414362e-06,
+            "surface_c": 25.447051729053587,
+            "surface_water": 0.035393492655309514
+          }
+        }
+      ],
+      "pass": true
+    }
+  },
+  "initialization": {
+    "initial_temperature_1": {
+      "common_dates": [
+        "2025-02-28 06:00",
+        "2025-07-03 06:00",
+        "2025-07-04 06:00",
+        "2025-07-05 06:00",
+        "2025-07-06 06:00",
+        "2025-07-07 06:00",
+        "2025-07-08 06:00",
+        "2025-07-09 06:00",
+        "2025-07-10 06:00",
+        "2025-07-11 06:00",
+        "2025-07-12 06:00",
+        "2025-07-13 06:00",
+        "2025-07-14 06:00",
+        "2025-07-15 06:00",
+        "2025-07-16 06:00",
+        "2025-07-17 06:00",
+        "2025-07-18 06:00",
+        "2025-07-19 06:00",
+        "2025-07-20 06:00",
+        "2025-07-21 06:00",
+        "2025-07-22 06:00",
+        "2025-07-23 06:00",
+        "2025-07-24 06:00",
+        "2025-07-25 06:00",
+        "2025-07-26 06:00",
+        "2025-07-27 06:00",
+        "2025-07-28 06:00",
+        "2025-07-29 06:00",
+        "2025-07-30 06:00",
+        "2025-07-31 06:00",
+        "2025-08-01 06:00",
+        "2025-08-02 06:00",
+        "2025-08-03 06:00",
+        "2025-08-04 06:00",
+        "2025-08-05 06:00",
+        "2025-08-06 06:00",
+        "2025-08-07 06:00",
+        "2025-08-08 06:00",
+        "2025-08-09 06:00",
+        "2025-08-10 06:00",
+        "2025-08-11 06:00",
+        "2025-08-12 06:00",
+        "2025-08-13 06:00",
+        "2025-08-14 06:00",
+        "2025-08-15 06:00",
+        "2025-08-16 06:00",
+        "2025-08-17 06:00",
+        "2025-08-18 06:00",
+        "2025-08-19 06:00",
+        "2025-08-20 06:00",
+        "2025-08-21 06:00",
+        "2025-08-22 06:00",
+        "2025-08-23 06:00",
+        "2025-08-24 06:00",
+        "2025-08-25 06:00",
+        "2025-08-31 06:00"
+      ],
+      "left_only_dates": [],
+      "right_only_dates": [],
+      "compared_hourly_temperatures": 12600,
+      "maximum_surface_difference_k": 0.0005045919559094614,
+      "maximum_watering_effect_difference_k_h": 0.0011493801493145384,
+      "worst_temperature": {
+        "date": "2025-08-17 06:00",
+        "albedo": 0.1,
+        "fraction": 0.0,
+        "endpoint_hour": 8
+      },
+      "worst_effect": {
+        "date": "2025-08-17 06:00",
+        "albedo": 0.1,
+        "fraction": 1.0
+      },
+      "days": [
+        {
+          "date": "2025-02-28 06:00",
+          "maximum_surface_difference_k": 0.00020544026150615124,
+          "maximum_watering_effect_difference_k_h": 5.593890356436759e-05,
+          "left_initial": {
+            "base_c": 2.6060872124556913,
+            "base_water": 0.0,
+            "surface_c": 2.182986622184047,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 2.605542967261668,
+            "base_water": 0.0,
+            "surface_c": 2.182781181922541,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-03 06:00",
+          "maximum_surface_difference_k": 0.00011806156409832624,
+          "maximum_watering_effect_difference_k_h": 5.1867536370764356e-05,
+          "left_initial": {
+            "base_c": 26.372230788975628,
+            "base_water": 8.865348209939271e-08,
+            "surface_c": 25.409731236434574,
+            "surface_water": 0.0001898150575633984
+          },
+          "right_initial": {
+            "base_c": 26.371767575967127,
+            "base_water": 8.867506890143028e-08,
+            "surface_c": 25.409613174870476,
+            "surface_water": 0.00018986127687308174
+          }
+        },
+        {
+          "date": "2025-07-04 06:00",
+          "maximum_surface_difference_k": 0.00012065631064572813,
+          "maximum_watering_effect_difference_k_h": 4.67610697114651e-05,
+          "left_initial": {
+            "base_c": 26.40537598749156,
+            "base_water": 1.393393506504736e-09,
+            "surface_c": 24.590339014878477,
+            "surface_water": 2.9833788690304813e-06
+          },
+          "right_initial": {
+            "base_c": 26.40491923714858,
+            "base_water": 1.3998243755296803e-09,
+            "surface_c": 24.59021835856783,
+            "surface_water": 2.9971479294336772e-06
+          }
+        },
+        {
+          "date": "2025-07-05 06:00",
+          "maximum_surface_difference_k": 0.00010986683014024834,
+          "maximum_watering_effect_difference_k_h": 5.96127350434017e-05,
+          "left_initial": {
+            "base_c": 25.528472144450028,
+            "base_water": 0.0,
+            "surface_c": 24.86421318976367,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 25.528023423458954,
+            "base_water": 0.0,
+            "surface_c": 24.86410332293353,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-06 06:00",
+          "maximum_surface_difference_k": 0.00011043613755745696,
+          "maximum_watering_effect_difference_k_h": 5.642653249537943e-05,
+          "left_initial": {
+            "base_c": 26.897059651554997,
+            "base_water": 0.0,
+            "surface_c": 25.314923763842167,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 26.896614672097087,
+            "base_water": 0.0,
+            "surface_c": 25.31481332770461,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-07 06:00",
+          "maximum_surface_difference_k": 0.00012727794383948776,
+          "maximum_watering_effect_difference_k_h": 5.6897690001278534e-05,
+          "left_initial": {
+            "base_c": 27.396641686333304,
+            "base_water": 0.0,
+            "surface_c": 25.630368567035198,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.396182742037166,
+            "base_water": 0.0,
+            "surface_c": 25.63024128909136,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-08 06:00",
+          "maximum_surface_difference_k": 0.00013892333717890892,
+          "maximum_watering_effect_difference_k_h": 7.585327017523014e-05,
+          "left_initial": {
+            "base_c": 27.01283192814573,
+            "base_water": 0.0,
+            "surface_c": 24.700368286136246,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.0123417798456,
+            "base_water": 0.0,
+            "surface_c": 24.700229362799067,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-09 06:00",
+          "maximum_surface_difference_k": 0.00017214711480306732,
+          "maximum_watering_effect_difference_k_h": 0.0001347151390405088,
+          "left_initial": {
+            "base_c": 29.035547072202725,
+            "base_water": 0.35485655565583374,
+            "surface_c": 27.067708266583175,
+            "surface_water": 0.5447926828302536
+          },
+          "right_initial": {
+            "base_c": 29.035035897575767,
+            "base_water": 0.3548568935802787,
+            "surface_c": 27.06753611946837,
+            "surface_water": 0.5447930170282301
+          }
+        },
+        {
+          "date": "2025-07-10 06:00",
+          "maximum_surface_difference_k": 0.0001673135954227689,
+          "maximum_watering_effect_difference_k_h": 6.826067090059951e-05,
+          "left_initial": {
+            "base_c": 28.842923598405946,
+            "base_water": 3.9920361671630315e-06,
+            "surface_c": 25.843357997127367,
+            "surface_water": 0.008547273210197026
+          },
+          "right_initial": {
+            "base_c": 28.842394249756296,
+            "base_water": 3.992157909777217e-06,
+            "surface_c": 25.843190683531944,
+            "surface_water": 0.008547533872320332
+          }
+        },
+        {
+          "date": "2025-07-11 06:00",
+          "maximum_surface_difference_k": 0.00012287143573175285,
+          "maximum_watering_effect_difference_k_h": 0.00011184765338612124,
+          "left_initial": {
+            "base_c": 28.742741820403023,
+            "base_water": 5.2753866683770034e-08,
+            "surface_c": 24.171840001674077,
+            "surface_water": 0.00011294973373542014
+          },
+          "right_initial": {
+            "base_c": 28.742229853943186,
+            "base_water": 5.27839587770211e-08,
+            "surface_c": 24.171717130238346,
+            "surface_water": 0.00011301416303964515
+          }
+        },
+        {
+          "date": "2025-07-12 06:00",
+          "maximum_surface_difference_k": 0.00014914849413472098,
+          "maximum_watering_effect_difference_k_h": 0.00012959481026086905,
+          "left_initial": {
+            "base_c": 28.571551086879026,
+            "base_water": 0.0,
+            "surface_c": 23.686254247023765,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.571045012203868,
+            "base_water": 0.0,
+            "surface_c": 23.68610509852963,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-13 06:00",
+          "maximum_surface_difference_k": 0.00015741618491205145,
+          "maximum_watering_effect_difference_k_h": 6.725951595853985e-05,
+          "left_initial": {
+            "base_c": 28.544923732683042,
+            "base_water": 0.0,
+            "surface_c": 25.03527438071162,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.54442225443623,
+            "base_water": 0.0,
+            "surface_c": 25.035116964526708,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-14 06:00",
+          "maximum_surface_difference_k": 0.00016287516821833492,
+          "maximum_watering_effect_difference_k_h": 0.00011896910184105991,
+          "left_initial": {
+            "base_c": 25.941989011609095,
+            "base_water": 5.638389898004348e-06,
+            "surface_c": 21.39658714366479,
+            "surface_water": 0.012072301322768016
+          },
+          "right_initial": {
+            "base_c": 25.94145889543937,
+            "base_water": 5.638409672040463e-06,
+            "surface_c": 21.39642426849657,
+            "surface_water": 0.012072343662254518
+          }
+        },
+        {
+          "date": "2025-07-15 06:00",
+          "maximum_surface_difference_k": 0.0001164228062151551,
+          "maximum_watering_effect_difference_k_h": 2.9382199826955002e-05,
+          "left_initial": {
+            "base_c": 24.33120261830521,
+            "base_water": 9.925605914423455,
+            "surface_c": 21.476137372101253,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 24.33068865955416,
+            "base_water": 9.925608167264297,
+            "surface_c": 21.476023262274797,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-16 06:00",
+          "maximum_surface_difference_k": 0.0001664072668141614,
+          "maximum_watering_effect_difference_k_h": 3.5981421945052716e-05,
+          "left_initial": {
+            "base_c": 24.755906428379383,
+            "base_water": 14.748695214763657,
+            "surface_c": 23.437680390140194,
+            "surface_water": 3.730410257614006
+          },
+          "right_initial": {
+            "base_c": 24.755221757899168,
+            "base_water": 14.748754698698633,
+            "surface_c": 23.43751398287338,
+            "surface_water": 3.7304178220518907
+          }
+        },
+        {
+          "date": "2025-07-17 06:00",
+          "maximum_surface_difference_k": 0.00017837421854238755,
+          "maximum_watering_effect_difference_k_h": 1.7257239633750032e-05,
+          "left_initial": {
+            "base_c": 23.459263960868654,
+            "base_water": 26.563344014439988,
+            "surface_c": 22.21031915238517,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 23.45833215245178,
+            "base_water": 26.564130869431146,
+            "surface_c": 22.21014077816663,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-18 06:00",
+          "maximum_surface_difference_k": 0.00021618185391858447,
+          "maximum_watering_effect_difference_k_h": 4.838795840100829e-05,
+          "left_initial": {
+            "base_c": 23.978181719035238,
+            "base_water": 23.55221847419199,
+            "surface_c": 22.588136074221172,
+            "surface_water": 5.911163465297635
+          },
+          "right_initial": {
+            "base_c": 23.977424440673136,
+            "base_water": 23.55397277497968,
+            "surface_c": 22.587919892367253,
+            "surface_water": 5.911188864000769
+          }
+        },
+        {
+          "date": "2025-07-19 06:00",
+          "maximum_surface_difference_k": 0.0002944817314869397,
+          "maximum_watering_effect_difference_k_h": 6.810164501303007e-05,
+          "left_initial": {
+            "base_c": 24.47251074881558,
+            "base_water": 29.45405388679752,
+            "surface_c": 22.02399829821596,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 24.471297566607543,
+            "base_water": 29.4554200537915,
+            "surface_c": 22.023703816484474,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-20 06:00",
+          "maximum_surface_difference_k": 0.00023785770546425056,
+          "maximum_watering_effect_difference_k_h": 0.00024056148259887777,
+          "left_initial": {
+            "base_c": 24.628119766984454,
+            "base_water": 27.776761699616443,
+            "surface_c": 24.54655380999023,
+            "surface_water": 5.335791914952852
+          },
+          "right_initial": {
+            "base_c": 24.626963130062755,
+            "base_water": 27.779702064175787,
+            "surface_c": 24.546315952284765,
+            "surface_water": 5.335869911642631
+          }
+        },
+        {
+          "date": "2025-07-21 06:00",
+          "maximum_surface_difference_k": 0.0003206606463450612,
+          "maximum_watering_effect_difference_k_h": 0.0007015102265484074,
+          "left_initial": {
+            "base_c": 26.78640864856386,
+            "base_water": 19.580759973908577,
+            "surface_c": 25.4116524285906,
+            "surface_water": 1.8589105720118821
+          },
+          "right_initial": {
+            "base_c": 26.785365495432433,
+            "base_water": 19.584025440483934,
+            "surface_c": 25.411339587880434,
+            "surface_water": 1.8592079385679066
+          }
+        },
+        {
+          "date": "2025-07-22 06:00",
+          "maximum_surface_difference_k": 0.0002586659011782899,
+          "maximum_watering_effect_difference_k_h": 0.0007112891487679462,
+          "left_initial": {
+            "base_c": 27.452711148136732,
+            "base_water": 6.541368724994108,
+            "surface_c": 25.810386594609465,
+            "surface_water": 0.6496930244903814
+          },
+          "right_initial": {
+            "base_c": 27.45203940096107,
+            "base_water": 6.544057068999314,
+            "surface_c": 25.810202122629786,
+            "surface_water": 0.6499381002913382
+          }
+        },
+        {
+          "date": "2025-07-23 06:00",
+          "maximum_surface_difference_k": 0.0001546437674804224,
+          "maximum_watering_effect_difference_k_h": 8.139943483342904e-05,
+          "left_initial": {
+            "base_c": 27.95163472479424,
+            "base_water": 7.536381028522279e-08,
+            "surface_c": 25.439146866635323,
+            "surface_water": 0.00016136062025952626
+          },
+          "right_initial": {
+            "base_c": 27.95115459509464,
+            "base_water": 7.538236705137247e-08,
+            "surface_c": 25.438992222867842,
+            "surface_water": 0.00016140035196775019
+          }
+        },
+        {
+          "date": "2025-07-24 06:00",
+          "maximum_surface_difference_k": 0.00016316252223802508,
+          "maximum_watering_effect_difference_k_h": 8.007272842291968e-05,
+          "left_initial": {
+            "base_c": 28.54242706959855,
+            "base_water": 1.113082952014616e-09,
+            "surface_c": 25.862927194617292,
+            "surface_water": 2.3832094038556335e-06
+          },
+          "right_initial": {
+            "base_c": 28.541918611313772,
+            "base_water": 1.1182139658304062e-09,
+            "surface_c": 25.862764032095054,
+            "surface_water": 2.3941953602268113e-06
+          }
+        },
+        {
+          "date": "2025-07-25 06:00",
+          "maximum_surface_difference_k": 0.00016777032001158432,
+          "maximum_watering_effect_difference_k_h": 8.69021684479776e-05,
+          "left_initial": {
+            "base_c": 28.167384187691848,
+            "base_water": 0.0,
+            "surface_c": 24.45419444317728,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.166838345451936,
+            "base_water": 0.0,
+            "surface_c": 24.454026672857267,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-26 06:00",
+          "maximum_surface_difference_k": 0.00017422806384459477,
+          "maximum_watering_effect_difference_k_h": 0.00010656727454261272,
+          "left_initial": {
+            "base_c": 29.227294374598717,
+            "base_water": 0.0,
+            "surface_c": 27.072978511781898,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.226738993590214,
+            "base_water": 0.0,
+            "surface_c": 27.072804283718053,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-27 06:00",
+          "maximum_surface_difference_k": 0.00017127925779902853,
+          "maximum_watering_effect_difference_k_h": 7.184551333239142e-05,
+          "left_initial": {
+            "base_c": 29.629773706083796,
+            "base_water": 0.0,
+            "surface_c": 26.870907607573262,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.629230374991657,
+            "base_water": 0.0,
+            "surface_c": 26.870736328315463,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-28 06:00",
+          "maximum_surface_difference_k": 0.0001777914928133839,
+          "maximum_watering_effect_difference_k_h": 0.00014612101341526795,
+          "left_initial": {
+            "base_c": 29.816297857506974,
+            "base_water": 0.0,
+            "surface_c": 26.071580446249207,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.815755183292612,
+            "base_water": 0.0,
+            "surface_c": 26.071402654756394,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-29 06:00",
+          "maximum_surface_difference_k": 0.00018777101212563707,
+          "maximum_watering_effect_difference_k_h": 9.350280228659358e-05,
+          "left_initial": {
+            "base_c": 29.425783203243352,
+            "base_water": 0.0,
+            "surface_c": 25.53716319935504,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.42522869516255,
+            "base_water": 0.0,
+            "surface_c": 25.536975428342913,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-30 06:00",
+          "maximum_surface_difference_k": 0.00015576965722985392,
+          "maximum_watering_effect_difference_k_h": 0.00014253173138456532,
+          "left_initial": {
+            "base_c": 29.949896880075997,
+            "base_water": 0.0,
+            "surface_c": 26.956266958293828,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.94933883143227,
+            "base_water": 0.0,
+            "surface_c": 26.956111188636598,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-31 06:00",
+          "maximum_surface_difference_k": 0.0001293878309205354,
+          "maximum_watering_effect_difference_k_h": 7.557799310120572e-05,
+          "left_initial": {
+            "base_c": 30.163439542080354,
+            "base_water": 0.0,
+            "surface_c": 28.93167307089057,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 30.162884968012275,
+            "base_water": 0.0,
+            "surface_c": 28.93154368305965,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-01 06:00",
+          "maximum_surface_difference_k": 0.00017126107452369865,
+          "maximum_watering_effect_difference_k_h": 8.224372035670058e-05,
+          "left_initial": {
+            "base_c": 29.312996620417433,
+            "base_water": 0.0,
+            "surface_c": 27.61769782427798,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.312454359139238,
+            "base_water": 0.0,
+            "surface_c": 27.617526563203455,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-02 06:00",
+          "maximum_surface_difference_k": 0.00019046871974026658,
+          "maximum_watering_effect_difference_k_h": 8.86612075987614e-05,
+          "left_initial": {
+            "base_c": 29.225635414176264,
+            "base_water": 0.0,
+            "surface_c": 27.26580662874864,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.22508794192222,
+            "base_water": 0.0,
+            "surface_c": 27.265616160028898,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-03 06:00",
+          "maximum_surface_difference_k": 0.0001893686539240491,
+          "maximum_watering_effect_difference_k_h": 7.998343031090371e-05,
+          "left_initial": {
+            "base_c": 29.703760760647594,
+            "base_water": 0.0,
+            "surface_c": 27.311366735645137,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.70320579593046,
+            "base_water": 0.0,
+            "surface_c": 27.311177366991213,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-04 06:00",
+          "maximum_surface_difference_k": 0.00015016759767760846,
+          "maximum_watering_effect_difference_k_h": 0.00011173993453894582,
+          "left_initial": {
+            "base_c": 27.442096984329275,
+            "base_water": 1.575515658071408,
+            "surface_c": 24.35202043695156,
+            "surface_water": 1.6191452909475532
+          },
+          "right_initial": {
+            "base_c": 27.44154725053802,
+            "base_water": 1.5755165303980418,
+            "surface_c": 24.35187026935388,
+            "surface_water": 1.61914611051346
+          }
+        },
+        {
+          "date": "2025-08-05 06:00",
+          "maximum_surface_difference_k": 0.00015213288635962385,
+          "maximum_watering_effect_difference_k_h": 6.897623535451203e-05,
+          "left_initial": {
+            "base_c": 28.335911003329237,
+            "base_water": 0.583062768361421,
+            "surface_c": 24.589067219249543,
+            "surface_water": 0.1154406280470989
+          },
+          "right_initial": {
+            "base_c": 28.335373834160453,
+            "base_water": 0.5830985381810473,
+            "surface_c": 24.588915086363183,
+            "surface_water": 0.11544443188064313
+          }
+        },
+        {
+          "date": "2025-08-06 06:00",
+          "maximum_surface_difference_k": 0.00010397679118767655,
+          "maximum_watering_effect_difference_k_h": 4.852705819047287e-05,
+          "left_initial": {
+            "base_c": 29.11285057282001,
+            "base_water": 0.00010998661945454552,
+            "surface_c": 27.46533085788485,
+            "surface_water": 0.2354908710255937
+          },
+          "right_initial": {
+            "base_c": 29.11234367711207,
+            "base_water": 0.00010998789089550478,
+            "surface_c": 27.465226881093663,
+            "surface_water": 0.23549359334138262
+          }
+        },
+        {
+          "date": "2025-08-07 06:00",
+          "maximum_surface_difference_k": 0.0001260628073040948,
+          "maximum_watering_effect_difference_k_h": 5.478226486843596e-05,
+          "left_initial": {
+            "base_c": 27.083360621907357,
+            "base_water": 4.467254270977285,
+            "surface_c": 25.040849540178385,
+            "surface_water": 0.8543206064276679
+          },
+          "right_initial": {
+            "base_c": 27.082884751366826,
+            "base_water": 4.467262830365515,
+            "surface_c": 25.04072347737108,
+            "surface_water": 0.8543227229328855
+          }
+        },
+        {
+          "date": "2025-08-08 06:00",
+          "maximum_surface_difference_k": 0.00018320738207577847,
+          "maximum_watering_effect_difference_k_h": 0.00014529962162157517,
+          "left_initial": {
+            "base_c": 28.122677340183206,
+            "base_water": 2.546189078924987,
+            "surface_c": 23.61911708497747,
+            "surface_water": 0.2817473596073139
+          },
+          "right_initial": {
+            "base_c": 28.1221397173292,
+            "base_water": 2.5463734242120064,
+            "surface_c": 23.618933877595396,
+            "surface_water": 0.28176467679331024
+          }
+        },
+        {
+          "date": "2025-08-09 06:00",
+          "maximum_surface_difference_k": 0.00015989308706920724,
+          "maximum_watering_effect_difference_k_h": 0.00019380568203075654,
+          "left_initial": {
+            "base_c": 27.945903690684187,
+            "base_water": 0.2639656538079561,
+            "surface_c": 25.684023848057777,
+            "surface_water": 0.07214678159164639
+          },
+          "right_initial": {
+            "base_c": 27.945357799439016,
+            "base_water": 0.2671082701071479,
+            "surface_c": 25.683863954970708,
+            "surface_water": 0.07243143528089646
+          }
+        },
+        {
+          "date": "2025-08-10 06:00",
+          "maximum_surface_difference_k": 0.00018199788855710608,
+          "maximum_watering_effect_difference_k_h": 0.0001402705640032309,
+          "left_initial": {
+            "base_c": 25.82083259754124,
+            "base_water": 0.0,
+            "surface_c": 21.5683494988495,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 25.820273233606805,
+            "base_water": 0.0,
+            "surface_c": 21.568167500960943,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-11 06:00",
+          "maximum_surface_difference_k": 0.00018902449093260998,
+          "maximum_watering_effect_difference_k_h": 7.428167400291841e-05,
+          "left_initial": {
+            "base_c": 27.785340641160655,
+            "base_water": 0.0,
+            "surface_c": 25.426689746655615,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.7847725599841,
+            "base_water": 0.0,
+            "surface_c": 25.426500722164683,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-12 06:00",
+          "maximum_surface_difference_k": 0.00019979176651574448,
+          "maximum_watering_effect_difference_k_h": 0.0001295767887228294,
+          "left_initial": {
+            "base_c": 26.221057009742793,
+            "base_water": 0.0,
+            "surface_c": 21.48783203526235,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 26.220491088906467,
+            "base_water": 0.0,
+            "surface_c": 21.487632243495835,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-13 06:00",
+          "maximum_surface_difference_k": 9.44345652591494e-05,
+          "maximum_watering_effect_difference_k_h": 1.745402620478842e-05,
+          "left_initial": {
+            "base_c": 28.13821611785,
+            "base_water": 0.873171078232526,
+            "surface_c": 25.006794813603776,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 28.137688822591503,
+            "base_water": 0.8731710829734423,
+            "surface_c": 25.006729939948766,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-08-14 06:00",
+          "maximum_surface_difference_k": 0.0001208754488182251,
+          "maximum_watering_effect_difference_k_h": 2.0814952598868786e-05,
+          "left_initial": {
+            "base_c": 25.55135986584566,
+            "base_water": 16.677072408635905,
+            "surface_c": 24.330516304114802,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 25.550849925792633,
+            "base_water": 16.677076160352,
+            "surface_c": 24.330395428665984,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-08-15 06:00",
+          "maximum_surface_difference_k": 0.0002805205442442116,
+          "maximum_watering_effect_difference_k_h": 9.554539143152851e-05,
+          "left_initial": {
+            "base_c": 25.512461918786524,
+            "base_water": 21.181297969706517,
+            "surface_c": 23.659632323049625,
+            "surface_water": 2.111311736614412
+          },
+          "right_initial": {
+            "base_c": 25.511645002218795,
+            "base_water": 21.18138312874692,
+            "surface_c": 23.65935180250538,
+            "surface_water": 2.111321262603367
+          }
+        },
+        {
+          "date": "2025-08-16 06:00",
+          "maximum_surface_difference_k": 0.0003878541786868084,
+          "maximum_watering_effect_difference_k_h": 0.00041787177696051003,
+          "left_initial": {
+            "base_c": 26.439467429283592,
+            "base_water": 23.135388528014595,
+            "surface_c": 25.163001449371084,
+            "surface_water": 2.3419236931087783
+          },
+          "right_initial": {
+            "base_c": 26.43813569598206,
+            "base_water": 23.136868975945646,
+            "surface_c": 25.162613595192397,
+            "surface_water": 2.3420561989652895
+          }
+        },
+        {
+          "date": "2025-08-17 06:00",
+          "maximum_surface_difference_k": 0.0005045919559094614,
+          "maximum_watering_effect_difference_k_h": 0.0011493801493145384,
+          "left_initial": {
+            "base_c": 27.611087318957075,
+            "base_water": 8.162157997447613,
+            "surface_c": 25.55311976838012,
+            "surface_water": 0.7910417504603023
+          },
+          "right_initial": {
+            "base_c": 27.610252156504075,
+            "base_water": 8.16866983861831,
+            "surface_c": 25.552881784871285,
+            "surface_water": 0.7916338240818758
+          }
+        },
+        {
+          "date": "2025-08-18 06:00",
+          "maximum_surface_difference_k": 0.00032292035312764256,
+          "maximum_watering_effect_difference_k_h": 0.0003940504813897405,
+          "left_initial": {
+            "base_c": 28.050009480122046,
+            "base_water": 0.9198404176198427,
+            "surface_c": 26.808895654780915,
+            "surface_water": 0.13202123529739507
+          },
+          "right_initial": {
+            "base_c": 28.04940481136867,
+            "base_water": 0.9241364466663267,
+            "surface_c": 26.808725134520405,
+            "surface_water": 0.132411306987125
+          }
+        },
+        {
+          "date": "2025-08-19 06:00",
+          "maximum_surface_difference_k": 0.00012859725733349592,
+          "maximum_watering_effect_difference_k_h": 7.192273329792442e-05,
+          "left_initial": {
+            "base_c": 27.936213338820576,
+            "base_water": 0.0,
+            "surface_c": 25.90349517215053,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.93573299588726,
+            "base_water": 0.0,
+            "surface_c": 25.903366574893198,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-20 06:00",
+          "maximum_surface_difference_k": 0.0001228117486569147,
+          "maximum_watering_effect_difference_k_h": 5.972621792693644e-05,
+          "left_initial": {
+            "base_c": 28.29651666460262,
+            "base_water": 0.0,
+            "surface_c": 26.370746752692487,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.29605421316479,
+            "base_water": 0.0,
+            "surface_c": 26.37062394094383,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-21 06:00",
+          "maximum_surface_difference_k": 0.00013471026240097217,
+          "maximum_watering_effect_difference_k_h": 5.032977009022943e-05,
+          "left_initial": {
+            "base_c": 28.56357018543602,
+            "base_water": 0.0,
+            "surface_c": 26.417342881853013,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.563117829018243,
+            "base_water": 0.0,
+            "surface_c": 26.417208171590612,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-22 06:00",
+          "maximum_surface_difference_k": 0.00014706155490529227,
+          "maximum_watering_effect_difference_k_h": 6.837218774080611e-05,
+          "left_initial": {
+            "base_c": 28.75382342445716,
+            "base_water": 0.0,
+            "surface_c": 25.930833895915697,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.753342228821314,
+            "base_water": 0.0,
+            "surface_c": 25.93068683436079,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-23 06:00",
+          "maximum_surface_difference_k": 0.00014749031012328828,
+          "maximum_watering_effect_difference_k_h": 4.4946187756522704e-05,
+          "left_initial": {
+            "base_c": 28.659262345632474,
+            "base_water": 0.0,
+            "surface_c": 26.30752646452358,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.658761231264005,
+            "base_water": 0.0,
+            "surface_c": 26.307378974213457,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-24 06:00",
+          "maximum_surface_difference_k": 0.00016928481272415752,
+          "maximum_watering_effect_difference_k_h": 0.00014371702468451986,
+          "left_initial": {
+            "base_c": 28.660010177913893,
+            "base_water": 0.0,
+            "surface_c": 26.537583899332187,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.659484125996475,
+            "base_water": 0.0,
+            "surface_c": 26.537414614519463,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-25 06:00",
+          "maximum_surface_difference_k": 0.00013828253177194938,
+          "maximum_watering_effect_difference_k_h": 5.1235693590001574e-05,
+          "left_initial": {
+            "base_c": 28.95171133792779,
+            "base_water": 0.0,
+            "surface_c": 26.62961456052509,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.951183501219273,
+            "base_water": 0.0,
+            "surface_c": 26.62947627799332,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-31 06:00",
+          "maximum_surface_difference_k": 0.00016124854450794146,
+          "maximum_watering_effect_difference_k_h": 8.930436888476834e-05,
+          "left_initial": {
+            "base_c": 28.266826175715398,
+            "base_water": 1.653107295438291e-05,
+            "surface_c": 25.446941696845744,
+            "surface_water": 0.0353945133142487
+          },
+          "right_initial": {
+            "base_c": 28.266365285806835,
+            "base_water": 1.653183769725655e-05,
+            "surface_c": 25.446780448301237,
+            "surface_water": 0.03539615070137622
+          }
+        }
+      ],
+      "initial_state_independence_demonstrated": true
+    },
+    "initial_temperature_2": {
+      "common_dates": [
+        "2025-02-28 06:00",
+        "2025-07-03 06:00",
+        "2025-07-04 06:00",
+        "2025-07-05 06:00",
+        "2025-07-06 06:00",
+        "2025-07-07 06:00",
+        "2025-07-08 06:00",
+        "2025-07-09 06:00",
+        "2025-07-10 06:00",
+        "2025-07-11 06:00",
+        "2025-07-12 06:00",
+        "2025-07-13 06:00",
+        "2025-07-14 06:00",
+        "2025-07-15 06:00",
+        "2025-07-16 06:00",
+        "2025-07-17 06:00",
+        "2025-07-18 06:00",
+        "2025-07-19 06:00",
+        "2025-07-20 06:00",
+        "2025-07-21 06:00",
+        "2025-07-22 06:00",
+        "2025-07-23 06:00",
+        "2025-07-24 06:00",
+        "2025-07-25 06:00",
+        "2025-07-26 06:00",
+        "2025-07-27 06:00",
+        "2025-07-28 06:00",
+        "2025-07-29 06:00",
+        "2025-07-30 06:00",
+        "2025-07-31 06:00",
+        "2025-08-01 06:00",
+        "2025-08-02 06:00",
+        "2025-08-03 06:00",
+        "2025-08-04 06:00",
+        "2025-08-05 06:00",
+        "2025-08-06 06:00",
+        "2025-08-07 06:00",
+        "2025-08-08 06:00",
+        "2025-08-09 06:00",
+        "2025-08-10 06:00",
+        "2025-08-11 06:00",
+        "2025-08-12 06:00",
+        "2025-08-13 06:00",
+        "2025-08-14 06:00",
+        "2025-08-15 06:00",
+        "2025-08-16 06:00",
+        "2025-08-17 06:00",
+        "2025-08-18 06:00",
+        "2025-08-19 06:00",
+        "2025-08-20 06:00",
+        "2025-08-21 06:00",
+        "2025-08-22 06:00",
+        "2025-08-23 06:00",
+        "2025-08-24 06:00",
+        "2025-08-25 06:00",
+        "2025-08-31 06:00"
+      ],
+      "left_only_dates": [],
+      "right_only_dates": [],
+      "compared_hourly_temperatures": 12600,
+      "maximum_surface_difference_k": 0.0005162764743289472,
+      "maximum_watering_effect_difference_k_h": 0.001178996424187062,
+      "worst_temperature": {
+        "date": "2025-08-17 06:00",
+        "albedo": 0.1,
+        "fraction": 0.0,
+        "endpoint_hour": 8
+      },
+      "worst_effect": {
+        "date": "2025-08-17 06:00",
+        "albedo": 0.1,
+        "fraction": 1.0
+      },
+      "days": [
+        {
+          "date": "2025-02-28 06:00",
+          "maximum_surface_difference_k": 0.00020537195129533004,
+          "maximum_watering_effect_difference_k_h": 5.5920352075133906e-05,
+          "left_initial": {
+            "base_c": 2.6060872124556913,
+            "base_water": 0.0,
+            "surface_c": 2.182986622184047,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 2.606631277004735,
+            "base_water": 0.0,
+            "surface_c": 2.1831919941353424,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-03 06:00",
+          "maximum_surface_difference_k": 0.00011801874001093893,
+          "maximum_watering_effect_difference_k_h": 5.18488043041998e-05,
+          "left_initial": {
+            "base_c": 26.372230788975628,
+            "base_water": 8.865348209939271e-08,
+            "surface_c": 25.409731236434574,
+            "surface_water": 0.0001898150575633984
+          },
+          "right_initial": {
+            "base_c": 26.3726938340963,
+            "base_water": 8.863188796263347e-08,
+            "surface_c": 25.409849255174585,
+            "surface_water": 0.0001897688225494435
+          }
+        },
+        {
+          "date": "2025-07-04 06:00",
+          "maximum_surface_difference_k": 0.00012060326790575004,
+          "maximum_watering_effect_difference_k_h": 4.674058873632703e-05,
+          "left_initial": {
+            "base_c": 26.40537598749156,
+            "base_water": 1.393393506504736e-09,
+            "surface_c": 24.590339014878477,
+            "surface_water": 2.9833788690304813e-06
+          },
+          "right_initial": {
+            "base_c": 26.405832537136536,
+            "base_water": 1.3866223745227394e-09,
+            "surface_c": 24.590459618146383,
+            "surface_water": 2.968881275513452e-06
+          }
+        },
+        {
+          "date": "2025-07-05 06:00",
+          "maximum_surface_difference_k": 0.00010983053284263633,
+          "maximum_watering_effect_difference_k_h": 5.959311550896018e-05,
+          "left_initial": {
+            "base_c": 25.528472144450028,
+            "base_water": 0.0,
+            "surface_c": 24.86421318976367,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 25.5289207173034,
+            "base_water": 0.0,
+            "surface_c": 24.864323020296514,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-06 06:00",
+          "maximum_surface_difference_k": 0.000110397722561828,
+          "maximum_watering_effect_difference_k_h": 5.640698503839303e-05,
+          "left_initial": {
+            "base_c": 26.897059651554997,
+            "base_water": 0.0,
+            "surface_c": 25.314923763842167,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 26.89750447634386,
+            "base_water": 0.0,
+            "surface_c": 25.31503416156473,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-07 06:00",
+          "maximum_surface_difference_k": 0.00012723435949624218,
+          "maximum_watering_effect_difference_k_h": 5.687829684575263e-05,
+          "left_initial": {
+            "base_c": 27.396641686333304,
+            "base_water": 0.0,
+            "surface_c": 25.630368567035198,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.397100473629784,
+            "base_water": 0.0,
+            "surface_c": 25.630495801394694,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-08 06:00",
+          "maximum_surface_difference_k": 0.0001388753308901869,
+          "maximum_watering_effect_difference_k_h": 7.582718203025252e-05,
+          "left_initial": {
+            "base_c": 27.01283192814573,
+            "base_water": 0.0,
+            "surface_c": 24.700368286136246,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.013321907246624,
+            "base_water": 0.0,
+            "surface_c": 24.700507161467137,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-09 06:00",
+          "maximum_surface_difference_k": 0.0001720796401691871,
+          "maximum_watering_effect_difference_k_h": 0.0001346624848679312,
+          "left_initial": {
+            "base_c": 29.035547072202725,
+            "base_water": 0.35485655565583374,
+            "surface_c": 27.067708266583175,
+            "surface_water": 0.5447926828302536
+          },
+          "right_initial": {
+            "base_c": 29.03605804677769,
+            "base_water": 0.35485621785916543,
+            "surface_c": 27.067880346223344,
+            "surface_water": 0.5447923487590757
+          }
+        },
+        {
+          "date": "2025-07-10 06:00",
+          "maximum_surface_difference_k": 0.00016723790809791694,
+          "maximum_watering_effect_difference_k_h": 6.82299351524307e-05,
+          "left_initial": {
+            "base_c": 28.842923598405946,
+            "base_water": 3.9920361671630315e-06,
+            "surface_c": 25.843357997127367,
+            "surface_water": 0.008547273210197026
+          },
+          "right_initial": {
+            "base_c": 28.84345270785093,
+            "base_water": 3.991914465711315e-06,
+            "surface_c": 25.843525235035465,
+            "surface_water": 0.008547012636206568
+          }
+        },
+        {
+          "date": "2025-07-11 06:00",
+          "maximum_surface_difference_k": 0.00012280573657719174,
+          "maximum_watering_effect_difference_k_h": 0.0001117879657215326,
+          "left_initial": {
+            "base_c": 28.742741820403023,
+            "base_water": 5.2753866683770034e-08,
+            "surface_c": 24.171840001674077,
+            "surface_water": 0.00011294973373542014
+          },
+          "right_initial": {
+            "base_c": 28.743253513211357,
+            "base_water": 5.272373475577071e-08,
+            "surface_c": 24.171962807410655,
+            "surface_water": 0.00011288521914223305
+          }
+        },
+        {
+          "date": "2025-07-12 06:00",
+          "maximum_surface_difference_k": 0.0001490606794618543,
+          "maximum_watering_effect_difference_k_h": 0.00012951863769217198,
+          "left_initial": {
+            "base_c": 28.571551086879026,
+            "base_water": 0.0,
+            "surface_c": 23.686254247023765,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.572056863791392,
+            "base_water": 0.0,
+            "surface_c": 23.686403307703227,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-13 06:00",
+          "maximum_surface_difference_k": 0.00015734237084430447,
+          "maximum_watering_effect_difference_k_h": 6.722811264125994e-05,
+          "left_initial": {
+            "base_c": 28.544923732683042,
+            "base_water": 0.0,
+            "surface_c": 25.03527438071162,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.545424976006608,
+            "base_water": 0.0,
+            "surface_c": 25.035431723082464,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-14 06:00",
+          "maximum_surface_difference_k": 0.00016281357320480083,
+          "maximum_watering_effect_difference_k_h": 0.00011892423027859422,
+          "left_initial": {
+            "base_c": 25.941989011609095,
+            "base_water": 5.638389898004348e-06,
+            "surface_c": 21.39658714366479,
+            "surface_water": 0.012072301322768016
+          },
+          "right_initial": {
+            "base_c": 25.94251892753327,
+            "base_water": 5.638370130864522e-06,
+            "surface_c": 21.396749957237994,
+            "surface_water": 0.012072258998047652
+          }
+        },
+        {
+          "date": "2025-07-15 06:00",
+          "maximum_surface_difference_k": 0.00011636135686643456,
+          "maximum_watering_effect_difference_k_h": 3.135628681150138e-05,
+          "left_initial": {
+            "base_c": 24.33120261830521,
+            "base_water": 9.925605914423455,
+            "surface_c": 21.476137372101253,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 24.331716306050133,
+            "base_water": 9.925603662659283,
+            "surface_c": 21.476251421701473,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-16 06:00",
+          "maximum_surface_difference_k": 0.00016630975853360042,
+          "maximum_watering_effect_difference_k_h": 3.5960574361837416e-05,
+          "left_initial": {
+            "base_c": 24.755906428379383,
+            "base_water": 14.748695214763657,
+            "surface_c": 23.437680390140194,
+            "surface_water": 3.730410257614006
+          },
+          "right_initial": {
+            "base_c": 24.756590697966764,
+            "base_water": 14.748635732135826,
+            "surface_c": 23.437846699898728,
+            "surface_water": 3.7304026945384847
+          }
+        },
+        {
+          "date": "2025-07-17 06:00",
+          "maximum_surface_difference_k": 0.00017825643347535447,
+          "maximum_watering_effect_difference_k_h": 1.7245795511655615e-05,
+          "left_initial": {
+            "base_c": 23.459263960868654,
+            "base_water": 26.563344014439988,
+            "surface_c": 22.21031915238517,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 23.46019515213038,
+            "base_water": 26.562553099789916,
+            "surface_c": 22.210497408818647,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-18 06:00",
+          "maximum_surface_difference_k": 0.0002159337966674002,
+          "maximum_watering_effect_difference_k_h": 4.851235055980396e-05,
+          "left_initial": {
+            "base_c": 23.978181719035238,
+            "base_water": 23.55221847419199,
+            "surface_c": 22.588136074221172,
+            "surface_water": 5.911163465297635
+          },
+          "right_initial": {
+            "base_c": 23.978938063382234,
+            "base_water": 23.55037717546091,
+            "surface_c": 22.58835200801784,
+            "surface_water": 5.911136826501796
+          }
+        },
+        {
+          "date": "2025-07-19 06:00",
+          "maximum_surface_difference_k": 0.0002942322322887492,
+          "maximum_watering_effect_difference_k_h": 6.80433819795212e-05,
+          "left_initial": {
+            "base_c": 24.47251074881558,
+            "base_water": 29.45405388679752,
+            "surface_c": 22.02399829821596,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 24.473722866253716,
+            "base_water": 29.452658149142884,
+            "surface_c": 22.02429253044825,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-20 06:00",
+          "maximum_surface_difference_k": 0.00023733778721179988,
+          "maximum_watering_effect_difference_k_h": 0.0002426909138080191,
+          "left_initial": {
+            "base_c": 24.628119766984454,
+            "base_water": 27.776761699616443,
+            "surface_c": 24.54655380999023,
+            "surface_water": 5.335791914952852
+          },
+          "right_initial": {
+            "base_c": 24.62927409326812,
+            "base_water": 27.7737839801943,
+            "surface_c": 24.54679114777744,
+            "surface_water": 5.335712928462598
+          }
+        },
+        {
+          "date": "2025-07-21 06:00",
+          "maximum_surface_difference_k": 0.00032348535441428794,
+          "maximum_watering_effect_difference_k_h": 0.0007096969819428978,
+          "left_initial": {
+            "base_c": 26.78640864856386,
+            "base_water": 19.580759973908577,
+            "surface_c": 25.4116524285906,
+            "surface_water": 1.8589105720118821
+          },
+          "right_initial": {
+            "base_c": 26.78745047452404,
+            "base_water": 19.577448197602557,
+            "surface_c": 25.411965007942253,
+            "surface_water": 1.8586090402142652
+          }
+        },
+        {
+          "date": "2025-07-22 06:00",
+          "maximum_surface_difference_k": 0.000282372132431874,
+          "maximum_watering_effect_difference_k_h": 0.0007935379249488506,
+          "left_initial": {
+            "base_c": 27.452711148136732,
+            "base_water": 6.541368724994108,
+            "surface_c": 25.810386594609465,
+            "surface_water": 0.6496930244903814
+          },
+          "right_initial": {
+            "base_c": 27.453377258683272,
+            "base_water": 6.5383227856152395,
+            "surface_c": 25.81056987079959,
+            "surface_water": 0.6494155258340284
+          }
+        },
+        {
+          "date": "2025-07-23 06:00",
+          "maximum_surface_difference_k": 0.00015459215236646173,
+          "maximum_watering_effect_difference_k_h": 8.137240175187799e-05,
+          "left_initial": {
+            "base_c": 27.95163472479424,
+            "base_water": 7.536381028522279e-08,
+            "surface_c": 25.439146866635323,
+            "surface_water": 0.00016136062025952626
+          },
+          "right_initial": {
+            "base_c": 27.952114694462473,
+            "base_water": 7.53452508672788e-08,
+            "surface_c": 25.43930145878769,
+            "surface_water": 0.00016132088287359246
+          }
+        },
+        {
+          "date": "2025-07-24 06:00",
+          "maximum_surface_difference_k": 0.00016310020827248195,
+          "maximum_watering_effect_difference_k_h": 8.004230210190144e-05,
+          "left_initial": {
+            "base_c": 28.54242706959855,
+            "base_water": 1.113082952014616e-09,
+            "surface_c": 25.862927194617292,
+            "surface_water": 2.3832094038556335e-06
+          },
+          "right_initial": {
+            "base_c": 28.542935333928114,
+            "base_water": 1.1079009880084156e-09,
+            "surface_c": 25.863090294825565,
+            "surface_water": 2.3721143586073573e-06
+          }
+        },
+        {
+          "date": "2025-07-25 06:00",
+          "maximum_surface_difference_k": 0.00016769373226921402,
+          "maximum_watering_effect_difference_k_h": 8.68626627550384e-05,
+          "left_initial": {
+            "base_c": 28.167384187691848,
+            "base_water": 0.0,
+            "surface_c": 24.45419444317728,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.167929781018,
+            "base_water": 0.0,
+            "surface_c": 24.45436213690955,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-26 06:00",
+          "maximum_surface_difference_k": 0.0001741006720799021,
+          "maximum_watering_effect_difference_k_h": 0.00010648952533642841,
+          "left_initial": {
+            "base_c": 29.227294374598717,
+            "base_water": 0.0,
+            "surface_c": 27.072978511781898,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.227849349800188,
+            "base_water": 0.0,
+            "surface_c": 27.073152612453978,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-27 06:00",
+          "maximum_surface_difference_k": 0.00017116572016462328,
+          "maximum_watering_effect_difference_k_h": 7.179803654366879e-05,
+          "left_initial": {
+            "base_c": 29.629773706083796,
+            "base_water": 0.0,
+            "surface_c": 26.870907607573262,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.630316677284675,
+            "base_water": 0.0,
+            "surface_c": 26.871078773293426,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-28 06:00",
+          "maximum_surface_difference_k": 0.00017769087927632654,
+          "maximum_watering_effect_difference_k_h": 0.00014603847608896103,
+          "left_initial": {
+            "base_c": 29.816297857506974,
+            "base_water": 0.0,
+            "surface_c": 26.071580446249207,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.816840224927446,
+            "base_water": 0.0,
+            "surface_c": 26.071758137128484,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-29 06:00",
+          "maximum_surface_difference_k": 0.0001876507989528875,
+          "maximum_watering_effect_difference_k_h": 9.344312042003367e-05,
+          "left_initial": {
+            "base_c": 29.425783203243352,
+            "base_water": 0.0,
+            "surface_c": 25.53716319935504,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.426337356654226,
+            "base_water": 0.0,
+            "surface_c": 25.53735085015399,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-30 06:00",
+          "maximum_surface_difference_k": 0.00015568859149084346,
+          "maximum_watering_effect_difference_k_h": 0.0001424577170325847,
+          "left_initial": {
+            "base_c": 29.949896880075997,
+            "base_water": 0.0,
+            "surface_c": 26.956266958293828,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.950454638570335,
+            "base_water": 0.0,
+            "surface_c": 26.95642264688532,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-31 06:00",
+          "maximum_surface_difference_k": 0.00012931376604541356,
+          "maximum_watering_effect_difference_k_h": 7.553487424161176e-05,
+          "left_initial": {
+            "base_c": 30.163439542080354,
+            "base_water": 0.0,
+            "surface_c": 28.93167307089057,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 30.16399379886011,
+            "base_water": 0.0,
+            "surface_c": 28.931802384656617,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-01 06:00",
+          "maximum_surface_difference_k": 0.00017114797859463238,
+          "maximum_watering_effect_difference_k_h": 8.218957736971788e-05,
+          "left_initial": {
+            "base_c": 29.312996620417433,
+            "base_water": 0.0,
+            "surface_c": 27.61769782427798,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.313538523866328,
+            "base_water": 0.0,
+            "surface_c": 27.617868972256574,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-02 06:00",
+          "maximum_surface_difference_k": 0.00019034436660803067,
+          "maximum_watering_effect_difference_k_h": 8.860349910833065e-05,
+          "left_initial": {
+            "base_c": 29.225635414176264,
+            "base_water": 0.0,
+            "surface_c": 27.26580662874864,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.22618252933705,
+            "base_water": 0.0,
+            "surface_c": 27.265996973115247,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-03 06:00",
+          "maximum_surface_difference_k": 0.00018927677856694913,
+          "maximum_watering_effect_difference_k_h": 7.994481168793754e-05,
+          "left_initial": {
+            "base_c": 29.703760760647594,
+            "base_water": 0.0,
+            "surface_c": 27.311366735645137,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.704315456455017,
+            "base_water": 0.0,
+            "surface_c": 27.311556012423704,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-04 06:00",
+          "maximum_surface_difference_k": 0.0001500805740484168,
+          "maximum_watering_effect_difference_k_h": 0.00011167530563227501,
+          "left_initial": {
+            "base_c": 27.442096984329275,
+            "base_water": 1.575515658071408,
+            "surface_c": 24.35202043695156,
+            "surface_water": 1.6191452909475532
+          },
+          "right_initial": {
+            "base_c": 27.44264639982433,
+            "base_water": 1.5755147862395842,
+            "surface_c": 24.352170517525607,
+            "surface_water": 1.6191444718478045
+          }
+        },
+        {
+          "date": "2025-08-05 06:00",
+          "maximum_surface_difference_k": 0.00015203624812798466,
+          "maximum_watering_effect_difference_k_h": 6.8931684410245e-05,
+          "left_initial": {
+            "base_c": 28.335911003329237,
+            "base_water": 0.583062768361421,
+            "surface_c": 24.589067219249543,
+            "surface_water": 0.1154406280470989
+          },
+          "right_initial": {
+            "base_c": 28.33644783139019,
+            "base_water": 0.5830270156581737,
+            "surface_c": 24.58921925549767,
+            "surface_water": 0.11543682609399748
+          }
+        },
+        {
+          "date": "2025-08-06 06:00",
+          "maximum_surface_difference_k": 0.00010390694449924354,
+          "maximum_watering_effect_difference_k_h": 4.849485140567822e-05,
+          "left_initial": {
+            "base_c": 29.11285057282001,
+            "base_water": 0.00010998661945454552,
+            "surface_c": 27.46533085788485,
+            "surface_water": 0.2354908710255937
+          },
+          "right_initial": {
+            "base_c": 29.113357127755048,
+            "base_water": 0.00010998534704233057,
+            "surface_c": 27.46543476482935,
+            "surface_water": 0.23548814663029743
+          }
+        },
+        {
+          "date": "2025-08-07 06:00",
+          "maximum_surface_difference_k": 0.0001260079423843763,
+          "maximum_watering_effect_difference_k_h": 5.475866200299606e-05,
+          "left_initial": {
+            "base_c": 27.083360621907357,
+            "base_water": 4.467254270977285,
+            "surface_c": 25.040849540178385,
+            "surface_water": 0.8543206064276679
+          },
+          "right_initial": {
+            "base_c": 27.08383628550703,
+            "base_water": 4.467245715078351,
+            "surface_c": 25.04097554812077,
+            "surface_water": 0.8543184907975383
+          }
+        },
+        {
+          "date": "2025-08-08 06:00",
+          "maximum_surface_difference_k": 0.00018312677834586566,
+          "maximum_watering_effect_difference_k_h": 0.00014523839340085942,
+          "left_initial": {
+            "base_c": 28.122677340183206,
+            "base_water": 2.546189078924987,
+            "surface_c": 23.61911708497747,
+            "surface_water": 0.2817473596073139
+          },
+          "right_initial": {
+            "base_c": 28.123214726133074,
+            "base_water": 2.5460046994336545,
+            "surface_c": 23.619300211755817,
+            "surface_water": 0.2817300394777267
+          }
+        },
+        {
+          "date": "2025-08-09 06:00",
+          "maximum_surface_difference_k": 0.00015969914277391695,
+          "maximum_watering_effect_difference_k_h": 0.0001976220053165889,
+          "left_initial": {
+            "base_c": 27.945903690684187,
+            "base_water": 0.2639656538079561,
+            "surface_c": 25.684023848057777,
+            "surface_water": 0.07214678159164639
+          },
+          "right_initial": {
+            "base_c": 27.946448689887276,
+            "base_water": 0.2607890101952726,
+            "surface_c": 25.68418354720055,
+            "surface_water": 0.07185904925005052
+          }
+        },
+        {
+          "date": "2025-08-10 06:00",
+          "maximum_surface_difference_k": 0.00018192092301561047,
+          "maximum_watering_effect_difference_k_h": 0.00014021139409692296,
+          "left_initial": {
+            "base_c": 25.82083259754124,
+            "base_water": 0.0,
+            "surface_c": 21.5683494988495,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 25.821391725192722,
+            "base_water": 0.0,
+            "surface_c": 21.568531419772516,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-11 06:00",
+          "maximum_surface_difference_k": 0.00018889311101943917,
+          "maximum_watering_effect_difference_k_h": 7.423020551300397e-05,
+          "left_initial": {
+            "base_c": 27.785340641160655,
+            "base_water": 0.0,
+            "surface_c": 25.426689746655615,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.785908327809985,
+            "base_water": 0.0,
+            "surface_c": 25.426878639766635,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-12 06:00",
+          "maximum_surface_difference_k": 0.0001996684008886973,
+          "maximum_watering_effect_difference_k_h": 0.00012949693910968563,
+          "left_initial": {
+            "base_c": 26.221057009742793,
+            "base_water": 0.0,
+            "surface_c": 21.48783203526235,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 26.221622581479668,
+            "base_water": 0.0,
+            "surface_c": 21.48803170366324,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-13 06:00",
+          "maximum_surface_difference_k": 9.438726694455113e-05,
+          "maximum_watering_effect_difference_k_h": 1.744527337699253e-05,
+          "left_initial": {
+            "base_c": 28.13821611785,
+            "base_water": 0.873171078232526,
+            "surface_c": 25.006794813603776,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 28.13874314916828,
+            "base_water": 0.8731710734939436,
+            "surface_c": 25.006859654767535,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-08-14 06:00",
+          "maximum_surface_difference_k": 0.00012080479958243018,
+          "maximum_watering_effect_difference_k_h": 2.080296260231762e-05,
+          "left_initial": {
+            "base_c": 25.55135986584566,
+            "base_water": 16.677072408635905,
+            "surface_c": 24.330516304114802,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 25.551869517534097,
+            "base_water": 16.67706865895973,
+            "surface_c": 24.330637108914384,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-08-15 06:00",
+          "maximum_surface_difference_k": 0.0002803431011351165,
+          "maximum_watering_effect_difference_k_h": 9.549220615667764e-05,
+          "left_initial": {
+            "base_c": 25.512461918786524,
+            "base_water": 21.181297969706517,
+            "surface_c": 23.659632323049625,
+            "surface_water": 2.111311736614412
+          },
+          "right_initial": {
+            "base_c": 25.513278331497123,
+            "base_water": 21.181212838323855,
+            "surface_c": 23.65991266615076,
+            "surface_water": 2.1113022129031194
+          }
+        },
+        {
+          "date": "2025-08-16 06:00",
+          "maximum_surface_difference_k": 0.0003872576704608832,
+          "maximum_watering_effect_difference_k_h": 0.00043268181127587013,
+          "left_initial": {
+            "base_c": 26.439467429283592,
+            "base_water": 23.135388528014595,
+            "surface_c": 25.163001449371084,
+            "surface_water": 2.3419236931087783
+          },
+          "right_initial": {
+            "base_c": 26.44079681099309,
+            "base_water": 23.133823276913876,
+            "surface_c": 25.163388707041545,
+            "surface_water": 2.341783751143721
+          }
+        },
+        {
+          "date": "2025-08-17 06:00",
+          "maximum_surface_difference_k": 0.0005162764743289472,
+          "maximum_watering_effect_difference_k_h": 0.001178996424187062,
+          "left_initial": {
+            "base_c": 27.611087318957075,
+            "base_water": 8.162157997447613,
+            "surface_c": 25.55311976838012,
+            "surface_water": 0.7910417504603023
+          },
+          "right_initial": {
+            "base_c": 27.611917925165216,
+            "base_water": 8.155459476141298,
+            "surface_c": 25.55335667004221,
+            "surface_water": 0.7904327569183811
+          }
+        },
+        {
+          "date": "2025-08-18 06:00",
+          "maximum_surface_difference_k": 0.00032677765469912856,
+          "maximum_watering_effect_difference_k_h": 0.0003970299341062855,
+          "left_initial": {
+            "base_c": 28.050009480122046,
+            "base_water": 0.9198404176198427,
+            "surface_c": 26.808895654780915,
+            "surface_water": 0.13202123529739507
+          },
+          "right_initial": {
+            "base_c": 28.0506126143306,
+            "base_water": 0.9154799539251767,
+            "surface_c": 26.809065829970894,
+            "surface_water": 0.13162531955507512
+          }
+        },
+        {
+          "date": "2025-08-19 06:00",
+          "maximum_surface_difference_k": 0.00012853896858189273,
+          "maximum_watering_effect_difference_k_h": 7.189022281295365e-05,
+          "left_initial": {
+            "base_c": 27.936213338820576,
+            "base_water": 0.0,
+            "surface_c": 25.90349517215053,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.93669346418501,
+            "base_water": 0.0,
+            "surface_c": 25.903623711119113,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-20 06:00",
+          "maximum_surface_difference_k": 0.0001227597126316482,
+          "maximum_watering_effect_difference_k_h": 5.9700997809386536e-05,
+          "left_initial": {
+            "base_c": 28.29651666460262,
+            "base_water": 0.0,
+            "surface_c": 26.370746752692487,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.296978920237226,
+            "base_water": 0.0,
+            "surface_c": 26.37086951240512,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-21 06:00",
+          "maximum_surface_difference_k": 0.00013466390655025862,
+          "maximum_watering_effect_difference_k_h": 5.031253635934263e-05,
+          "left_initial": {
+            "base_c": 28.56357018543602,
+            "base_water": 0.0,
+            "surface_c": 26.417342881853013,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.564022386356505,
+            "base_water": 0.0,
+            "surface_c": 26.417477545759564,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-22 06:00",
+          "maximum_surface_difference_k": 0.00014700879354734298,
+          "maximum_watering_effect_difference_k_h": 6.834776311848145e-05,
+          "left_initial": {
+            "base_c": 28.75382342445716,
+            "base_water": 0.0,
+            "surface_c": 25.930833895915697,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.7543044476549,
+            "base_water": 0.0,
+            "surface_c": 25.930980904709244,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-23 06:00",
+          "maximum_surface_difference_k": 0.00014743302242337109,
+          "maximum_watering_effect_difference_k_h": 4.4928831243851164e-05,
+          "left_initial": {
+            "base_c": 28.659262345632474,
+            "base_water": 0.0,
+            "surface_c": 26.30752646452358,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.659763265567456,
+            "base_water": 0.0,
+            "surface_c": 26.307673897546003,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-24 06:00",
+          "maximum_surface_difference_k": 0.00016920625277805357,
+          "maximum_watering_effect_difference_k_h": 0.0001436504672085448,
+          "left_initial": {
+            "base_c": 28.660010177913893,
+            "base_water": 0.0,
+            "surface_c": 26.537583899332187,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.660535985974526,
+            "base_water": 0.0,
+            "surface_c": 26.537753105584965,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-25 06:00",
+          "maximum_surface_difference_k": 0.00013821055266305393,
+          "maximum_watering_effect_difference_k_h": 5.120909602851498e-05,
+          "left_initial": {
+            "base_c": 28.95171133792779,
+            "base_water": 0.0,
+            "surface_c": 26.62961456052509,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.952238900064533,
+            "base_water": 0.0,
+            "surface_c": 26.629752771077754,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-31 06:00",
+          "maximum_surface_difference_k": 0.00016117770099555173,
+          "maximum_watering_effect_difference_k_h": 8.926524455432627e-05,
+          "left_initial": {
+            "base_c": 28.266826175715398,
+            "base_water": 1.653107295438291e-05,
+            "surface_c": 25.446941696845744,
+            "surface_water": 0.0353945133142487
+          },
+          "right_initial": {
+            "base_c": 28.267286863356908,
+            "base_water": 1.6530308423828096e-05,
+            "surface_c": 25.44710287454674,
+            "surface_water": 0.03539287638171692
+          }
+        }
+      ],
+      "initial_state_independence_demonstrated": true
+    },
+    "spinup_1": {
+      "common_dates": [
+        "2025-02-28 06:00",
+        "2025-07-07 06:00",
+        "2025-07-08 06:00",
+        "2025-07-09 06:00",
+        "2025-07-10 06:00",
+        "2025-07-11 06:00",
+        "2025-07-12 06:00",
+        "2025-07-13 06:00",
+        "2025-07-14 06:00",
+        "2025-07-15 06:00",
+        "2025-07-16 06:00",
+        "2025-07-17 06:00",
+        "2025-07-18 06:00",
+        "2025-07-19 06:00",
+        "2025-07-20 06:00",
+        "2025-07-21 06:00",
+        "2025-07-22 06:00",
+        "2025-07-23 06:00",
+        "2025-07-24 06:00",
+        "2025-07-25 06:00",
+        "2025-07-26 06:00",
+        "2025-07-27 06:00",
+        "2025-07-28 06:00",
+        "2025-07-29 06:00",
+        "2025-07-30 06:00",
+        "2025-07-31 06:00",
+        "2025-08-01 06:00",
+        "2025-08-02 06:00",
+        "2025-08-03 06:00",
+        "2025-08-04 06:00",
+        "2025-08-05 06:00",
+        "2025-08-06 06:00",
+        "2025-08-07 06:00",
+        "2025-08-08 06:00",
+        "2025-08-09 06:00",
+        "2025-08-10 06:00",
+        "2025-08-11 06:00",
+        "2025-08-12 06:00",
+        "2025-08-13 06:00",
+        "2025-08-14 06:00",
+        "2025-08-15 06:00",
+        "2025-08-16 06:00",
+        "2025-08-17 06:00",
+        "2025-08-18 06:00",
+        "2025-08-19 06:00",
+        "2025-08-20 06:00",
+        "2025-08-21 06:00",
+        "2025-08-22 06:00",
+        "2025-08-23 06:00",
+        "2025-08-24 06:00",
+        "2025-08-25 06:00"
+      ],
+      "left_only_dates": [
+        "2025-07-03 06:00",
+        "2025-07-04 06:00",
+        "2025-07-05 06:00",
+        "2025-07-06 06:00",
+        "2025-08-31 06:00"
+      ],
+      "right_only_dates": [],
+      "compared_hourly_temperatures": 11475,
+      "maximum_surface_difference_k": 2.1215333221517483,
+      "maximum_watering_effect_difference_k_h": 5.892922257057307,
+      "worst_temperature": {
+        "date": "2025-07-23 06:00",
+        "albedo": 0.1,
+        "fraction": 0.0,
+        "endpoint_hour": 8
+      },
+      "worst_effect": {
+        "date": "2025-07-23 06:00",
+        "albedo": 0.1,
+        "fraction": 1.0
+      },
+      "days": [
+        {
+          "date": "2025-02-28 06:00",
+          "maximum_surface_difference_k": 8.477824226682529e-05,
+          "maximum_watering_effect_difference_k_h": 2.308409808193801e-05,
+          "left_initial": {
+            "base_c": 2.6060872124556913,
+            "base_water": 0.0,
+            "surface_c": 2.182986622184047,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 2.605862620846696,
+            "base_water": 0.0,
+            "surface_c": 2.18290184394178,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-07 06:00",
+          "maximum_surface_difference_k": 3.8694679403761256e-05,
+          "maximum_watering_effect_difference_k_h": 1.7297891531597998e-05,
+          "left_initial": {
+            "base_c": 27.396641686333304,
+            "base_water": 0.0,
+            "surface_c": 25.630368567035198,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.396781213307438,
+            "base_water": 5.029885896359291e-15,
+            "surface_c": 25.630407261714602,
+            "surface_water": 1.0769434565507562e-11
+          }
+        },
+        {
+          "date": "2025-07-08 06:00",
+          "maximum_surface_difference_k": 2.2841454971000985e-05,
+          "maximum_watering_effect_difference_k_h": 1.2471632572896851e-05,
+          "left_initial": {
+            "base_c": 27.01283192814573,
+            "base_water": 0.0,
+            "surface_c": 24.700368286136246,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.012912517216588,
+            "base_water": 8.057304364750043e-17,
+            "surface_c": 24.700391127591217,
+            "surface_water": 1.725142654265088e-13
+          }
+        },
+        {
+          "date": "2025-07-09 06:00",
+          "maximum_surface_difference_k": 6.878593635306629e-05,
+          "maximum_watering_effect_difference_k_h": 5.382904022610546e-05,
+          "left_initial": {
+            "base_c": 29.035547072202725,
+            "base_water": 0.35485655565583374,
+            "surface_c": 27.067708266583175,
+            "surface_water": 0.5447926828302536
+          },
+          "right_initial": {
+            "base_c": 29.03575132564148,
+            "base_water": 0.3548564206278681,
+            "surface_c": 27.067777052519528,
+            "surface_water": 0.54479254929143
+          }
+        },
+        {
+          "date": "2025-07-10 06:00",
+          "maximum_surface_difference_k": 6.706316376536847e-05,
+          "maximum_watering_effect_difference_k_h": 2.7360498620510043e-05,
+          "left_initial": {
+            "base_c": 28.842923598405946,
+            "base_water": 3.9920361671630315e-06,
+            "surface_c": 25.843357997127367,
+            "surface_water": 0.008547273210197026
+          },
+          "right_initial": {
+            "base_c": 28.84313577367558,
+            "base_water": 3.991987365996157e-06,
+            "surface_c": 25.843425060291132,
+            "surface_water": 0.008547168722414707
+          }
+        },
+        {
+          "date": "2025-07-11 06:00",
+          "maximum_surface_difference_k": 2.750480909696762e-05,
+          "maximum_watering_effect_difference_k_h": 2.5037148503770368e-05,
+          "left_initial": {
+            "base_c": 28.742741820403023,
+            "base_water": 5.2753866683770034e-08,
+            "surface_c": 24.171840001674077,
+            "surface_water": 0.00011294973373542014
+          },
+          "right_initial": {
+            "base_c": 28.74285642426739,
+            "base_water": 5.2747122986736336e-08,
+            "surface_c": 24.171867506483174,
+            "surface_water": 0.00011293529500216458
+          }
+        },
+        {
+          "date": "2025-07-12 06:00",
+          "maximum_surface_difference_k": 9.285449065998819e-05,
+          "maximum_watering_effect_difference_k_h": 8.027443061564554e-05,
+          "left_initial": {
+            "base_c": 28.571551086879026,
+            "base_water": 0.0,
+            "surface_c": 23.686254247023765,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.571866366829713,
+            "base_water": 7.069402104095116e-10,
+            "surface_c": 23.686347101514425,
+            "surface_water": 1.5136149479589846e-06
+          }
+        },
+        {
+          "date": "2025-07-13 06:00",
+          "maximum_surface_difference_k": 8.068305455211089e-05,
+          "maximum_watering_effect_difference_k_h": 3.447183330251846e-05,
+          "left_initial": {
+            "base_c": 28.544923732683042,
+            "base_water": 0.0,
+            "surface_c": 25.03527438071162,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.545180765520236,
+            "base_water": 9.657319464126108e-12,
+            "surface_c": 25.035355063766172,
+            "surface_water": 2.0677139840464695e-08
+          }
+        },
+        {
+          "date": "2025-07-14 06:00",
+          "maximum_surface_difference_k": 7.98214516528617e-05,
+          "maximum_watering_effect_difference_k_h": 5.8304089840532924e-05,
+          "left_initial": {
+            "base_c": 25.941989011609095,
+            "base_water": 5.638389898004348e-06,
+            "surface_c": 21.39658714366479,
+            "surface_water": 0.012072301322768016
+          },
+          "right_initial": {
+            "base_c": 25.942248809673856,
+            "base_water": 5.638380366005099e-06,
+            "surface_c": 21.39666696511644,
+            "surface_water": 0.012072280913166856
+          }
+        },
+        {
+          "date": "2025-07-15 06:00",
+          "maximum_surface_difference_k": 4.730740392844268e-05,
+          "maximum_watering_effect_difference_k_h": 1.1939194692445199e-05,
+          "left_initial": {
+            "base_c": 24.33120261830521,
+            "base_water": 9.925605914423455,
+            "surface_c": 21.476137372101253,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 24.331411461090447,
+            "base_water": 9.925604999009522,
+            "surface_c": 21.47618373964639,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-16 06:00",
+          "maximum_surface_difference_k": 7.49935094361831e-05,
+          "maximum_watering_effect_difference_k_h": 1.6215552896881036e-05,
+          "left_initial": {
+            "base_c": 24.755906428379383,
+            "base_water": 14.748695214763657,
+            "surface_c": 23.437680390140194,
+            "surface_water": 3.730410257614006
+          },
+          "right_initial": {
+            "base_c": 24.75621498376471,
+            "base_water": 14.748668396621573,
+            "surface_c": 23.43775538364963,
+            "surface_water": 3.73040684760228
+          }
+        },
+        {
+          "date": "2025-07-17 06:00",
+          "maximum_surface_difference_k": 1.9886398650470483e-05,
+          "maximum_watering_effect_difference_k_h": 1.918120418054059e-06,
+          "left_initial": {
+            "base_c": 23.459263960868654,
+            "base_water": 26.563344014439988,
+            "surface_c": 22.21031915238517,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 23.45916042298164,
+            "base_water": 26.56441773083248,
+            "surface_c": 22.21029926598652,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-18 06:00",
+          "maximum_surface_difference_k": 0.06423850550054411,
+          "maximum_watering_effect_difference_k_h": 0.010689846819687432,
+          "left_initial": {
+            "base_c": 23.978181719035238,
+            "base_water": 23.55221847419199,
+            "surface_c": 22.588136074221172,
+            "surface_water": 5.911163465297635
+          },
+          "right_initial": {
+            "base_c": 23.998894227399457,
+            "base_water": 32.38607063202755,
+            "surface_c": 22.592282729655476,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-19 06:00",
+          "maximum_surface_difference_k": 0.05041202180105131,
+          "maximum_watering_effect_difference_k_h": 0.0012127475509444707,
+          "left_initial": {
+            "base_c": 24.47251074881558,
+            "base_water": 29.45405388679752,
+            "surface_c": 22.02399829821596,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 24.499447147800687,
+            "base_water": 37.585570022271554,
+            "surface_c": 22.028331832022623,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-07-20 06:00",
+          "maximum_surface_difference_k": 0.5953086360957158,
+          "maximum_watering_effect_difference_k_h": 0.7876730970922381,
+          "left_initial": {
+            "base_c": 24.628119766984454,
+            "base_water": 27.776761699616443,
+            "surface_c": 24.54655380999023,
+            "surface_water": 5.335791914952852
+          },
+          "right_initial": {
+            "base_c": 24.644273847189847,
+            "base_water": 41.5158861098439,
+            "surface_c": 24.54892091946897,
+            "surface_water": 5.699086722020424
+          }
+        },
+        {
+          "date": "2025-07-21 06:00",
+          "maximum_surface_difference_k": 1.2398652351472563,
+          "maximum_watering_effect_difference_k_h": 3.450687646066825,
+          "left_initial": {
+            "base_c": 26.78640864856386,
+            "base_water": 19.580759973908577,
+            "surface_c": 25.4116524285906,
+            "surface_water": 1.8589105720118821
+          },
+          "right_initial": {
+            "base_c": 26.824313410380018,
+            "base_water": 40.50099685474326,
+            "surface_c": 25.369590197308593,
+            "surface_water": 3.7392789534181774
+          }
+        },
+        {
+          "date": "2025-07-22 06:00",
+          "maximum_surface_difference_k": 1.6407243056566614,
+          "maximum_watering_effect_difference_k_h": 5.365039653467846,
+          "left_initial": {
+            "base_c": 27.452711148136732,
+            "base_water": 6.541368724994108,
+            "surface_c": 25.810386594609465,
+            "surface_water": 0.6496930244903814
+          },
+          "right_initial": {
+            "base_c": 27.64582620581189,
+            "base_water": 33.299613438392754,
+            "surface_c": 25.83815787787023,
+            "surface_water": 3.0354387648382546
+          }
+        },
+        {
+          "date": "2025-07-23 06:00",
+          "maximum_surface_difference_k": 2.1215333221517483,
+          "maximum_watering_effect_difference_k_h": 5.892922257057307,
+          "left_initial": {
+            "base_c": 27.95163472479424,
+            "base_water": 7.536381028522279e-08,
+            "surface_c": 25.439146866635323,
+            "surface_water": 0.00016136062025952626
+          },
+          "right_initial": {
+            "base_c": 28.270716488495978,
+            "base_water": 29.90569073150923,
+            "surface_c": 25.497833769096832,
+            "surface_water": 2.5778270399699577
+          }
+        },
+        {
+          "date": "2025-07-24 06:00",
+          "maximum_surface_difference_k": 1.6015413993187408,
+          "maximum_watering_effect_difference_k_h": 3.453161407511544,
+          "left_initial": {
+            "base_c": 28.54242706959855,
+            "base_water": 1.113082952014616e-09,
+            "surface_c": 25.862927194617292,
+            "surface_water": 2.3832094038556335e-06
+          },
+          "right_initial": {
+            "base_c": 28.816016420032575,
+            "base_water": 20.71978539247995,
+            "surface_c": 25.919118230241956,
+            "surface_water": 1.776066355796047
+          }
+        },
+        {
+          "date": "2025-07-25 06:00",
+          "maximum_surface_difference_k": 0.8694087152736003,
+          "maximum_watering_effect_difference_k_h": 1.9875965695640048,
+          "left_initial": {
+            "base_c": 28.167384187691848,
+            "base_water": 0.0,
+            "surface_c": 24.45419444317728,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.35415400125064,
+            "base_water": 10.42700173641734,
+            "surface_c": 24.50510770009736,
+            "surface_water": 0.9808490949763738
+          }
+        },
+        {
+          "date": "2025-07-26 06:00",
+          "maximum_surface_difference_k": 0.0002289560034185456,
+          "maximum_watering_effect_difference_k_h": 0.0001436563161973936,
+          "left_initial": {
+            "base_c": 29.227294374598717,
+            "base_water": 0.0,
+            "surface_c": 27.072978511781898,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.227010276489125,
+            "base_water": 2.116231541248043e-07,
+            "surface_c": 27.072882245135553,
+            "surface_water": 0.00045310376231904735
+          }
+        },
+        {
+          "date": "2025-07-27 06:00",
+          "maximum_surface_difference_k": 7.144361724797932e-05,
+          "maximum_watering_effect_difference_k_h": 2.9968081520337364e-05,
+          "left_initial": {
+            "base_c": 29.629773706083796,
+            "base_water": 0.0,
+            "surface_c": 26.870907607573262,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.630000339202816,
+            "base_water": 3.4055677921874958e-15,
+            "surface_c": 26.87097905119051,
+            "surface_water": 7.291619285116466e-12
+          }
+        },
+        {
+          "date": "2025-07-28 06:00",
+          "maximum_surface_difference_k": 4.271236307928916e-05,
+          "maximum_watering_effect_difference_k_h": 3.5103917440437726e-05,
+          "left_initial": {
+            "base_c": 29.816297857506974,
+            "base_water": 0.0,
+            "surface_c": 26.071580446249207,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.81642822879695,
+            "base_water": 4.7659232556048127e-17,
+            "surface_c": 26.071623158612287,
+            "surface_water": 1.020426974445226e-13
+          }
+        },
+        {
+          "date": "2025-07-29 06:00",
+          "maximum_surface_difference_k": 9.235086271175419e-05,
+          "maximum_watering_effect_difference_k_h": 4.598727451821105e-05,
+          "left_initial": {
+            "base_c": 29.425783203243352,
+            "base_water": 0.0,
+            "surface_c": 25.53716319935504,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.426055925438277,
+            "base_water": 0.0,
+            "surface_c": 25.53725555021775,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-30 06:00",
+          "maximum_surface_difference_k": 7.466518416876511e-05,
+          "maximum_watering_effect_difference_k_h": 6.831989779243486e-05,
+          "left_initial": {
+            "base_c": 29.949896880075997,
+            "base_water": 0.0,
+            "surface_c": 26.956266958293828,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.950164370038063,
+            "base_water": 0.0,
+            "surface_c": 26.956341623477996,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-07-31 06:00",
+          "maximum_surface_difference_k": 5.6145555781483836e-05,
+          "maximum_watering_effect_difference_k_h": 3.279577720149973e-05,
+          "left_initial": {
+            "base_c": 30.163439542080354,
+            "base_water": 0.0,
+            "surface_c": 28.93167307089057,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 30.16368018971825,
+            "base_water": 0.0,
+            "surface_c": 28.931729216446353,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-01 06:00",
+          "maximum_surface_difference_k": 4.866447786611161e-05,
+          "maximum_watering_effect_difference_k_h": 2.3369893341396164e-05,
+          "left_initial": {
+            "base_c": 29.312996620417433,
+            "base_water": 0.0,
+            "surface_c": 27.61769782427798,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.313150706045594,
+            "base_water": 0.0,
+            "surface_c": 27.617746488755845,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-02 06:00",
+          "maximum_surface_difference_k": 8.620620758392761e-05,
+          "maximum_watering_effect_difference_k_h": 4.012815182363738e-05,
+          "left_initial": {
+            "base_c": 29.225635414176264,
+            "base_water": 0.0,
+            "surface_c": 27.26580662874864,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.225883200417446,
+            "base_water": 0.0,
+            "surface_c": 27.265892834956222,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-03 06:00",
+          "maximum_surface_difference_k": 0.00010169369565460329,
+          "maximum_watering_effect_difference_k_h": 4.295233141249355e-05,
+          "left_initial": {
+            "base_c": 29.703760760647594,
+            "base_water": 0.0,
+            "surface_c": 27.311366735645137,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 29.70405878483759,
+            "base_water": 0.0,
+            "surface_c": 27.311468429340792,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-04 06:00",
+          "maximum_surface_difference_k": 5.3344493345264254e-05,
+          "maximum_watering_effect_difference_k_h": 3.969374768075795e-05,
+          "left_initial": {
+            "base_c": 27.442096984329275,
+            "base_water": 1.575515658071408,
+            "surface_c": 24.35202043695156,
+            "surface_water": 1.6191452909475532
+          },
+          "right_initial": {
+            "base_c": 27.442292268006774,
+            "base_water": 1.5755153481895743,
+            "surface_c": 24.352073781444904,
+            "surface_water": 1.619144999808533
+          }
+        },
+        {
+          "date": "2025-08-05 06:00",
+          "maximum_surface_difference_k": 4.687168177852641e-05,
+          "maximum_watering_effect_difference_k_h": 2.1251123371257563e-05,
+          "left_initial": {
+            "base_c": 28.335911003329237,
+            "base_water": 0.583062768361421,
+            "surface_c": 24.589067219249543,
+            "surface_water": 0.1154406280470989
+          },
+          "right_initial": {
+            "base_c": 28.33607650354697,
+            "base_water": 0.5830517466576962,
+            "surface_c": 24.58911409093132,
+            "surface_water": 0.11543945598942285
+          }
+        },
+        {
+          "date": "2025-08-06 06:00",
+          "maximum_surface_difference_k": 4.289394643564037e-05,
+          "maximum_watering_effect_difference_k_h": 2.0019168800899934e-05,
+          "left_initial": {
+            "base_c": 29.11285057282001,
+            "base_water": 0.00010998661945454552,
+            "surface_c": 27.46533085788485,
+            "surface_water": 0.2354908710255937
+          },
+          "right_initial": {
+            "base_c": 29.11305968438348,
+            "base_water": 0.00010998609441053106,
+            "surface_c": 27.465373751831287,
+            "surface_water": 0.23548974684002094
+          }
+        },
+        {
+          "date": "2025-08-07 06:00",
+          "maximum_surface_difference_k": 6.14978768780361e-05,
+          "maximum_watering_effect_difference_k_h": 0.00024314497869681873,
+          "left_initial": {
+            "base_c": 27.083360621907357,
+            "base_water": 4.467254270977285,
+            "surface_c": 25.040849540178385,
+            "surface_water": 0.8543206064276679
+          },
+          "right_initial": {
+            "base_c": 27.083283198734815,
+            "base_water": 4.467839302937742,
+            "surface_c": 25.040828487245616,
+            "surface_water": 0.8544045864374702
+          }
+        },
+        {
+          "date": "2025-08-08 06:00",
+          "maximum_surface_difference_k": 2.8774624301064478e-05,
+          "maximum_watering_effect_difference_k_h": 1.7220123993411107e-05,
+          "left_initial": {
+            "base_c": 28.122677340183206,
+            "base_water": 2.546189078924987,
+            "surface_c": 23.61911708497747,
+            "surface_water": 0.2817473596073139
+          },
+          "right_initial": {
+            "base_c": 28.122763965052705,
+            "base_water": 2.5467639360489365,
+            "surface_c": 23.619145859601772,
+            "surface_water": 0.28179947669204175
+          }
+        },
+        {
+          "date": "2025-08-09 06:00",
+          "maximum_surface_difference_k": 0.0011496141581659458,
+          "maximum_watering_effect_difference_k_h": 0.0041485276528163695,
+          "left_initial": {
+            "base_c": 27.945903690684187,
+            "base_water": 0.2639656538079561,
+            "surface_c": 25.684023848057777,
+            "surface_water": 0.07214678159164639
+          },
+          "right_initial": {
+            "base_c": 27.9468706444075,
+            "base_water": 0.3229976614421972,
+            "surface_c": 25.68419815804934,
+            "surface_water": 0.07748839837248561
+          }
+        },
+        {
+          "date": "2025-08-10 06:00",
+          "maximum_surface_difference_k": 0.00047484724452573346,
+          "maximum_watering_effect_difference_k_h": 0.0002840688079004394,
+          "left_initial": {
+            "base_c": 25.82083259754124,
+            "base_water": 0.0,
+            "surface_c": 21.5683494988495,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 25.820682784106637,
+            "base_water": 6.948641227534451e-07,
+            "surface_c": 21.56828202493366,
+            "surface_water": 0.0014877659806607952
+          }
+        },
+        {
+          "date": "2025-08-11 06:00",
+          "maximum_surface_difference_k": 2.5632160479460708e-05,
+          "maximum_watering_effect_difference_k_h": 9.969387036790067e-06,
+          "left_initial": {
+            "base_c": 27.785340641160655,
+            "base_water": 0.0,
+            "surface_c": 25.426689746655615,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 27.785418544951597,
+            "base_water": 1.0221225727929191e-08,
+            "surface_c": 25.426715378816095,
+            "surface_water": 2.188454644649824e-05
+          }
+        },
+        {
+          "date": "2025-08-12 06:00",
+          "maximum_surface_difference_k": 4.2651527930814837e-05,
+          "maximum_watering_effect_difference_k_h": 2.7635968933736876e-05,
+          "left_initial": {
+            "base_c": 26.221057009742793,
+            "base_water": 0.0,
+            "surface_c": 21.48783203526235,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 26.221177811187143,
+            "base_water": 1.6725287056872886e-10,
+            "surface_c": 21.48787468679028,
+            "surface_water": 3.5810340734739514e-07
+          }
+        },
+        {
+          "date": "2025-08-13 06:00",
+          "maximum_surface_difference_k": 2.3883288982062822e-05,
+          "maximum_watering_effect_difference_k_h": 4.414268108376973e-06,
+          "left_initial": {
+            "base_c": 28.13821611785,
+            "base_water": 0.873171078232526,
+            "surface_c": 25.006794813603776,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 28.138082760468528,
+            "base_water": 0.8731710801319371,
+            "surface_c": 25.006778406513835,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-08-14 06:00",
+          "maximum_surface_difference_k": 3.29598320547575e-05,
+          "maximum_watering_effect_difference_k_h": 5.675761492796028e-06,
+          "left_initial": {
+            "base_c": 25.55135986584566,
+            "base_water": 16.677072408635905,
+            "surface_c": 24.330516304114802,
+            "surface_water": 5.95
+          },
+          "right_initial": {
+            "base_c": 25.551498915582737,
+            "base_water": 16.677071385609207,
+            "surface_c": 24.330549263946857,
+            "surface_water": 5.95
+          }
+        },
+        {
+          "date": "2025-08-15 06:00",
+          "maximum_surface_difference_k": 3.720441593557666e-05,
+          "maximum_watering_effect_difference_k_h": 1.267255875347928e-05,
+          "left_initial": {
+            "base_c": 25.512461918786524,
+            "base_water": 21.181297969706517,
+            "surface_c": 23.659632323049625,
+            "surface_water": 2.111311736614412
+          },
+          "right_initial": {
+            "base_c": 25.512353573551387,
+            "base_water": 21.18130926548231,
+            "surface_c": 23.65959511863369,
+            "surface_water": 2.1113130001875087
+          }
+        },
+        {
+          "date": "2025-08-16 06:00",
+          "maximum_surface_difference_k": 0.05338202125364688,
+          "maximum_watering_effect_difference_k_h": 0.165734604555837,
+          "left_initial": {
+            "base_c": 26.439467429283592,
+            "base_water": 23.135388528014595,
+            "surface_c": 25.163001449371084,
+            "surface_water": 2.3419236931087783
+          },
+          "right_initial": {
+            "base_c": 26.442984493281497,
+            "base_water": 24.073524021343403,
+            "surface_c": 25.16307121042344,
+            "surface_water": 2.4242237024842903
+          }
+        },
+        {
+          "date": "2025-08-17 06:00",
+          "maximum_surface_difference_k": 0.8168010588645487,
+          "maximum_watering_effect_difference_k_h": 2.0064685736259094,
+          "left_initial": {
+            "base_c": 27.611087318957075,
+            "base_water": 8.162157997447613,
+            "surface_c": 25.55311976838012,
+            "surface_water": 0.7910417504603023
+          },
+          "right_initial": {
+            "base_c": 27.7207450706643,
+            "base_water": 21.79958551968727,
+            "surface_c": 25.5706481592735,
+            "surface_water": 1.9968971923596441
+          }
+        },
+        {
+          "date": "2025-08-18 06:00",
+          "maximum_surface_difference_k": 1.069829151414318,
+          "maximum_watering_effect_difference_k_h": 2.5820790448146624,
+          "left_initial": {
+            "base_c": 28.050009480122046,
+            "base_water": 0.9198404176198427,
+            "surface_c": 26.808895654780915,
+            "surface_water": 0.13202123529739507
+          },
+          "right_initial": {
+            "base_c": 28.194369737786538,
+            "base_water": 19.3992532380778,
+            "surface_c": 26.82738789968334,
+            "surface_water": 1.789529193678318
+          }
+        },
+        {
+          "date": "2025-08-19 06:00",
+          "maximum_surface_difference_k": 0.9635264369882037,
+          "maximum_watering_effect_difference_k_h": 2.161775504275397,
+          "left_initial": {
+            "base_c": 27.936213338820576,
+            "base_water": 0.0,
+            "surface_c": 25.90349517215053,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.121701287199176,
+            "base_water": 16.99953536292891,
+            "surface_c": 25.939287944436007,
+            "surface_water": 1.563579198627504
+          }
+        },
+        {
+          "date": "2025-08-20 06:00",
+          "maximum_surface_difference_k": 0.8623640211122847,
+          "maximum_watering_effect_difference_k_h": 1.9550431454827049,
+          "left_initial": {
+            "base_c": 28.29651666460262,
+            "base_water": 0.0,
+            "surface_c": 26.370746752692487,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.434656804672276,
+            "base_water": 13.69636269729804,
+            "surface_c": 26.39828542681283,
+            "surface_water": 1.2712882236461591
+          }
+        },
+        {
+          "date": "2025-08-21 06:00",
+          "maximum_surface_difference_k": 0.003236694282101382,
+          "maximum_watering_effect_difference_k_h": 0.001233963180112596,
+          "left_initial": {
+            "base_c": 28.56357018543602,
+            "base_water": 0.0,
+            "surface_c": 26.417342881853013,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.558173696582383,
+            "base_water": 4.594923408420815e-06,
+            "surface_c": 26.415689958916712,
+            "surface_water": 0.009838146017735624
+          }
+        },
+        {
+          "date": "2025-08-22 06:00",
+          "maximum_surface_difference_k": 3.067919816501785e-05,
+          "maximum_watering_effect_difference_k_h": 1.4261647152125079e-05,
+          "left_initial": {
+            "base_c": 28.75382342445716,
+            "base_water": 0.0,
+            "surface_c": 25.930833895915697,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.75392380865969,
+            "base_water": 6.546556265085349e-12,
+            "surface_c": 25.930864575113862,
+            "surface_water": 1.4016773222842638e-08
+          }
+        },
+        {
+          "date": "2025-08-23 06:00",
+          "maximum_surface_difference_k": 3.913619866224849e-05,
+          "maximum_watering_effect_difference_k_h": 1.1926378846283114e-05,
+          "left_initial": {
+            "base_c": 28.659262345632474,
+            "base_water": 0.0,
+            "surface_c": 26.30752646452358,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.65939531515835,
+            "base_water": 0.0,
+            "surface_c": 26.307565600722242,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-24 06:00",
+          "maximum_surface_difference_k": 4.761642448869452e-05,
+          "maximum_watering_effect_difference_k_h": 4.042474321863665e-05,
+          "left_initial": {
+            "base_c": 28.660010177913893,
+            "base_water": 0.0,
+            "surface_c": 26.537583899332187,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.660158145821867,
+            "base_water": 0.0,
+            "surface_c": 26.537631515756676,
+            "surface_water": 0.0
+          }
+        },
+        {
+          "date": "2025-08-25 06:00",
+          "maximum_surface_difference_k": 4.036450702926686e-05,
+          "maximum_watering_effect_difference_k_h": 1.4955651948866944e-05,
+          "left_initial": {
+            "base_c": 28.95171133792779,
+            "base_water": 0.0,
+            "surface_c": 26.62961456052509,
+            "surface_water": 0.0
+          },
+          "right_initial": {
+            "base_c": 28.951865412870777,
+            "base_water": 0.0,
+            "surface_c": 26.62965492503212,
+            "surface_water": 0.0
+          }
+        }
+      ],
+      "initial_state_independence_demonstrated": false
+    }
+  },
+  "numerical_gate_pass": true,
+  "initialization_interpretation": "conditional_on_initialization; no initialization-robust optimal-dose claim"
+}

@@ -1,0 +1,2 @@
+# Optional: simulation and tabulation use the Python standard library only.
+matplotlib==3.10.8

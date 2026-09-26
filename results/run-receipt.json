@@ -1,0 +1,284 @@
+{
+  "status": "completed_with_conditional_scientific_interpretation",
+  "base_commit": "03804f86b43ff9afb02efe4882ff56d90de9a046",
+  "authorization": {
+    "date_kst": "2026-09-26",
+    "user_request": "좋아 그럼 방향성 유지도 됐네. 이제 시뮬래아션해서 결과 얻고 끝내자",
+    "mode": "codex-autonomous-loop full"
+  },
+  "python_version": "3.14.7",
+  "physics_changes": false,
+  "stages": {
+    "coarse": {
+      "started_utc": "2026-09-26T07:11:25.744303+00:00",
+      "finished_utc": "2026-09-26T07:11:26.401558+00:00",
+      "runner_sha256": "671417cbf40e563a973f80b925c18da6ba7d1d23344aa7ff5356919abbcdd82f",
+      "source_hashes": {
+        "annual": "2572c3bcdf0782427c389674c994d8ee9aacc036cc7c555ea24554c8712ae9a6",
+        "config": "b2224ae298589bb607657f28cce465ca2acb776883844c208c0510c9716769fb",
+        "daily": "ad551bb169f41b308d417a26c8a864e1e37e02367236bc0cdf7330328a2e08c7"
+      },
+      "code_hashes": {
+        "src/geoscience/__init__.py": "ae70d95f22d65eef6774157a40a73d0be7354d034fa24cf2e695b8a902aaca49",
+        "src/geoscience/comparison.py": "24fc0120de61545fc2dd69042e64516524ad1180dbe866ad5089af20a22d7f02",
+        "src/geoscience/model.py": "2f6eed7aa722cace5ca8ae5d5c8c5ddec792b64165b68569f175e6f73fdcecec",
+        "src/geoscience/physics.py": "75be3ec8a02441de3ad0178340cf392432144090a99b07df54638f019caa30ea",
+        "src/geoscience/preflight.py": "65eb79afdfdc0dae458065bb90d81166ea2a314a886370c48f4927098179ce3c",
+        "src/geoscience/preprocess.py": "82a388eaad1c989963de2a020f9083260e4d1b5f7e9f0a4ba7303d395a0207ab",
+        "src/geoscience/simulate.py": "3538a5630d5faa87b042044ae575c518f99e8f12a8cdc522ba960cb7fd385c40",
+        "src/geoscience/weather.py": "c0e45a60a978426043a6dd4fec26db3f6f89908c7acf0da33fc380e19fdf0416"
+      },
+      "weather_bundle_sha256": "dbeacb6c0b080a5352826fb6966210ec61117774d6f1498b401ca65faa2ff212",
+      "runner_source_file": "scripts/run_final_study.py"
+    },
+    "convergence": {
+      "started_utc": "2026-09-26T07:09:28.328053+00:00",
+      "finished_utc": "2026-09-26T07:10:17.352431+00:00",
+      "runner_sha256": "38b8aab107c2348992df1dc158e6a13a15950e19ce8cbc16b096cde54c39fb15",
+      "source_hashes": {
+        "annual": "2572c3bcdf0782427c389674c994d8ee9aacc036cc7c555ea24554c8712ae9a6",
+        "config": "b2224ae298589bb607657f28cce465ca2acb776883844c208c0510c9716769fb",
+        "daily": "ad551bb169f41b308d417a26c8a864e1e37e02367236bc0cdf7330328a2e08c7"
+      },
+      "code_hashes": {
+        "src/geoscience/__init__.py": "ae70d95f22d65eef6774157a40a73d0be7354d034fa24cf2e695b8a902aaca49",
+        "src/geoscience/comparison.py": "24fc0120de61545fc2dd69042e64516524ad1180dbe866ad5089af20a22d7f02",
+        "src/geoscience/model.py": "2f6eed7aa722cace5ca8ae5d5c8c5ddec792b64165b68569f175e6f73fdcecec",
+        "src/geoscience/physics.py": "75be3ec8a02441de3ad0178340cf392432144090a99b07df54638f019caa30ea",
+        "src/geoscience/preflight.py": "65eb79afdfdc0dae458065bb90d81166ea2a314a886370c48f4927098179ce3c",
+        "src/geoscience/preprocess.py": "82a388eaad1c989963de2a020f9083260e4d1b5f7e9f0a4ba7303d395a0207ab",
+        "src/geoscience/simulate.py": "3538a5630d5faa87b042044ae575c518f99e8f12a8cdc522ba960cb7fd385c40",
+        "src/geoscience/weather.py": "c0e45a60a978426043a6dd4fec26db3f6f89908c7acf0da33fc380e19fdf0416"
+      },
+      "weather_bundle_sha256": "dbeacb6c0b080a5352826fb6966210ec61117774d6f1498b401ca65faa2ff212",
+      "runner_source_file": "results/provenance/runner-before-gate.py"
+    },
+    "initialization": {
+      "started_utc": "2026-09-26T07:09:49.434150+00:00",
+      "finished_utc": "2026-09-26T07:10:37.899743+00:00",
+      "runner_sha256": "38b8aab107c2348992df1dc158e6a13a15950e19ce8cbc16b096cde54c39fb15",
+      "source_hashes": {
+        "annual": "2572c3bcdf0782427c389674c994d8ee9aacc036cc7c555ea24554c8712ae9a6",
+        "config": "b2224ae298589bb607657f28cce465ca2acb776883844c208c0510c9716769fb",
+        "daily": "ad551bb169f41b308d417a26c8a864e1e37e02367236bc0cdf7330328a2e08c7"
+      },
+      "code_hashes": {
+        "src/geoscience/__init__.py": "ae70d95f22d65eef6774157a40a73d0be7354d034fa24cf2e695b8a902aaca49",
+        "src/geoscience/comparison.py": "24fc0120de61545fc2dd69042e64516524ad1180dbe866ad5089af20a22d7f02",
+        "src/geoscience/model.py": "2f6eed7aa722cace5ca8ae5d5c8c5ddec792b64165b68569f175e6f73fdcecec",
+        "src/geoscience/physics.py": "75be3ec8a02441de3ad0178340cf392432144090a99b07df54638f019caa30ea",
+        "src/geoscience/preflight.py": "65eb79afdfdc0dae458065bb90d81166ea2a314a886370c48f4927098179ce3c",
+        "src/geoscience/preprocess.py": "82a388eaad1c989963de2a020f9083260e4d1b5f7e9f0a4ba7303d395a0207ab",
+        "src/geoscience/simulate.py": "3538a5630d5faa87b042044ae575c518f99e8f12a8cdc522ba960cb7fd385c40",
+        "src/geoscience/weather.py": "c0e45a60a978426043a6dd4fec26db3f6f89908c7acf0da33fc380e19fdf0416"
+      },
+      "weather_bundle_sha256": "dbeacb6c0b080a5352826fb6966210ec61117774d6f1498b401ca65faa2ff212",
+      "runner_source_file": "results/provenance/runner-before-gate.py"
+    },
+    "refinement": {
+      "started_utc": "2026-09-26T07:17:32.743386+00:00",
+      "finished_utc": "2026-09-26T07:18:29.146920+00:00",
+      "runner_sha256": "671417cbf40e563a973f80b925c18da6ba7d1d23344aa7ff5356919abbcdd82f",
+      "source_hashes": {
+        "annual": "2572c3bcdf0782427c389674c994d8ee9aacc036cc7c555ea24554c8712ae9a6",
+        "config": "b2224ae298589bb607657f28cce465ca2acb776883844c208c0510c9716769fb",
+        "daily": "ad551bb169f41b308d417a26c8a864e1e37e02367236bc0cdf7330328a2e08c7"
+      },
+      "code_hashes": {
+        "src/geoscience/__init__.py": "ae70d95f22d65eef6774157a40a73d0be7354d034fa24cf2e695b8a902aaca49",
+        "src/geoscience/comparison.py": "24fc0120de61545fc2dd69042e64516524ad1180dbe866ad5089af20a22d7f02",
+        "src/geoscience/model.py": "2f6eed7aa722cace5ca8ae5d5c8c5ddec792b64165b68569f175e6f73fdcecec",
+        "src/geoscience/physics.py": "75be3ec8a02441de3ad0178340cf392432144090a99b07df54638f019caa30ea",
+        "src/geoscience/preflight.py": "65eb79afdfdc0dae458065bb90d81166ea2a314a886370c48f4927098179ce3c",
+        "src/geoscience/preprocess.py": "82a388eaad1c989963de2a020f9083260e4d1b5f7e9f0a4ba7303d395a0207ab",
+        "src/geoscience/simulate.py": "3538a5630d5faa87b042044ae575c518f99e8f12a8cdc522ba960cb7fd385c40",
+        "src/geoscience/weather.py": "c0e45a60a978426043a6dd4fec26db3f6f89908c7acf0da33fc380e19fdf0416"
+      },
+      "weather_bundle_sha256": "dbeacb6c0b080a5352826fb6966210ec61117774d6f1498b401ca65faa2ff212",
+      "runner_source_file": "scripts/run_final_study.py"
+    },
+    "sensitivity": {
+      "started_utc": "2026-09-26T07:11:31.980971+00:00",
+      "finished_utc": "2026-09-26T07:16:43.410053+00:00",
+      "runner_sha256": "671417cbf40e563a973f80b925c18da6ba7d1d23344aa7ff5356919abbcdd82f",
+      "source_hashes": {
+        "annual": "2572c3bcdf0782427c389674c994d8ee9aacc036cc7c555ea24554c8712ae9a6",
+        "config": "b2224ae298589bb607657f28cce465ca2acb776883844c208c0510c9716769fb",
+        "daily": "ad551bb169f41b308d417a26c8a864e1e37e02367236bc0cdf7330328a2e08c7"
+      },
+      "code_hashes": {
+        "src/geoscience/__init__.py": "ae70d95f22d65eef6774157a40a73d0be7354d034fa24cf2e695b8a902aaca49",
+        "src/geoscience/comparison.py": "24fc0120de61545fc2dd69042e64516524ad1180dbe866ad5089af20a22d7f02",
+        "src/geoscience/model.py": "2f6eed7aa722cace5ca8ae5d5c8c5ddec792b64165b68569f175e6f73fdcecec",
+        "src/geoscience/physics.py": "75be3ec8a02441de3ad0178340cf392432144090a99b07df54638f019caa30ea",
+        "src/geoscience/preflight.py": "65eb79afdfdc0dae458065bb90d81166ea2a314a886370c48f4927098179ce3c",
+        "src/geoscience/preprocess.py": "82a388eaad1c989963de2a020f9083260e4d1b5f7e9f0a4ba7303d395a0207ab",
+        "src/geoscience/simulate.py": "3538a5630d5faa87b042044ae575c518f99e8f12a8cdc522ba960cb7fd385c40",
+        "src/geoscience/weather.py": "c0e45a60a978426043a6dd4fec26db3f6f89908c7acf0da33fc380e19fdf0416"
+      },
+      "weather_bundle_sha256": "dbeacb6c0b080a5352826fb6966210ec61117774d6f1498b401ca65faa2ff212",
+      "runner_source_file": "scripts/run_final_study.py"
+    }
+  },
+  "independent_review": "pass; no blockers or requested fixes",
+  "unit_tests": {
+    "command": "python3 -m unittest discover -s tests",
+    "passed": 55
+  },
+  "files": {
+    "README.md": {
+      "bytes": 5412,
+      "sha256": "68000c373c727c5dadecc24a4a61f4593bc499921f5ae5b311e4592ac27759f6"
+    },
+    "docs/experiment-design.md": {
+      "bytes": 8426,
+      "sha256": "8d0328b3425a5d81077b684d48ef0c9420cbe843bf6e7868d48732fe07df3ae7"
+    },
+    "docs/final-execution-plan.md": {
+      "bytes": 4149,
+      "sha256": "c910f60c46ff0eb2f00e9176b28de0b6851ea49dbdfbee7661c9c92559a929f2"
+    },
+    "docs/final-execution-record.md": {
+      "bytes": 4817,
+      "sha256": "23147cda5daeada05442d2a5b0c02cd312f5ff8ddcb66a2a3626f1786d45b3cc"
+    },
+    "docs/final-results.md": {
+      "bytes": 14030,
+      "sha256": "cfe732f29b97f609d390a40e3f220dcabc68acf058c0e0272ef5e6670cf0b006"
+    },
+    "docs/preflight-readiness.md": {
+      "bytes": 5485,
+      "sha256": "f73a4679eba8ab8921850a1d2cd28072244f38286813fa5b5b5aa9b72b0896a9"
+    },
+    "requirements-figures.txt": {
+      "bytes": 95,
+      "sha256": "79cf783ecf9d66b0e294397ac9c56978dc865e71b36e047b9b40db7286f38969"
+    },
+    "results/README.md": {
+      "bytes": 5102,
+      "sha256": "aae3eb60793d20e0a3472ee664656231674f5da471b2cc967936942f83647cc7"
+    },
+    "results/baseline_summary.csv": {
+      "bytes": 23583,
+      "sha256": "7abc9b2255bc6303248e88b7d6cca4224745ab101a6c0a51eabd443454f3d365"
+    },
+    "results/cohort_counts.csv": {
+      "bytes": 221,
+      "sha256": "cfad6d070c140c09a0d519934c7309a26e7573f050295279510c76c159311c84"
+    },
+    "results/dose_response.csv": {
+      "bytes": 174351,
+      "sha256": "34ac46c7024f28694b5494fd46169aff80a9dc19d4a60474eaaae1a47fe4fdde"
+    },
+    "results/figures/albedo-evaporation-reflection.png": {
+      "bytes": 260248,
+      "sha256": "2be3d72456c56dc57fd3cdfc766fe67aad9cbc260927999c84840cd9e396f7b4"
+    },
+    "results/figures/albedo-evaporation-reflection.svg": {
+      "bytes": 129071,
+      "sha256": "2b92e5785b4f17a91c09b181186bc444f59f2874439caa0a2dfa5d741c918574"
+    },
+    "results/figures/baseline-temperature.png": {
+      "bytes": 131127,
+      "sha256": "d615d94d33f6aad9ac55194261a48daeb5aee1f52896e2c9abe4d472b6f7a8a3"
+    },
+    "results/figures/baseline-temperature.svg": {
+      "bytes": 79057,
+      "sha256": "e7b10e1273347bf26bd7aa87aafd85adbdb0e1b089541c609f2416b75820a83d"
+    },
+    "results/figures/sensitivity.png": {
+      "bytes": 143967,
+      "sha256": "8100496ace7cdb9b066520a514eb31c4720a5201e7d038860e64709b9e0cc4ea"
+    },
+    "results/figures/sensitivity.svg": {
+      "bytes": 110345,
+      "sha256": "fa9d77cea43e0a09e272202188b5d0ae6fe5e20e5ab9b1a8e5b2ded2a559446c"
+    },
+    "results/figures/water-dose-response.png": {
+      "bytes": 161860,
+      "sha256": "182106fc929fb161724050b5c5ba2a3da55b74d0f326345f1141ac815117612b"
+    },
+    "results/figures/water-dose-response.svg": {
+      "bytes": 84749,
+      "sha256": "4effe97aa95917356a4fe9ed696a01f640106116d18fe23fd98841ad4da61d08"
+    },
+    "results/gates.json": {
+      "bytes": 180332,
+      "sha256": "e593e98fef142e95d55f1c719cdef626869607486ee17aabac94b060b01eb74c"
+    },
+    "results/provenance/runner-before-gate.py": {
+      "bytes": 8759,
+      "sha256": "38b8aab107c2348992df1dc158e6a13a15950e19ce8cbc16b096cde54c39fb15"
+    },
+    "results/raw/coarse.json.gz": {
+      "bytes": 1792278,
+      "sha256": "047a802fd8fa71f10f1c7fcb3fdcfa8c393e030896575fc9a74d8d344bf58605"
+    },
+    "results/raw/convergence.json.gz": {
+      "bytes": 5368764,
+      "sha256": "b66e2bd5c63b6edbd0c46cda057ebff8b01d56426d439a14b16244aca19ea8f5"
+    },
+    "results/raw/initialization.json.gz": {
+      "bytes": 7073994,
+      "sha256": "2f5f3941520580ce53e0f297b56a995eea5aa1c0875ead2478de51b32383d97d"
+    },
+    "results/raw/refinement.json.gz": {
+      "bytes": 12848390,
+      "sha256": "b23fd2a00ad1240a926c6ccaf7d20c1321db753a8a3cba0ca6839e23f1618acc"
+    },
+    "results/raw/sensitivity.json.gz": {
+      "bytes": 53420406,
+      "sha256": "49fcc929b43897cc9b461ee987c354bd1c61e96443187a0b13740cb980b66f9c"
+    },
+    "results/sensitivity_ranges.csv": {
+      "bytes": 1247,
+      "sha256": "723308f4eb87ff21aaa8962dbf4fd574ea0183f8f88b325f551fa618ebe4ded2"
+    },
+    "results/sensitivity_summary.csv": {
+      "bytes": 289068,
+      "sha256": "7445241f7933d5bcd09f0e6818f58d2a6074f93137cb66ae128afaae0a054cc0"
+    },
+    "results/summary.json": {
+      "bytes": 18177,
+      "sha256": "306347d649232fe2d6ef21b3cb20cebe3cce9d8cbdb80339302b50a82ed02d44"
+    },
+    "results/verification.json": {
+      "bytes": 911,
+      "sha256": "ac4e0f7e139c86269b5d4f6ecbab0341b79633d866cad633bd38972f5b7c2c6f"
+    },
+    "results/water_choices.csv": {
+      "bytes": 2575,
+      "sha256": "1cc23f2cc3c4cfbc598fcd7905d385c99988e80efdbdc1ed0b1619e86dcafe96"
+    },
+    "scripts/analyze_final_study.py": {
+      "bytes": 10116,
+      "sha256": "90ba7ca16d768629cad80437d2598e71cf643fe7eb4e4edf2f48fb8dce1837f2"
+    },
+    "scripts/check_final_gates.py": {
+      "bytes": 5129,
+      "sha256": "10f2b92fb07c96031e434edbc1245b0aafe378fb43d419cefc2531b266133cd1"
+    },
+    "scripts/plot_final_study.py": {
+      "bytes": 6775,
+      "sha256": "f8e3ef05290d77f2c05d3bd71055bf0b4a5ffd937a01c6a1e9453f094561abfc"
+    },
+    "scripts/run_final_study.py": {
+      "bytes": 9222,
+      "sha256": "671417cbf40e563a973f80b925c18da6ba7d1d23344aa7ff5356919abbcdd82f"
+    },
+    "scripts/verify_final_results.py": {
+      "bytes": 4620,
+      "sha256": "13bb62ff855248d48e76734a24cf335c2a8a7d37747948f8b3af4bb3bbec2b86"
+    },
+    "tests/test_final_study.py": {
+      "bytes": 2784,
+      "sha256": "64a8715ac5c6af84c85afa4203f5f750fd9112526a4389116acee6ec65a6b017"
+    }
+  },
+  "limitations": [
+    "168-hour prehistory differs meaningfully; results conditional on baseline initialization",
+    "95/90 doses only within predefined grid; maximum at upper boundary",
+    "winter baseline n=1 and all-variant common n=0",
+    "not calibrated field WCC or pedestrian comfort validation"
+  ]
+}

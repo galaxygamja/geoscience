@@ -1,0 +1,595 @@
+{
+  "raw_sha256": {
+    "results/raw/convergence.json.gz": "b66e2bd5c63b6edbd0c46cda057ebff8b01d56426d439a14b16244aca19ea8f5",
+    "results/raw/initialization.json.gz": "2f5f3941520580ce53e0f297b56a995eea5aa1c0875ead2478de51b32383d97d",
+    "results/raw/coarse.json.gz": "047a802fd8fa71f10f1c7fcb3fdcfa8c393e030896575fc9a74d8d344bf58605",
+    "results/raw/sensitivity.json.gz": "49fcc929b43897cc9b461ee987c354bd1c61e96443187a0b13740cb980b66f9c",
+    "results/raw/refinement.json.gz": "b23fd2a00ad1240a926c6ccaf7d20c1321db753a8a3cba0ca6839e23f1618acc"
+  },
+  "analysis_sha256": "90ba7ca16d768629cad80437d2598e71cf643fe7eb4e4edf2f48fb8dce1837f2",
+  "counts": [
+    {
+      "cohort": "winter_zero_recorded_amount",
+      "preflight_ready": 5,
+      "coarse_complete": 1,
+      "sensitivity_common": 0,
+      "refinement_complete": 1
+    },
+    {
+      "cohort": "winter_reported_rain",
+      "preflight_ready": 0,
+      "coarse_complete": 0,
+      "sensitivity_common": 0,
+      "refinement_complete": 0
+    },
+    {
+      "cohort": "summer_zero_recorded_amount",
+      "preflight_ready": 37,
+      "coarse_complete": 37,
+      "sensitivity_common": 33,
+      "refinement_complete": 37
+    },
+    {
+      "cohort": "summer_reported_rain",
+      "preflight_ready": 18,
+      "coarse_complete": 18,
+      "sensitivity_common": 17,
+      "refinement_complete": 18
+    }
+  ],
+  "dates": {
+    "winter_zero_recorded_amount": {
+      "baseline": [
+        "2025-02-28 06:00"
+      ],
+      "sensitivity_common": [],
+      "refinement": [
+        "2025-02-28 06:00"
+      ]
+    },
+    "winter_reported_rain": {
+      "baseline": [],
+      "sensitivity_common": [],
+      "refinement": []
+    },
+    "summer_zero_recorded_amount": {
+      "baseline": [
+        "2025-07-03 06:00",
+        "2025-07-04 06:00",
+        "2025-07-05 06:00",
+        "2025-07-06 06:00",
+        "2025-07-07 06:00",
+        "2025-07-09 06:00",
+        "2025-07-10 06:00",
+        "2025-07-11 06:00",
+        "2025-07-12 06:00",
+        "2025-07-20 06:00",
+        "2025-07-22 06:00",
+        "2025-07-23 06:00",
+        "2025-07-24 06:00",
+        "2025-07-25 06:00",
+        "2025-07-26 06:00",
+        "2025-07-27 06:00",
+        "2025-07-28 06:00",
+        "2025-07-29 06:00",
+        "2025-07-30 06:00",
+        "2025-07-31 06:00",
+        "2025-08-01 06:00",
+        "2025-08-02 06:00",
+        "2025-08-04 06:00",
+        "2025-08-07 06:00",
+        "2025-08-08 06:00",
+        "2025-08-09 06:00",
+        "2025-08-10 06:00",
+        "2025-08-11 06:00",
+        "2025-08-16 06:00",
+        "2025-08-17 06:00",
+        "2025-08-18 06:00",
+        "2025-08-19 06:00",
+        "2025-08-20 06:00",
+        "2025-08-21 06:00",
+        "2025-08-22 06:00",
+        "2025-08-23 06:00",
+        "2025-08-24 06:00"
+      ],
+      "sensitivity_common": [
+        "2025-07-07 06:00",
+        "2025-07-09 06:00",
+        "2025-07-10 06:00",
+        "2025-07-11 06:00",
+        "2025-07-12 06:00",
+        "2025-07-20 06:00",
+        "2025-07-22 06:00",
+        "2025-07-23 06:00",
+        "2025-07-24 06:00",
+        "2025-07-25 06:00",
+        "2025-07-26 06:00",
+        "2025-07-27 06:00",
+        "2025-07-28 06:00",
+        "2025-07-29 06:00",
+        "2025-07-30 06:00",
+        "2025-07-31 06:00",
+        "2025-08-01 06:00",
+        "2025-08-02 06:00",
+        "2025-08-04 06:00",
+        "2025-08-07 06:00",
+        "2025-08-08 06:00",
+        "2025-08-09 06:00",
+        "2025-08-10 06:00",
+        "2025-08-11 06:00",
+        "2025-08-16 06:00",
+        "2025-08-17 06:00",
+        "2025-08-18 06:00",
+        "2025-08-19 06:00",
+        "2025-08-20 06:00",
+        "2025-08-21 06:00",
+        "2025-08-22 06:00",
+        "2025-08-23 06:00",
+        "2025-08-24 06:00"
+      ],
+      "refinement": [
+        "2025-07-03 06:00",
+        "2025-07-04 06:00",
+        "2025-07-05 06:00",
+        "2025-07-06 06:00",
+        "2025-07-07 06:00",
+        "2025-07-09 06:00",
+        "2025-07-10 06:00",
+        "2025-07-11 06:00",
+        "2025-07-12 06:00",
+        "2025-07-20 06:00",
+        "2025-07-22 06:00",
+        "2025-07-23 06:00",
+        "2025-07-24 06:00",
+        "2025-07-25 06:00",
+        "2025-07-26 06:00",
+        "2025-07-27 06:00",
+        "2025-07-28 06:00",
+        "2025-07-29 06:00",
+        "2025-07-30 06:00",
+        "2025-07-31 06:00",
+        "2025-08-01 06:00",
+        "2025-08-02 06:00",
+        "2025-08-04 06:00",
+        "2025-08-07 06:00",
+        "2025-08-08 06:00",
+        "2025-08-09 06:00",
+        "2025-08-10 06:00",
+        "2025-08-11 06:00",
+        "2025-08-16 06:00",
+        "2025-08-17 06:00",
+        "2025-08-18 06:00",
+        "2025-08-19 06:00",
+        "2025-08-20 06:00",
+        "2025-08-21 06:00",
+        "2025-08-22 06:00",
+        "2025-08-23 06:00",
+        "2025-08-24 06:00"
+      ]
+    },
+    "summer_reported_rain": {
+      "baseline": [
+        "2025-07-08 06:00",
+        "2025-07-13 06:00",
+        "2025-07-14 06:00",
+        "2025-07-15 06:00",
+        "2025-07-16 06:00",
+        "2025-07-17 06:00",
+        "2025-07-18 06:00",
+        "2025-07-19 06:00",
+        "2025-07-21 06:00",
+        "2025-08-03 06:00",
+        "2025-08-05 06:00",
+        "2025-08-06 06:00",
+        "2025-08-12 06:00",
+        "2025-08-13 06:00",
+        "2025-08-14 06:00",
+        "2025-08-15 06:00",
+        "2025-08-25 06:00",
+        "2025-08-31 06:00"
+      ],
+      "sensitivity_common": [
+        "2025-07-08 06:00",
+        "2025-07-13 06:00",
+        "2025-07-14 06:00",
+        "2025-07-15 06:00",
+        "2025-07-16 06:00",
+        "2025-07-17 06:00",
+        "2025-07-18 06:00",
+        "2025-07-19 06:00",
+        "2025-07-21 06:00",
+        "2025-08-03 06:00",
+        "2025-08-05 06:00",
+        "2025-08-06 06:00",
+        "2025-08-12 06:00",
+        "2025-08-13 06:00",
+        "2025-08-14 06:00",
+        "2025-08-15 06:00",
+        "2025-08-25 06:00"
+      ],
+      "refinement": [
+        "2025-07-08 06:00",
+        "2025-07-13 06:00",
+        "2025-07-14 06:00",
+        "2025-07-15 06:00",
+        "2025-07-16 06:00",
+        "2025-07-17 06:00",
+        "2025-07-18 06:00",
+        "2025-07-19 06:00",
+        "2025-07-21 06:00",
+        "2025-08-03 06:00",
+        "2025-08-05 06:00",
+        "2025-08-06 06:00",
+        "2025-08-12 06:00",
+        "2025-08-13 06:00",
+        "2025-08-14 06:00",
+        "2025-08-15 06:00",
+        "2025-08-25 06:00",
+        "2025-08-31 06:00"
+      ]
+    }
+  },
+  "water_choices": [
+    {
+      "scope": "baseline_all",
+      "cohort": "winter_zero_recorded_amount",
+      "n_days": 1,
+      "albedo": 0.1,
+      "max_effect_k_h": 3.09437135305231,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "baseline_all",
+      "cohort": "winter_zero_recorded_amount",
+      "n_days": 1,
+      "albedo": 0.3,
+      "max_effect_k_h": 2.4317124198153905,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "baseline_all",
+      "cohort": "winter_zero_recorded_amount",
+      "n_days": 1,
+      "albedo": 0.5,
+      "max_effect_k_h": 1.8253177657693378,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "sensitivity_common",
+      "cohort": "winter_zero_recorded_amount",
+      "n_days": 0,
+      "albedo": 0.1,
+      "max_effect_k_h": null,
+      "minimum_95_l_m2": null,
+      "minimum_90_l_m2": null,
+      "dose_at_grid_maximum_l_m2": null,
+      "status": "no_eligible_days"
+    },
+    {
+      "scope": "sensitivity_common",
+      "cohort": "winter_zero_recorded_amount",
+      "n_days": 0,
+      "albedo": 0.3,
+      "max_effect_k_h": null,
+      "minimum_95_l_m2": null,
+      "minimum_90_l_m2": null,
+      "dose_at_grid_maximum_l_m2": null,
+      "status": "no_eligible_days"
+    },
+    {
+      "scope": "sensitivity_common",
+      "cohort": "winter_zero_recorded_amount",
+      "n_days": 0,
+      "albedo": 0.5,
+      "max_effect_k_h": null,
+      "minimum_95_l_m2": null,
+      "minimum_90_l_m2": null,
+      "dose_at_grid_maximum_l_m2": null,
+      "status": "no_eligible_days"
+    },
+    {
+      "scope": "baseline_all",
+      "cohort": "winter_reported_rain",
+      "n_days": 0,
+      "albedo": 0.1,
+      "max_effect_k_h": null,
+      "minimum_95_l_m2": null,
+      "minimum_90_l_m2": null,
+      "dose_at_grid_maximum_l_m2": null,
+      "status": "no_eligible_days"
+    },
+    {
+      "scope": "baseline_all",
+      "cohort": "winter_reported_rain",
+      "n_days": 0,
+      "albedo": 0.3,
+      "max_effect_k_h": null,
+      "minimum_95_l_m2": null,
+      "minimum_90_l_m2": null,
+      "dose_at_grid_maximum_l_m2": null,
+      "status": "no_eligible_days"
+    },
+    {
+      "scope": "baseline_all",
+      "cohort": "winter_reported_rain",
+      "n_days": 0,
+      "albedo": 0.5,
+      "max_effect_k_h": null,
+      "minimum_95_l_m2": null,
+      "minimum_90_l_m2": null,
+      "dose_at_grid_maximum_l_m2": null,
+      "status": "no_eligible_days"
+    },
+    {
+      "scope": "sensitivity_common",
+      "cohort": "winter_reported_rain",
+      "n_days": 0,
+      "albedo": 0.1,
+      "max_effect_k_h": null,
+      "minimum_95_l_m2": null,
+      "minimum_90_l_m2": null,
+      "dose_at_grid_maximum_l_m2": null,
+      "status": "no_eligible_days"
+    },
+    {
+      "scope": "sensitivity_common",
+      "cohort": "winter_reported_rain",
+      "n_days": 0,
+      "albedo": 0.3,
+      "max_effect_k_h": null,
+      "minimum_95_l_m2": null,
+      "minimum_90_l_m2": null,
+      "dose_at_grid_maximum_l_m2": null,
+      "status": "no_eligible_days"
+    },
+    {
+      "scope": "sensitivity_common",
+      "cohort": "winter_reported_rain",
+      "n_days": 0,
+      "albedo": 0.5,
+      "max_effect_k_h": null,
+      "minimum_95_l_m2": null,
+      "minimum_90_l_m2": null,
+      "dose_at_grid_maximum_l_m2": null,
+      "status": "no_eligible_days"
+    },
+    {
+      "scope": "baseline_all",
+      "cohort": "summer_zero_recorded_amount",
+      "n_days": 37,
+      "albedo": 0.1,
+      "max_effect_k_h": 11.37921062168033,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "baseline_all",
+      "cohort": "summer_zero_recorded_amount",
+      "n_days": 37,
+      "albedo": 0.3,
+      "max_effect_k_h": 8.69495914910598,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "baseline_all",
+      "cohort": "summer_zero_recorded_amount",
+      "n_days": 37,
+      "albedo": 0.5,
+      "max_effect_k_h": 6.293200270229757,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "sensitivity_common",
+      "cohort": "summer_zero_recorded_amount",
+      "n_days": 33,
+      "albedo": 0.1,
+      "max_effect_k_h": 11.69591037225823,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "sensitivity_common",
+      "cohort": "summer_zero_recorded_amount",
+      "n_days": 33,
+      "albedo": 0.3,
+      "max_effect_k_h": 8.943984206845643,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "sensitivity_common",
+      "cohort": "summer_zero_recorded_amount",
+      "n_days": 33,
+      "albedo": 0.5,
+      "max_effect_k_h": 6.483361087534632,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "baseline_all",
+      "cohort": "summer_reported_rain",
+      "n_days": 18,
+      "albedo": 0.1,
+      "max_effect_k_h": 4.862354657068849,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "baseline_all",
+      "cohort": "summer_reported_rain",
+      "n_days": 18,
+      "albedo": 0.3,
+      "max_effect_k_h": 3.780725175237419,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "baseline_all",
+      "cohort": "summer_reported_rain",
+      "n_days": 18,
+      "albedo": 0.5,
+      "max_effect_k_h": 2.784115057441284,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "sensitivity_common",
+      "cohort": "summer_reported_rain",
+      "n_days": 17,
+      "albedo": 0.1,
+      "max_effect_k_h": 4.631470294527723,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "sensitivity_common",
+      "cohort": "summer_reported_rain",
+      "n_days": 17,
+      "albedo": 0.3,
+      "max_effect_k_h": 3.599772229202959,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    },
+    {
+      "scope": "sensitivity_common",
+      "cohort": "summer_reported_rain",
+      "n_days": 17,
+      "albedo": 0.5,
+      "max_effect_k_h": 2.6524755876815878,
+      "minimum_95_l_m2": 5.6525,
+      "minimum_90_l_m2": 5.355,
+      "dose_at_grid_maximum_l_m2": 5.95,
+      "status": "conditional_on_baseline_initialization"
+    }
+  ],
+  "conservation": {
+    "convergence": {
+      "archived_treatment_results": 1512,
+      "max_abs_water_residual_kg_m2": 4.1239900383516215e-11,
+      "max_abs_energy_residual_j_m2": 2.0817387849092484e-06
+    },
+    "initialization": {
+      "archived_treatment_results": 1971,
+      "max_abs_water_residual_kg_m2": 6.349409886752255e-11,
+      "max_abs_energy_residual_j_m2": 1.7713755369186401e-06
+    },
+    "coarse": {
+      "archived_treatment_results": 504,
+      "max_abs_water_residual_kg_m2": 1.2580159136632574e-11,
+      "max_abs_energy_residual_j_m2": 9.099021553993225e-07
+    },
+    "sensitivity": {
+      "archived_treatment_results": 15057,
+      "max_abs_water_residual_kg_m2": 6.349409886752255e-11,
+      "max_abs_energy_residual_j_m2": 2.0046718418598175e-06
+    },
+    "refinement": {
+      "archived_treatment_results": 3528,
+      "max_abs_water_residual_kg_m2": 1.2864376230936614e-11,
+      "max_abs_energy_residual_j_m2": 9.099021553993225e-07
+    }
+  },
+  "sensitivity_ranges": [
+    {
+      "cohort": "summer_zero_recorded_amount",
+      "albedo": 0.1,
+      "n_days": 33,
+      "minimum_effect_k_h": 4.408769539035415,
+      "maximum_effect_k_h": 26.327926285343707,
+      "lowest_effect_variant": "downward_2",
+      "highest_effect_variant": "beta_shape_1",
+      "warning": "OAT scenario envelope, not a probability interval; storage variants also alter absolute dose."
+    },
+    {
+      "cohort": "summer_zero_recorded_amount",
+      "albedo": 0.3,
+      "n_days": 33,
+      "minimum_effect_k_h": 3.3696175106096,
+      "maximum_effect_k_h": 19.391676147511255,
+      "lowest_effect_variant": "downward_2",
+      "highest_effect_variant": "beta_shape_1",
+      "warning": "OAT scenario envelope, not a probability interval; storage variants also alter absolute dose."
+    },
+    {
+      "cohort": "summer_zero_recorded_amount",
+      "albedo": 0.5,
+      "n_days": 33,
+      "minimum_effect_k_h": 2.449525477260083,
+      "maximum_effect_k_h": 13.382833805078496,
+      "lowest_effect_variant": "downward_2",
+      "highest_effect_variant": "beta_shape_1",
+      "warning": "OAT scenario envelope, not a probability interval; storage variants also alter absolute dose."
+    },
+    {
+      "cohort": "summer_reported_rain",
+      "albedo": 0.1,
+      "n_days": 17,
+      "minimum_effect_k_h": 1.9115282103356028,
+      "maximum_effect_k_h": 8.377720659395159,
+      "lowest_effect_variant": "downward_2",
+      "highest_effect_variant": "beta_shape_1",
+      "warning": "OAT scenario envelope, not a probability interval; storage variants also alter absolute dose."
+    },
+    {
+      "cohort": "summer_reported_rain",
+      "albedo": 0.3,
+      "n_days": 17,
+      "minimum_effect_k_h": 1.4935131252344291,
+      "maximum_effect_k_h": 6.402669474375507,
+      "lowest_effect_variant": "downward_2",
+      "highest_effect_variant": "beta_shape_1",
+      "warning": "OAT scenario envelope, not a probability interval; storage variants also alter absolute dose."
+    },
+    {
+      "cohort": "summer_reported_rain",
+      "albedo": 0.5,
+      "n_days": 17,
+      "minimum_effect_k_h": 1.111705077722663,
+      "maximum_effect_k_h": 4.591716966867331,
+      "lowest_effect_variant": "downward_2",
+      "highest_effect_variant": "beta_shape_1",
+      "warning": "OAT scenario envelope, not a probability interval; storage variants also alter absolute dose."
+    }
+  ],
+  "metrics_note": "Hourly endpoint extrema and trapezoidal positive Ts-Ta integral; arithmetic mean across paired dates. Dose thresholds relative to same-albedo no-irrigation control, within 0..5.95 L/m2 grid only.",
+  "limitations": [
+    "initialization-dependent proxy study",
+    "one winter day is not winter season evidence",
+    "common alpha=0.30 prehistory, 24-hour intervention",
+    "upward reflected shortwave is not pedestrian dose or comfort",
+    "minimum dose not tested across all uncertain parameters; grid maximum may be at upper boundary"
+  ]
+}

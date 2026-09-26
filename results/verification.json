@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "treatment_records_verified": {
+    "convergence": 1512,
+    "initialization": 1971,
+    "coarse": 504,
+    "sensitivity": 15057,
+    "refinement": 3528
+  },
+  "max_recomputed_water_residual_kg_m2": 2.3568702545162523e-11,
+  "max_recomputed_energy_residual_j_m2": 1.8051359802484512e-06,
+  "max_hourly_budget_sum_difference": 7.450580596923828e-09,
+  "checks": [
+    "source hashes",
+    "complete date accounting",
+    "treatment grids",
+    "common cloned initial state",
+    "independently recomputed mass and sensible-enthalpy balances",
+    "latent-water identity",
+    "irrigation amount",
+    "hourly budgets sum to totals",
+    "reused baseline records identical across stages",
+    "summary raw hashes"
+  ],
+  "verifier_sha256": "13bb62ff855248d48e76734a24cf335c2a8a7d37747948f8b3af4bb3bbec2b86",
+  "limitation": "Artifact consistency and conservation, not field validation."
+}

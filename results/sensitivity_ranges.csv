@@ -1,0 +1,7 @@
+cohort,albedo,n_days,minimum_effect_k_h,maximum_effect_k_h,lowest_effect_variant,highest_effect_variant,warning
+summer_zero_recorded_amount,0.1,33,4.408769539035415,26.327926285343707,downward_2,beta_shape_1,"OAT scenario envelope, not a probability interval; storage variants also alter absolute dose."
+summer_zero_recorded_amount,0.3,33,3.3696175106096,19.391676147511255,downward_2,beta_shape_1,"OAT scenario envelope, not a probability interval; storage variants also alter absolute dose."
+summer_zero_recorded_amount,0.5,33,2.449525477260083,13.382833805078496,downward_2,beta_shape_1,"OAT scenario envelope, not a probability interval; storage variants also alter absolute dose."
+summer_reported_rain,0.1,17,1.9115282103356028,8.377720659395159,downward_2,beta_shape_1,"OAT scenario envelope, not a probability interval; storage variants also alter absolute dose."
+summer_reported_rain,0.3,17,1.4935131252344291,6.402669474375507,downward_2,beta_shape_1,"OAT scenario envelope, not a probability interval; storage variants also alter absolute dose."
+summer_reported_rain,0.5,17,1.111705077722663,4.591716966867331,downward_2,beta_shape_1,"OAT scenario envelope, not a probability interval; storage variants also alter absolute dose."
