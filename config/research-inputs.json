@@ -5,7 +5,7 @@
     "final_comparison_authorized": false
   },
   "decisions": {
-    "base_material": "pending_user",
+    "base_material": "RCA_literature_proxy",
     "optimal_water_criterion": "minimum_dose_at_95_percent_max_effect_with_90_percent_sensitivity"
   },
   "constants": {

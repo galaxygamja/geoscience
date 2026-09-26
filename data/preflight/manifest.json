@@ -2,7 +2,7 @@
   "status": "prepared_not_executed",
   "final_comparison_authorized": false,
   "scope_decisions": {
-    "base_material": "pending_user",
+    "base_material": "RCA_literature_proxy",
     "optimal_water_criterion": "minimum_dose_at_95_percent_max_effect_with_90_percent_sensitivity"
   },
   "variants": [
@@ -14305,7 +14305,7 @@
   "source_hashes": {
     "annual": "2572c3bcdf0782427c389674c994d8ee9aacc036cc7c555ea24554c8712ae9a6",
     "daily": "ad551bb169f41b308d417a26c8a864e1e37e02367236bc0cdf7330328a2e08c7",
-    "config": "5e0d8f90bf2b89d5a311c9db362befa148177d443a5911d8ea77c0ec5988e2a3"
+    "config": "b2224ae298589bb607657f28cce465ca2acb776883844c208c0510c9716769fb"
   },
   "code_hashes": {
     "src/geoscience/__init__.py": "ae70d95f22d65eef6774157a40a73d0be7354d034fa24cf2e695b8a902aaca49",
