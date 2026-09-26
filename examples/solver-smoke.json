@@ -1,0 +1,39 @@
+{
+  "label": "SYNTHETIC NUMERICAL CHECK - NOT WCC OR INCHEON RESULTS",
+  "evidence_note": "Thermal capacities, conductivities, storage limits, hydraulic curves and forcing are deliberately synthetic for software checks. They are not adopted research coefficients. Physics constants use the sources in physics.py.",
+  "max_step_s": 10.0,
+  "parameters": {
+    "surface": {"depth_m": 0.05, "dry_capacity_j_m2_k": 80000.0, "max_water_kg_m2": 6.0, "conductivity": 1.0},
+    "base": {"depth_m": 0.25, "dry_capacity_j_m2_k": 300000.0, "max_water_kg_m2": 20.0, "conductivity": 1.0},
+    "albedo": 0.3,
+    "emissivity": 0.94,
+    "drainage_kg_m2_s": 0.00001,
+    "allow_recharge": true
+  },
+  "initial_state": {"surface_c": 30.0, "base_c": 25.0, "surface_water": 3.0, "base_water": 5.0},
+  "surface_resistance_curve": [[0.0, 10000.0], [3.0, 100.0], [6.0, 0.0]],
+  "exchange": {
+    "mode": "darcy",
+    "water_density_kg_m3": 1000.0,
+    "surface_head_curve": [[0.0, -10.0], [6.0, 0.0]],
+    "base_head_curve": [[0.0, -10.0], [20.0, 0.0]],
+    "surface_conductivity_curve": [[0.0, 0.0], [6.0, 0.00000001]],
+    "base_conductivity_curve": [[0.0, 0.0], [20.0, 0.00000001]]
+  },
+  "intervals": [
+    {
+      "duration_s": 3600.0,
+      "forcing": {"air_c": 30.0, "shortwave": 700.0, "longwave": 400.0, "deep_c": 25.0,
+        "pressure_pa": 101325.0, "vapor_pa": 2000.0, "air_density": 1.2,
+        "convection_w_m2_k": 10.0, "aerodynamic_resistance_s_m": 100.0,
+        "rain_rate": 0.0, "rain_c": 30.0, "irrigation_rate": 0.0, "irrigation_c": 20.0, "snow_present": false}
+    },
+    {
+      "duration_s": 3600.0,
+      "forcing": {"air_c": 29.0, "shortwave": 500.0, "longwave": 400.0, "deep_c": 25.0,
+        "pressure_pa": 101325.0, "vapor_pa": 2000.0, "air_density": 1.2,
+        "convection_w_m2_k": 10.0, "aerodynamic_resistance_s_m": 100.0,
+        "rain_rate": 0.0001, "rain_c": 29.0, "irrigation_rate": 0.0, "irrigation_c": 20.0, "snow_present": false}
+    }
+  ]
+}
