@@ -1,0 +1,76 @@
+{
+  "sources": [
+    {
+      "id": "takebayashi2012",
+      "doi_url": "https://doi.org/10.1155/2012/523051",
+      "download_url": "https://pdfs.semanticscholar.org/161a/45bfff4089fd7f196447d7bc803417c8c523.pdf",
+      "local_file": "tmp/literature/takebayashi-2012.pdf",
+      "bytes": 4651083,
+      "sha256": "6d5e808f24c2273b6057d553a55513e07e7eedb803dc298a1c85bf5118c519fa",
+      "verification": "Table 1,4,5; 3.3; effective values not dry",
+      "reviewed_date": "2026-09-26",
+      "redistribution": "not included in Git; URL/hash and small factual parameter extraction only"
+    },
+    {
+      "id": "yamamoto2006",
+      "doi_url": "https://www.sept.org/techpapers/1313.pdf",
+      "download_url": "https://www.sept.org/techpapers/1313.pdf",
+      "local_file": "tmp/literature/yamamoto-2006.pdf",
+      "bytes": 518807,
+      "sha256": "d22c0a56f9f676efa76c93c811ceeb8f863b5008659bb1e4850590e8468ab024",
+      "verification": "4.2.1; Table 2 PDF p.9 visually verified",
+      "reviewed_date": "2026-09-26",
+      "redistribution": "not included in Git; URL/hash and small factual parameter extraction only"
+    },
+    {
+      "id": "wang2021",
+      "doi_url": "https://doi.org/10.3390/ma14206141",
+      "download_url": "https://www.mdpi.com/1996-1944/14/20/6141/pdf",
+      "local_file": "tmp/literature/wang-wcc-2021.pdf",
+      "bytes": 3011473,
+      "sha256": "83cc6c2c11d1bb4a344ab480d13e8f6f2c5b9bdd66c141d4023d2c37e406323c",
+      "verification": "Prior original review reused: tables 1,4,6 and 3.4,3.5",
+      "reviewed_date": "2026-09-26",
+      "redistribution": "not included in Git; URL/hash and small factual parameter extraction only"
+    },
+    {
+      "id": "pham2026",
+      "doi_url": "https://doi.org/10.3390/constrmater6010010",
+      "download_url": "https://www.mdpi.com/2673-7108/6/1/10/pdf",
+      "local_file": "tmp/literature/base-2026.pdf",
+      "bytes": 3047197,
+      "sha256": "a1e0b54a436e2186afeaabcebcc28742878e95130f5b47268ea6d06d6cfb17de",
+      "verification": "Table 1, Figure 4, Table 2, Eq.9",
+      "reviewed_date": "2026-09-26",
+      "redistribution": "not included in Git; URL/hash and small factual parameter extraction only"
+    },
+    {
+      "id": "pham2025",
+      "doi_url": "https://doi.org/10.1007/s10163-024-02134-y",
+      "download_url": "https://link.springer.com/content/pdf/10.1007/s10163-024-02134-y.pdf",
+      "local_file": "tmp/literature/pham-hydraulic-2025.pdf",
+      "bytes": 2355868,
+      "sha256": "ee54bc7d27fc3a496a6a48dbdfb0b5b5da0cfdc0b886c23de836725984428120",
+      "verification": "Separate hydraulic specimen; not adopted",
+      "reviewed_date": "2026-09-26",
+      "redistribution": "not included in Git; URL/hash and small factual parameter extraction only"
+    },
+    {
+      "id": "haddad2023",
+      "doi_url": "https://doi.org/10.3390/su15065384",
+      "download_url": "https://www.mdpi.com/2071-1050/15/6/5384/pdf",
+      "local_file": "tmp/literature/recycled-2023.pdf",
+      "bytes": 3534864,
+      "sha256": "0addb8b5cf7ef1dc23affa42de69fb3d745377508c2e6e5e5f6fef1cf2050dfa",
+      "verification": "Prior full-text review; storage alternative not combined",
+      "reviewed_date": "2026-09-26",
+      "redistribution": "not included in Git; URL/hash and small factual parameter extraction only"
+    }
+  ],
+  "unavailable": [
+    "Wang 2022 exact evaporation resistance regression",
+    "Hu and Sha 2012 full text",
+    "same-mix WCC full dry thermal/storage/hydraulic/interface measurements"
+  ],
+  "policy": "bounded verification; unavailable numbers remain assumptions or excluded"
+}

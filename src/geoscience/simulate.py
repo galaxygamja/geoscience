@@ -37,8 +37,8 @@ def table_function(rows: list[list[float]]):
     return interpolate
 
 
-def run(job: dict) -> dict:
-    """No default material, drainage, resistance, or meteorological values."""
+def components(job: dict):
+    """Validate material laws without advancing the model."""
     spec = job["parameters"]
     layers = {}
     for name in ("surface", "base"):
@@ -47,7 +47,6 @@ def run(job: dict) -> dict:
             layer["conductivity"] = table_function(layer["conductivity"])
         layers[name] = Layer(**layer)
     params = Parameters(**{**spec, **layers})
-    resistance = table_function(job["surface_resistance_curve"])
     hydraulic = job["exchange"]
     if hydraulic["mode"] == "none":
         exchange = lambda state: 0.0
@@ -62,8 +61,48 @@ def run(job: dict) -> dict:
                               hs(state.surface_water), hb(state.base_water),
                               params.surface.depth_m, params.base.depth_m,
                               hydraulic["water_density_kg_m3"])
+    elif hydraulic["mode"] == "bounded_bucket":
+        down = finite("downward maximum", hydraulic["downward_max_mm_h"], 0) / 3600
+        up = finite("upward maximum", hydraulic["upward_max_mm_h"], 0) / 3600
+
+        def exchange(state):
+            # Saturation-gradient phenomenology, not Darcy or measured K.
+            delta = (state.surface_water / params.surface.max_water_kg_m2
+                     - state.base_water / params.base.max_water_kg_m2)
+            return down * max(delta, 0) - up * max(-delta, 0)
     else:
-        raise ValueError("exchange mode must be none or darcy")
+        raise ValueError("exchange mode must be none, darcy or bounded_bucket")
+    evaporation = job.get("evaporation")
+    if evaporation is None:
+        curve = table_function(job["surface_resistance_curve"])
+        resistance_for = lambda forcing: curve
+    else:
+        if evaporation["mode"] != "beta" or evaporation["shape"] not in (
+            "linear_saturation", "constant_when_wet"
+        ):
+            raise ValueError("unsupported evaporation mode/shape")
+        beta_max = finite("beta_max", evaporation["beta_max"], 0)
+        if beta_max > 1:
+            raise ValueError("beta_max must not exceed one")
+
+        def resistance_for(forcing):
+            def resistance(water):
+                fraction = water / params.surface.max_water_kg_m2
+                if not 0 <= fraction <= 1:
+                    raise ValueError("evaporation water outside capacity")
+                beta = beta_max * (fraction if evaporation["shape"] == "linear_saturation"
+                                   else float(water > 0))
+                return (forcing.aerodynamic_resistance_s_m * (1 / beta - 1)
+                        if beta > 0 else float("inf"))
+            return resistance
+    return params, exchange, resistance_for
+
+
+def run(job: dict, *, authorize_research: bool = False) -> dict:
+    """Research inputs require explicit approval; ordinary synthetic tests do not."""
+    if job.get("research_run") and not authorize_research:
+        raise PermissionError("Final research simulation requires additional user approval")
+    params, exchange, resistance_for = components(job)
     state = initial = State(**job["initial_state"])
     total, elapsed, rows = Budget(), 0.0, []
     if not job["intervals"]:
@@ -73,8 +112,9 @@ def run(job: dict) -> dict:
         finite("interval duration", duration, 0)
         if duration == 0:
             raise ValueError("forcing intervals must have positive duration")
-        state, budget = advance(state, Forcing(**interval["forcing"]), params, duration,
-                                surface_resistance=resistance, exchange=exchange,
+        forcing = Forcing(**interval["forcing"])
+        state, budget = advance(state, forcing, params, duration,
+                                surface_resistance=resistance_for(forcing), exchange=exchange,
                                 max_step_s=job["max_step_s"])
         elapsed += duration
         total += budget
@@ -101,6 +141,8 @@ def main():
     parser.add_argument("--weather", type=Path, help="prepared weather JSON; job must have no intervals")
     parser.add_argument("--start", help="KST start, YYYY-MM-DD HH:MM")
     parser.add_argument("--hours", type=int, default=24)
+    parser.add_argument("--approve-final-comparison", action="store_true",
+                        help="use only after the user explicitly authorizes research simulations")
     args = parser.parse_args()
     # Refuse replacement of an existing result or input; choose a new filename.
     if args.output.exists():
@@ -113,7 +155,7 @@ def main():
         from .weather import TIME_FORMAT, attach_weather
         weather = json.loads(args.weather.read_text(encoding="utf-8"))
         job = attach_weather(job, weather, datetime.strptime(args.start, TIME_FORMAT), args.hours)
-    result = run(job)
+    result = run(job, authorize_research=args.approve_final_comparison)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("x", encoding="utf-8") as stream:
         json.dump(result, stream, indent=2, ensure_ascii=False, allow_nan=False)

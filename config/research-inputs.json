@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "label": "WCC-family proxy study; NOT a calibrated Wang WCC material",
+  "execution": {
+    "final_comparison_authorized": false
+  },
+  "decisions": {
+    "base_material": "pending_user",
+    "optimal_water_criterion": "minimum_dose_at_95_percent_max_effect_with_90_percent_sensitivity"
+  },
+  "constants": {
+    "water_density_kg_m3": 1000.0,
+    "water_heat_capacity_j_kg_k": 4174.0,
+    "latent_heat_j_kg": 2450000.0
+  },
+  "surface": {
+    "depth_m": 0.05,
+    "thermal_pair": "Con-W",
+    "thermal_pairs": {
+      "Con-W": {
+        "effective_capacity_j_m3_k": 1500000.0,
+        "conductivity_w_m_k": 1.19
+      },
+      "Con-W-prime": {
+        "effective_capacity_j_m3_k": 1200000.0,
+        "conductivity_w_m_k": 0.9
+      }
+    },
+    "storage_kg_m2": 5.95,
+    "reference_water_fraction": 0.5,
+    "emissivity": 0.97,
+    "beta_max": 0.04,
+    "beta_shape": "linear_saturation"
+  },
+  "base": {
+    "depth_m": 0.25,
+    "dry_density_kg_m3": 1960.0,
+    "dry_specific_heat_j_kg_k": 790.0,
+    "porosity": 0.26,
+    "conductivity_w_m_k": 1.0,
+    "initial_water_fraction": 0.0
+  },
+  "water": {
+    "exchange_mode": "bounded_bucket",
+    "downward_max_mm_h": 1.0,
+    "upward_max_mm_h": 0.1,
+    "drainage_mm_h": 0.1
+  },
+  "weather": {
+    "station": "112",
+    "year": 2025,
+    "timezone": "Asia/Seoul",
+    "wind_factor": 1.0,
+    "deep_boundary": "observed_30cm",
+    "longwave_offset_w_m2": 0.0
+  },
+  "experiment": {
+    "months": [
+      1,
+      2,
+      7,
+      8
+    ],
+    "start_hour_kst": 6,
+    "hours": 24,
+    "spinup_hours": 72,
+    "spinup_albedo": 0.3,
+    "albedos": [
+      0.1,
+      0.3,
+      0.5
+    ],
+    "irrigation_storage_fractions": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "irrigation_duration_s": 3600.0,
+    "irrigation_temperature": "first_hour_air_temperature_proxy",
+    "refinement_fractions": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "effect_thresholds": [
+      0.95,
+      0.9
+    ],
+    "max_step_s": 10.0,
+    "initial_temperature_offset_k": 0.0,
+    "convergence_steps_s": [
+      20.0,
+      10.0,
+      5.0
+    ],
+    "water_residual_tolerance_kg_m2": 1e-06,
+    "energy_residual_tolerance_j_m2": 0.1,
+    "temperature_convergence_tolerance_k": 0.05,
+    "albedo_selection": "report_surface_cooling_reflected_shortwave_and_water_separately_no_automatic_winner"
+  },
+  "sensitivity": [
+    {
+      "id": "thermal_pair",
+      "path": "surface.thermal_pair",
+      "values": [
+        "Con-W-prime"
+      ]
+    },
+    {
+      "id": "water_reference",
+      "path": "surface.reference_water_fraction",
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "storage",
+      "path": "surface.storage_kg_m2",
+      "values": [
+        2.975,
+        9.1
+      ]
+    },
+    {
+      "id": "beta",
+      "path": "surface.beta_max",
+      "values": [
+        0.02,
+        0.08
+      ]
+    },
+    {
+      "id": "beta_shape",
+      "path": "surface.beta_shape",
+      "values": [
+        "constant_when_wet"
+      ]
+    },
+    {
+      "id": "emissivity",
+      "path": "surface.emissivity",
+      "values": [
+        0.92,
+        1.0
+      ]
+    },
+    {
+      "id": "base_k",
+      "path": "base.conductivity_w_m_k",
+      "values": [
+        0.37,
+        1.77
+      ]
+    },
+    {
+      "id": "base_heat",
+      "path": "base.dry_specific_heat_j_kg_k",
+      "values": [
+        700.0,
+        890.0
+      ]
+    },
+    {
+      "id": "base_initial_water",
+      "path": "base.initial_water_fraction",
+      "values": [
+        0.25
+      ]
+    },
+    {
+      "id": "recharge",
+      "path": "water.upward_max_mm_h",
+      "values": [
+        0.0,
+        0.2
+      ]
+    },
+    {
+      "id": "downward",
+      "path": "water.downward_max_mm_h",
+      "values": [
+        0.25,
+        4.0
+      ]
+    },
+    {
+      "id": "drainage",
+      "path": "water.drainage_mm_h",
+      "values": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "id": "wind",
+      "path": "weather.wind_factor",
+      "values": [
+        0.5,
+        1.5
+      ]
+    },
+    {
+      "id": "longwave",
+      "path": "weather.longwave_offset_w_m2",
+      "values": [
+        -30.0,
+        30.0
+      ]
+    },
+    {
+      "id": "deep_boundary",
+      "path": "weather.deep_boundary",
+      "values": [
+        "insulated"
+      ]
+    },
+    {
+      "id": "initial_temperature",
+      "path": "experiment.initial_temperature_offset_k",
+      "values": [
+        -3.0,
+        3.0
+      ]
+    },
+    {
+      "id": "spinup",
+      "path": "experiment.spinup_hours",
+      "values": [
+        168
+      ]
+    }
+  ],
+  "provenance": {
+    "surface.thermal_pairs": {
+      "kind": "literature_proxy",
+      "source": "takebayashi2012",
+      "location": "Table 4 p.8",
+      "limitation": "paired effective inverse estimates, unknown original water content; not dry or same WCC mix"
+    },
+    "surface.storage_kg_m2": {
+      "kind": "literature_proxy",
+      "source": "yamamoto2006",
+      "location": "Table 2 p.9 and 4.2.1",
+      "conversion": "119 kg/m3 * 0.05 m = 5.95 kg/m2",
+      "limitation": "24h immersion and 30min drainage; not short irrigation uptake; 2.975 assumption, 9.10 different block proxy"
+    },
+    "surface.reference_water_fraction": {
+      "kind": "assumption",
+      "source": "model_design",
+      "conversion": "Cdry_equivalent = Ceff*depth - cw*reference_fraction*storage",
+      "limitation": "unknown water content bracketed 0..1; not recovered dry measurement"
+    },
+    "surface.emissivity": {
+      "kind": "literature_proxy",
+      "source": "takebayashi2012",
+      "location": "3.1 overall surfaces range 0.97..1.0",
+      "limitation": "not Con-W specific; 0.92 stress endpoint from Hu 2017 PPCC"
+    },
+    "surface.beta_max": {
+      "kind": "literature_informed_assumption",
+      "source": "takebayashi2012",
+      "location": "Table 5 p.8 Con-W/Con-W-prime daily beta 0.02..0.04",
+      "limitation": "daily estimate is not beta(W); linear law and 0.08 upper stress scenario are assumptions"
+    },
+    "surface.beta_shape": {
+      "kind": "assumption",
+      "source": "model_design",
+      "limitation": "beta=bmax*W/Wmax; alternative constant when wet; no fitted resistance curve"
+    },
+    "base": {
+      "kind": "literature_proxy",
+      "source": "pham2026",
+      "location": "Table 1, Figure 4, Table 2, Eq.9",
+      "limitation": "rho and porosity well-graded RCA; c specimen-group mean; k=1 assumed and endpoints stress envelope, not WCC/RCA assembly measurements"
+    },
+    "water": {
+      "kind": "assumption",
+      "source": "model_design",
+      "limitation": "bucket saturation-gradient rates, constant drainage; 24h max downward 24mm/upward 2.4mm/drainage 2.4mm; not measured K or Ks"
+    },
+    "weather": {
+      "kind": "observations_plus_estimates",
+      "source": "kma2025_and_boundary_sources",
+      "limitation": "original observations/QC preserved; LW,hc,ra and boundary/wind offsets are proxies"
+    },
+    "experiment": {
+      "kind": "design",
+      "source": "user_decisions_and_model_design",
+      "limitation": "factorial albedo levels are virtual independent levels; irrigation fraction denotes delivered amount, not retained initial water"
+    },
+    "constants": {
+      "kind": "physical_approximation",
+      "source": "fao56_dong2019",
+      "limitation": "constant latent heat/water specific heat and density; temperature dependence omitted"
+    }
+  }
+}

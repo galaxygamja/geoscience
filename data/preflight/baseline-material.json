@@ -1,0 +1,40 @@
+{
+  "research_run": true,
+  "label": "WCC-family proxy study; NOT a calibrated Wang WCC material",
+  "evidence_note": "Proxy ensemble; different specimens and explicit assumptions. No WCC calibration. See config/research-inputs.json and docs/preflight-input-evidence.md.",
+  "max_step_s": 10.0,
+  "parameters": {
+    "surface": {
+      "depth_m": 0.05,
+      "dry_capacity_j_m2_k": 62582.35,
+      "max_water_kg_m2": 5.95,
+      "conductivity": 1.19
+    },
+    "base": {
+      "depth_m": 0.25,
+      "dry_capacity_j_m2_k": 387100.0,
+      "max_water_kg_m2": 65.0,
+      "conductivity": 1.0
+    },
+    "albedo": 0.3,
+    "emissivity": 0.97,
+    "drainage_kg_m2_s": 2.777777777777778e-05,
+    "allow_recharge": true,
+    "water_heat_capacity": 4174.0,
+    "latent_heat": 2450000.0
+  },
+  "exchange": {
+    "mode": "bounded_bucket",
+    "downward_max_mm_h": 1.0,
+    "upward_max_mm_h": 0.1
+  },
+  "evaporation": {
+    "mode": "beta",
+    "beta_max": 0.04,
+    "shape": "linear_saturation"
+  },
+  "capacity_conversion": {
+    "effective_surface_capacity_j_m2_k": 75000.0,
+    "assumed_reference_water_kg_m2": 2.975
+  }
+}
