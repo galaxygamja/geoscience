@@ -10,6 +10,7 @@ import argparse
 import json
 from bisect import bisect_right
 from dataclasses import asdict
+from datetime import datetime
 from pathlib import Path
 
 from .model import Budget, Forcing, Layer, Parameters, State, advance, energy
@@ -97,12 +98,21 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("job", type=Path)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--weather", type=Path, help="prepared weather JSON; job must have no intervals")
+    parser.add_argument("--start", help="KST start, YYYY-MM-DD HH:MM")
+    parser.add_argument("--hours", type=int, default=24)
     args = parser.parse_args()
     # Refuse replacement of an existing result or input; choose a new filename.
     if args.output.exists():
         parser.error(f"output already exists: {args.output}")
     with args.job.open(encoding="utf-8") as stream:
         job = json.load(stream)
+    if bool(args.weather) != bool(args.start):
+        parser.error("--weather and --start must be used together")
+    if args.weather:
+        from .weather import TIME_FORMAT, attach_weather
+        weather = json.loads(args.weather.read_text(encoding="utf-8"))
+        job = attach_weather(job, weather, datetime.strptime(args.start, TIME_FORMAT), args.hours)
     result = run(job)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("x", encoding="utf-8") as stream:

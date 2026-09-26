@@ -87,6 +87,8 @@ def transform(rows: list[dict]) -> list[dict]:
             item[f"{name}_raw"] = raw
             item[f"{name}_qc"] = qc or "" if qc_column else "not_provided"
             item[f"{name}_status"] = state
+        # A packed string of two-digit domestic weather codes, not a number.
+        item["phenomena_code_raw"] = row.get("현상번호(국내식)", "").strip()
         # Only intervals ending at 00-04 or 21-23 are safely dark all year.
         if item["solar_mj_m2"] is None and stamp.hour in (0, 1, 2, 3, 4, 21, 22, 23):
             if item["solar_mj_m2_status"] == "qc_missing":

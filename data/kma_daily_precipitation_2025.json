@@ -1,0 +1,954 @@
+{
+  "station": "112",
+  "year": 2025,
+  "sources": [
+    {
+      "url": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=112&yy=2025&mm=1&obs=1",
+      "sha256": "5c5bde368e6e7209b4bc2ef883101d8beea5ee20236266282f0615962108ec3c",
+      "retrieved_date": "2026-09-26",
+      "month": 1
+    },
+    {
+      "url": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=112&yy=2025&mm=2&obs=1",
+      "sha256": "62ebbe0a287708cc494a2f63f3b03114c98ad36c8f5cd6b261aef96e5ead6b6d",
+      "retrieved_date": "2026-09-26",
+      "month": 2
+    },
+    {
+      "url": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=112&yy=2025&mm=3&obs=1",
+      "sha256": "f5b60619ced0f94ebe68f8ac86aa2563f2cd181d4ef190de531b3f55dab33e40",
+      "retrieved_date": "2026-09-26",
+      "month": 3
+    },
+    {
+      "url": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=112&yy=2025&mm=7&obs=1",
+      "sha256": "8427438d2e8b0b3b3fc37ce76a8ba4a906b3c2711e91b908dc389f773d6de075",
+      "retrieved_date": "2026-09-26",
+      "month": 7
+    },
+    {
+      "url": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=112&yy=2025&mm=8&obs=1",
+      "sha256": "270ad719c588c94d8f29b367907a41b9e1586454cbe01499b3145d7d96540cdd",
+      "retrieved_date": "2026-09-26",
+      "month": 8
+    },
+    {
+      "url": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=112&yy=2025&mm=9&obs=1",
+      "sha256": "0f563ac39de78f83705ec1a2da661dd7a6a0e3ee17737c5529ab02f83e864ca1",
+      "retrieved_date": "2026-09-26",
+      "month": 9
+    }
+  ],
+  "days": {
+    "2025-01-01": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-02": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-03": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 1
+    },
+    "2025-01-04": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-05": {
+      "rain_mm": 7.8,
+      "raw": "7.8",
+      "source_month": 1
+    },
+    "2025-01-06": {
+      "rain_mm": 2.6,
+      "raw": "2.6",
+      "source_month": 1
+    },
+    "2025-01-07": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-08": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 1
+    },
+    "2025-01-09": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 1
+    },
+    "2025-01-10": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-11": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-12": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-13": {
+      "rain_mm": 0.3,
+      "raw": "0.3",
+      "source_month": 1
+    },
+    "2025-01-14": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 1
+    },
+    "2025-01-15": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-16": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 1
+    },
+    "2025-01-17": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-18": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-19": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-20": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-21": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-22": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-23": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-24": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-25": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-26": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 1
+    },
+    "2025-01-27": {
+      "rain_mm": 6.2,
+      "raw": "6.2",
+      "source_month": 1
+    },
+    "2025-01-28": {
+      "rain_mm": 1.0,
+      "raw": "1.0",
+      "source_month": 1
+    },
+    "2025-01-29": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 1
+    },
+    "2025-01-30": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 1
+    },
+    "2025-01-31": {
+      "rain_mm": 1.7,
+      "raw": "1.7",
+      "source_month": 1
+    },
+    "2025-02-01": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-02": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-03": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-04": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-05": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-06": {
+      "rain_mm": 0.6,
+      "raw": "0.6",
+      "source_month": 2
+    },
+    "2025-02-07": {
+      "rain_mm": 0.4,
+      "raw": "0.4",
+      "source_month": 2
+    },
+    "2025-02-08": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-09": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-10": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-11": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-12": {
+      "rain_mm": 2.5,
+      "raw": "2.5",
+      "source_month": 2
+    },
+    "2025-02-13": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-14": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-15": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-16": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-17": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-18": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-19": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-20": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-21": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-22": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-23": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-24": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-25": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-26": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-27": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-02-28": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 2
+    },
+    "2025-03-01": {
+      "rain_mm": 0.5,
+      "raw": "0.5",
+      "source_month": 3
+    },
+    "2025-03-02": {
+      "rain_mm": 10.6,
+      "raw": "10.6",
+      "source_month": 3
+    },
+    "2025-03-03": {
+      "rain_mm": 7.8,
+      "raw": "7.8",
+      "source_month": 3
+    },
+    "2025-03-04": {
+      "rain_mm": 1.8,
+      "raw": "1.8",
+      "source_month": 3
+    },
+    "2025-03-05": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 3
+    },
+    "2025-03-06": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-07": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-08": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-09": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-10": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-11": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-12": {
+      "rain_mm": 0.2,
+      "raw": "0.2",
+      "source_month": 3
+    },
+    "2025-03-13": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-14": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-15": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 3
+    },
+    "2025-03-16": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 3
+    },
+    "2025-03-17": {
+      "rain_mm": 2.9,
+      "raw": "2.9",
+      "source_month": 3
+    },
+    "2025-03-18": {
+      "rain_mm": 2.1,
+      "raw": "2.1",
+      "source_month": 3
+    },
+    "2025-03-19": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-20": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-21": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-22": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-23": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-24": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 3
+    },
+    "2025-03-25": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-26": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-27": {
+      "rain_mm": 0.6,
+      "raw": "0.6",
+      "source_month": 3
+    },
+    "2025-03-28": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-03-29": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 3
+    },
+    "2025-03-30": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 3
+    },
+    "2025-03-31": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 3
+    },
+    "2025-07-01": {
+      "rain_mm": 0.7,
+      "raw": "0.7",
+      "source_month": 7
+    },
+    "2025-07-02": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-03": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 7
+    },
+    "2025-07-04": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-05": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-06": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-07": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 7
+    },
+    "2025-07-08": {
+      "rain_mm": 1.7,
+      "raw": "1.7",
+      "source_month": 7
+    },
+    "2025-07-09": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 7
+    },
+    "2025-07-10": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-11": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-12": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-13": {
+      "rain_mm": 0.2,
+      "raw": "0.2",
+      "source_month": 7
+    },
+    "2025-07-14": {
+      "rain_mm": 15.1,
+      "raw": "15.1",
+      "source_month": 7
+    },
+    "2025-07-15": {
+      "rain_mm": 25.0,
+      "raw": "25.0",
+      "source_month": 7
+    },
+    "2025-07-16": {
+      "rain_mm": 64.0,
+      "raw": "64.0",
+      "source_month": 7
+    },
+    "2025-07-17": {
+      "rain_mm": 55.7,
+      "raw": "55.7",
+      "source_month": 7
+    },
+    "2025-07-18": {
+      "rain_mm": 14.7,
+      "raw": "14.7",
+      "source_month": 7
+    },
+    "2025-07-19": {
+      "rain_mm": 52.4,
+      "raw": "52.4",
+      "source_month": 7
+    },
+    "2025-07-20": {
+      "rain_mm": 30.1,
+      "raw": "30.1",
+      "source_month": 7
+    },
+    "2025-07-21": {
+      "rain_mm": 0.5,
+      "raw": "0.5",
+      "source_month": 7
+    },
+    "2025-07-22": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-23": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-24": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-25": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-26": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-27": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-28": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-29": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-30": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-07-31": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 7
+    },
+    "2025-08-01": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 8
+    },
+    "2025-08-02": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-03": {
+      "rain_mm": 3.1,
+      "raw": "3.1",
+      "source_month": 8
+    },
+    "2025-08-04": {
+      "rain_mm": 0.9,
+      "raw": "0.9",
+      "source_month": 8
+    },
+    "2025-08-05": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-06": {
+      "rain_mm": 7.3,
+      "raw": "7.3",
+      "source_month": 8
+    },
+    "2025-08-07": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-08": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-09": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 8
+    },
+    "2025-08-10": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-11": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-12": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-13": {
+      "rain_mm": 189.9,
+      "raw": "189.9",
+      "source_month": 8
+    },
+    "2025-08-14": {
+      "rain_mm": 31.0,
+      "raw": "31.0",
+      "source_month": 8
+    },
+    "2025-08-15": {
+      "rain_mm": 60.7,
+      "raw": "60.7",
+      "source_month": 8
+    },
+    "2025-08-16": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-17": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 8
+    },
+    "2025-08-18": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 8
+    },
+    "2025-08-19": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 8
+    },
+    "2025-08-20": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 8
+    },
+    "2025-08-21": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-22": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-23": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-24": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-25": {
+      "rain_mm": 4.2,
+      "raw": "4.2",
+      "source_month": 8
+    },
+    "2025-08-26": {
+      "rain_mm": 10.0,
+      "raw": "10.0",
+      "source_month": 8
+    },
+    "2025-08-27": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-28": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 8
+    },
+    "2025-08-29": {
+      "rain_mm": 2.3,
+      "raw": "2.3",
+      "source_month": 8
+    },
+    "2025-08-30": {
+      "rain_mm": 0.8,
+      "raw": "0.8",
+      "source_month": 8
+    },
+    "2025-08-31": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 8
+    },
+    "2025-09-01": {
+      "rain_mm": 10.8,
+      "raw": "10.8",
+      "source_month": 9
+    },
+    "2025-09-02": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-03": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-04": {
+      "rain_mm": 35.7,
+      "raw": "35.7",
+      "source_month": 9
+    },
+    "2025-09-05": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-06": {
+      "rain_mm": 17.5,
+      "raw": "17.5",
+      "source_month": 9
+    },
+    "2025-09-07": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 9
+    },
+    "2025-09-08": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 9
+    },
+    "2025-09-09": {
+      "rain_mm": 0.0,
+      "raw": "0.0",
+      "source_month": 9
+    },
+    "2025-09-10": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-11": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-12": {
+      "rain_mm": 5.6,
+      "raw": "5.6",
+      "source_month": 9
+    },
+    "2025-09-13": {
+      "rain_mm": 36.7,
+      "raw": "36.7",
+      "source_month": 9
+    },
+    "2025-09-14": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-15": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-16": {
+      "rain_mm": 17.0,
+      "raw": "17.0",
+      "source_month": 9
+    },
+    "2025-09-17": {
+      "rain_mm": 51.9,
+      "raw": "51.9",
+      "source_month": 9
+    },
+    "2025-09-18": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-19": {
+      "rain_mm": 13.8,
+      "raw": "13.8",
+      "source_month": 9
+    },
+    "2025-09-20": {
+      "rain_mm": 30.5,
+      "raw": "30.5",
+      "source_month": 9
+    },
+    "2025-09-21": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-22": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-23": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-24": {
+      "rain_mm": 25.3,
+      "raw": "25.3",
+      "source_month": 9
+    },
+    "2025-09-25": {
+      "rain_mm": 0.6,
+      "raw": "0.6",
+      "source_month": 9
+    },
+    "2025-09-26": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-27": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-28": {
+      "rain_mm": 48.5,
+      "raw": "48.5",
+      "source_month": 9
+    },
+    "2025-09-29": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    },
+    "2025-09-30": {
+      "rain_mm": null,
+      "raw": "-",
+      "source_month": 9
+    }
+  }
+}
