@@ -1,0 +1,231 @@
+% Generated from docs/concrete-model-draft.md. Compile with XeLaTeX and kotex.
+\documentclass[11pt,a4paper]{article}
+\usepackage{kotex}
+\usepackage{amsmath,amssymb}
+\usepackage[a4paper,margin=19mm]{geometry}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\title{콘크리트 2층 모델: 재료 선택과 물 이동 검토안}
+\date{}
+\begin{document}
+\maketitle
+2026-09-26. \textbf{2단계 사용자 검토안. 방정식 구조와 물성 후보를 구체화했으며, 모든 입력값을 확정하거나 시뮬레이션을 실행한 상태는 아니다.} 이 문서는 이전 세 상태 모델을 네 상태 콘크리트 모델로 갱신한 설명이다. 기존 문헌 수치의 상세 조건은 \href{\detokenize{concrete-parameter-review.md}}{물성 감사표}를 함께 읽는다.
+
+\section{1. 이번에 제안하는 구조}
+
+위층은 \textbf{보수재를 넣은 다공성 시멘트 콘크리트}, 아래층은 \textbf{다짐한 쇄석 지지층}으로 제안한다. 위층의 대표 유형은 Wang et al. (2021)의 WCC다. 아래층의 열물성 검토에는 Pham et al. (2026)의 재생 콘크리트 골재(RCA) 지지층을 우선 후보로 삼는다. RCA는 부순 콘크리트 조각을 골재로 다진 것이며, 아래에 또 하나의 콘크리트 판을 만드는 구성이 아니다. \textbf{재료 유형 추천이며 사용자 확정 배합은 아니다.}
+
+\begin{description}[leftmargin=0pt,style=nextline]
+\item[표면에서 0-5 cm] \textbf{무엇으로 보는가:} 다공성·보수성 콘크리트 한 덩어리; \textbf{기억할 값:} 대표온도 Ts, 물 Ws
+\item[깊이 5-30 cm] \textbf{무엇으로 보는가:} 쇄석 지지층 한 덩어리; \textbf{기억할 값:} 대표온도 Tb, 물 Wb
+\item[깊이 30 cm] \textbf{무엇으로 보는가:} 계산 영역의 바닥; \textbf{기억할 값:} 입력 온도 Td, 외부로 나가는 배수 D
+\end{description}
+
+사용자가 동의한 깊이와 두 물 저장소를 유지한다. 모든 물의 양은 1 m²당 kg으로 적는다. 물의 밀도를 1,000 kg/m³로 근사하면 \textbf{1 kg/m² = 강수 깊이 1 mm = 1 L/m²}다. 증발은 위층 물만 사용한다. 아래층 물은 위층에 도달한 다음에야 표면 증발에 쓰인다.
+
+5 cm 콘크리트 시편은 \href{\detokenize{https://doi.org/10.3390/su14116638}}{Barišić et al. (2022)} §2.1에 실제 사례가 있다. 우리 두 층의 정확성까지 입증한 것은 아니다. Ts는 표면 자체의 별도 온도가 아니라 5 cm층 대표온도로 표면온도를 근사한 값이다. 추후 같은 재료를 세분한 열전도 계산과 비교한다.
+
+\section{2. 어떤 콘크리트를 대표로 삼을 것인가}
+
+\begin{description}[leftmargin=0pt,style=nextline]
+\item[일반 투수성 콘크리트] \textbf{근거와 장점:} Hu (2017) Table 1에 열물성 묶음이 있음; \textbf{이번 판단:} 열 계산 점검용 대리 재료. 보수재를 넣은 재료의 확정 물성으로 부르지 않음
+\item[보수재 충전 콘크리트 WCC] \textbf{근거와 장점:} Wang (2021) Table 1·§2.3: 일반 골재 다공성 콘크리트에 보수재를 충전; \textbf{이번 판단:} \textbf{연구 대상 유형으로 추천.} 반사와 증발의 비교 목적에 맞음. 전체 WCC 물성 묶음은 아직 부족
+\item[제올라이트 개질 콘크리트] \textbf{근거와 장점:} Guo (2023): 내부 모세관 흡수·증발 실험; \textbf{이번 판단:} 대안. 특정 배합의 열전도율·비열·증발저항을 함께 확정할 자료가 부족
+\item[재생골재 보수성 콘크리트] \textbf{근거와 장점:} Haddad (2023): 전체 콘크리트의 침수 후 잔류수 측정; \textbf{이번 판단:} 저장량 교차검토에 유용. 논문 결론에서 열전도율·비열 시험을 후속 연구로 제시하므로 완전한 열물성 묶음은 아님
+\end{description}
+
+WCC와 내열 골재를 사용한 WTCC는 다르다. 이번 추천은 WCC다. 내열 골재에 따른 열전도율 변화까지 새 실험 요인으로 추가하지 않는다. 어느 후보도 현재 확보한 근거만으로 열·수분 물성 전체가 갖춰졌다고 말할 수 없다. \href{\detokenize{https://doi.org/10.3390/ma14206141}}{Wang (2021)}, \href{\detokenize{https://doi.org/10.3390/su15032092}}{Guo (2023)}, \href{\detokenize{https://doi.org/10.3390/su15065384}}{Haddad (2023)}.
+
+\subsection{위층 열물성의 한 묶음}
+
+Hu (2017) Table 1의 골재 9.50-13.2 mm 행을 \textbf{열 계산 점검용 대표 후보}로 고른다. 다섯 행 중 중간 입도이며, 서로 다른 행에서 숫자를 골라 섞지 않기 위한 선택이다. 최적 배합이라는 뜻은 아니다.
+
+\begin{description}[leftmargin=0pt,style=nextline]
+\item[겉보기 밀도] \textbf{같은 행에 보고된 수치:} 1,928 kg/m³; \textbf{해석:} 보수재 충전 후 WCC 밀도로 확정하지 않음
+\item[비열] \textbf{같은 행에 보고된 수치:} 870 J/(kg·K); \textbf{해석:} 원문의 수분 기준 상태가 충분히 명시되지 않음
+\item[열전도율] \textbf{같은 행에 보고된 수치:} 1.23 W/(m·K); \textbf{해석:} 젖어도 일정하다는 증거는 아님
+\item[장파 방사율] \textbf{같은 행에 보고된 수치:} 0.94; \textbf{해석:} 알베도와 다른 값
+\item[공극률] \textbf{같은 행에 보고된 수치:} 0.201; \textbf{해석:} 전부 증발 가능한 물의 비율이 아님
+\item[원문 알베도] \textbf{같은 행에 보고된 수치:} 0.3305; \textbf{해석:} 실험 요인으로 바꾸는 α와 구분
+\end{description}
+
+5 cm로 환산한 열용량은 \texttt{1928 × 870 × 0.05 = 83,868 J/(m²·K)}다. \textbf{이 값을 건조 열용량으로 간주해 물의 열용량을 추가하려면, 건조 기준이라는 가정을 별도로 표시해야 한다.} 원문이 그 가정을 확인해 준 것은 아니다. 실제 WCC 결과의 확정 입력으로 아직 등록하지 않는다. \href{\detokenize{https://doi.org/10.1155/2017/2058034}}{Hu (2017)}.
+
+\subsection{보수량은 숫자의 정의부터 맞춘다}
+
+Yamamoto (2006) Table 2의 전체 보수성 콘크리트 판은 119 kg/m³, 보수 블록은 182 kg/m³다. 5 cm 전체에 균일하다고 가정하면 각각 \textbf{5.95, 9.10 mm}다. Haddad (2023) §3.4의 재생골재 100\% 콘크리트 D100은 침수 후 30분 시점 211 kg/m³, 24시간 시점 180 kg/m³를 보고한다. 같은 환산은 \textbf{10.55, 9.00 mm}다. 후자의 시험체는 15 cm 정육면체이며, 5 cm 재료의 배수·건조 속도를 측정한 값이 아니다. \href{\detokenize{https://www.sept.org/techpapers/1313.pdf}}{Yamamoto (2006)}, \href{\detokenize{https://doi.org/10.3390/su15065384}}{Haddad (2023)}.
+
+이 값들은 서로 다른 제품·시편의 물 보유량이다. 예컨대 Hu의 열물성과 D100의 저장량을 결합하면 \textbf{서로 다른 재료를 이용한 가상 대리 모델}이 된다. 한 논문이 측정한 WCC라고 부를 수 없다. 24시간 침수 용량을 몇 분간 뿌린 물의 흡수량이나 전량 증발 가능량으로도 바꾸어 읽지 않는다.
+
+\section{3. 지지층에서 새로 확보한 수치}
+
+\href{\detokenize{https://doi.org/10.3390/constrmater6010010}}{Pham, Sakaki \& Kawamoto (2026)}는 포장 아래에 쓰는 재생골재의 수분별 열물성을 실험했다. \textbf{보수재나 AAC를 더하지 않은 RCA 100\%, 입도가 고르게 섞인 well-graded 시료}를 우선 후보로 둔다. 지지층도 실험 중 동일하게 유지한다.
+
+\begin{description}[leftmargin=0pt,style=nextline]
+\item[건조 밀도] \textbf{원문·환산:} Table 1: 1.96 g/cm³ = 1,960 kg/m³; \textbf{채택 상태:} 해당 지지층 후보의 문헌값
+\item[공극률] \textbf{원문·환산:} Table 1: 0.26; \textbf{채택 상태:} 포화 공극량 기준. 이용 가능한 보수량과 다름
+\item[건조 재료 비열] \textbf{원문·환산:} §2.2.1: 연구 시료 평균 0.79 J/(g·K) = 790 J/(kg·K); \textbf{채택 상태:} 해당 시료 하나의 직접 측정치라고 하지 않음
+\item[건조 면적 열용량] \textbf{원문·환산:} 1960 × 790 × 0.25 = \textbf{387,100 J/(m²·K)}; \textbf{채택 상태:} 원문 평균 비열을 사용하는 환산 후보
+\item[전체 공극의 물 환산] \textbf{원문·환산:} 1000 × 0.26 × 0.25 = \textbf{65 kg/m²}; \textbf{채택 상태:} 65 mm 모두 보유·상향 공급된다는 뜻은 아님
+\end{description}
+
+같은 논문 Fig. 4·Table 2의 AAC 0\% 회귀식은 다음과 같다. 두 입도군을 포함한 회귀이므로 well-graded 한 시료만의 보정식이라고 하지 않는다.
+
+\begin{equation*}
+k_b = 0.37+5.4(\theta_b-\theta_r)\quad[\mathrm{W/(m\,K)}].\tag{P1}
+\end{equation*}
+
+\texttt{θb}는 체적수분함량, \texttt{θr}는 이 회귀에서 기준이 되는 잔류 수분함량이다. Fig. 4는 그 차이를 가로축으로 사용한다. \textbf{θr를 확인하지 않고 0으로 대입하지 않는다.} 원문의 관측 구간 안에서 적용하며 공극률 범위 전체로 임의 외삽하지 않는다. 예를 들어 차이가 0.10이면 산술상 k=0.91이지만, 이것은 우리 지지층의 확정 상태값이 아니다.
+
+원문 Eq.9는 물의 질량함량을 \%라고 설명하면서 식에는 비율 변환을 드러내지 않는다. 우리는 그 모호함을 옮기지 않고 \texttt{Cb=ρdry cb db+cw Wb}를 사용한다. 65 mm를 느리게 빠지는 저장수로 모두 넣는 것도 피한다. 거대 공극에 잠시 찬 물과 골재 내부에 남는 물이 다르기 때문이다.
+
+\section{4. 실제로 풀 네 개의 식}
+
+단위는 온도 K, 시간 s, 저장수량 kg/m², 물 유속 kg/(m²·s), 열유속 W/m²다. 온도 차이는 °C로 계산해도 같지만 복사의 네제곱에는 반드시 K를 넣는다. 아래 식의 I와 P는 각각 실제 위층에 들어오는 살수와 비다. 유입되지 않고 넘친 양은 별도로 기록한다.
+
+\begin{equation*}
+\begin{aligned}
+C_s(W_s)\frac{dT_s}{dt}
+&=(1-\alpha)K_\downarrow+\varepsilon(L_\downarrow-\sigma T_s^4)\\
+&\quad-H-L_vE-G_{sb}+c_wU(T_b-T_s)\\
+&\quad+c_wI(T_{in}-T_s)+c_wP(T_P-T_s).
+\end{aligned}\tag{T1}
+\end{equation*}
+
+위층은 햇빛과 열복사를 받고, 공기·증발·아래층으로 열을 보낸다. 아래에서 올라오거나 밖에서 들어온 물은 도착한 층과 섞이며 열도 주고받는다. 찬물을 부었을 때의 냉각과 증발 냉각을 혼동하지 않도록 둘 다 기록한다.
+
+\begin{equation*}
+C_b(W_b)\frac{dT_b}{dt}=G_{sb}-G_{bd}+c_wF(T_s-T_b).\tag{T2}
+\end{equation*}
+
+아래층은 위에서 전도된 열을 받고 바닥과 열을 교환한다. 위에서 내려온 물의 온도가 아래층과 다르면 혼합으로 온도가 변한다.
+
+\begin{equation*}
+\frac{dW_s}{dt}=I+P-E-F+U-R,\qquad
+\frac{dW_b}{dt}=F-U-D.\tag{W1}
+\end{equation*}
+
+F는 아래로 이동하는 물, U는 위로 이동하는 물, D는 바닥 밖 배수, R은 위층에서 넘쳐 영역 밖으로 나가는 물이다. 용량 초과를 조용히 잘라 버리지 않고 실제 출구를 기록한다. 아래층이 가득 차면 층간 하향 유입을 제한하고, 위층의 남는 물은 R로 처리한다. 바닥 외부의 포화·역압은 계산하지 않는다.
+
+\begin{equation*}
+\begin{aligned}
+C_j(W_j)&=\rho_{j,\mathrm{dry}}c_jd_j+c_wW_j,\quad j=s,b,\\
+G_{sb}&=\frac{T_s-T_b}{0.025/k_s+0.125/k_b},\qquad
+G_{bd}=\frac{T_b-T_d}{0.125/k_b}.
+\end{aligned}\tag{T3}
+\end{equation*}
+
+0.025 m와 0.125 m는 각 층 중심에서 경계까지의 거리다. 두 층 중심 사이 거리는 \textbf{0.15 m}다. 접촉 열저항은 우선 생략한다. 30 cm 토양 관측온도 Td를 포장 아래의 대리 경계로 쓰며, 실제 해당 포장 아래를 관측한 것으로 설명하지 않는다.
+
+\begin{equation*}
+H=h_c(T_s-T_a),\qquad
+E_{pot}=\frac{\rho_a\max[q_{sat}(T_s)-q_a,0]}{r_a+r_s(\theta_s)}.\tag{E1}
+\end{equation*}
+
+\texttt{hc}는 열 전달 계수, \texttt{ra}는 공기 저항, \texttt{rs}는 재료의 증발저항이다. \texttt{ρa}는 공기 밀도, \texttt{q}는 비습이다. Epot는 공급이 충분할 때 요구되는 증발량이다. 실제 E는 위층 물과 같은 시간에 유입·유출되는 양을 함께 고려해 제한한다. 남은 물보다 많이 증발시키지 않는다. 응결은 제외한다.
+
+저장수량을 층 전체의 액체 물로 정의하면 \texttt{θj=Wj/(ρw dj)}다. 유효 저장수량에서 제외할 잔류·결합수가 있다면 그 기준 수분을 따로 정의해야 하며, 총 수분으로 측정된 문헌 곡선에 유효 저장량을 바로 넣지 않는다.
+
+\href{\detokenize{https://doi.org/10.1016/j.buildenv.2022.109083}}{Wang (2022)}는 건조에 따른 재료 저항 증가를 실험했다. 그러나 \textbf{현재 원문 회귀 계수를 확보하지 못했다.} 물수지의 Ws는 5 cm 평균 수분이므로 표면 근처 수분으로 측정한 저항과도 차이가 있다. \texttt{rs=0}은 이상적인 자유수면 비교용으로만 쓰며 현실 콘크리트의 기본값으로 채택하지 않는다.
+
+\section{5. 아래로 가는 물과 위로 오는 물을 한 식으로 읽기}
+
+물은 중력 때문에 내려가려 하고, 더 강한 모세관 흡인력이 있는 쪽으로도 이동한다. 이 두 작용을 Darcy형 식으로 함께 계산한다. 압력수두 ψ는 물을 당기는 상태를 물기둥 높이 m로 표현한 값이며, 불포화 상태에서는 보통 음수다. \textbf{다른 재료의 수분 비율이 같다고 ψ도 같은 것은 아니다.}
+
+깊이 z를 아래 방향 양수로 두면 총 수두는 \texttt{ψ-z}이고, 액체의 체적유속은 \texttt{q=-K d(ψ-z)/dz}다. 이를 두 중심 사이의 차이로 근사한다.
+
+\begin{equation*}
+J=\rho_wK_{\mathrm{eff}}\left[1+\frac{\psi_s-\psi_b}{0.15}\right],
+\qquad F=\max(J,0),\quad U=\max(-J,0).\tag{W2}
+\end{equation*}
+
+\begin{equation*}
+K_{\mathrm{eff}}=\frac{0.15}{0.025/K_s+0.125/K_b}.\tag{W3}
+\end{equation*}
+
+\textbf{가운데 1은 중력, 그 뒤 항은 물을 당기는 힘의 차이}다. 대괄호가 양수면 아래로, 음수면 위로 움직인다. Ks와 Kb는 각 층의 현재 수분 상태에서의 수리전도도(m/s)다. 열전도율 ks, kb와는 다른 물성이다. 한쪽 액체 통로가 끊겨 K가 0이면 Keff도 0으로 처리한다.
+
+\begin{description}[leftmargin=0pt,style=nextline]
+\item[위아래 흡인력 같음] \textbf{ψs, ψb:} -0.20 m, -0.20 m; \textbf{대괄호 값:} 1; \textbf{방향:} 중력으로 아래
+\item[위층이 더 젖고 아래가 더 강하게 당김] \textbf{ψs, ψb:} -0.10 m, -0.40 m; \textbf{대괄호 값:} 3; \textbf{방향:} 아래
+\item[위층이 더 강하게 당김] \textbf{ψs, ψb:} -1.00 m, -0.20 m; \textbf{대괄호 값:} -4.33; \textbf{방향:} 위
+\end{description}
+
+이는 \textbf{가상 숫자 예시}다. 마지막 행에서 Keff를 설명용 0.01 mm/h로 놓으면 상향 이동은 약 0.043 mm/h, 즉 1 m²에서 시간당 약 43 mL다. 실제 물성이 이 속도라는 뜻은 아니다.
+
+W2는 \href{\detokenize{https://www.jstage.jst.go.jp/article/taiki/51/2/51_103/_pdf/-char/en}}{Cortes (2016)} Eq.12의 압력·중력 이동 원리를 참고하되, 좌표를 위처럼 새로 정의하고 온도구배에 직접 유도되는 수분 이동을 생략해 유도한 \textbf{우리의 두 점 근사}다. W3는 두 구간의 수리저항을 직렬로 더한 식이다. 원문에 같은 5/25 cm 조합이 실려 있지 않다. 계면의 추가 저항·모세관 단절도 생략하므로 별도 지지층에 적용할 때 검토가 필요하다.
+
+상태변수는 여전히 네 개다. 하지만 실제 계산에는 양쪽 재료의 \texttt{ψ(θ)}와 \texttt{K(θ)}가 필요하다. 공극률이나 포화 투수계수만으로는 정할 수 없다. \textbf{식은 간단해도, 자료가 없으면 재공급 속도를 확정할 수 없다.} 재공급을 제외한 비교에서는 동일한 계수로 계산한 J의 음수 부분만 막는다. 상세 토양 수분모델 전체를 도입할 필요는 없다.
+
+\section{6. 일정 배수와 한 시간 물수지 예시}
+
+아래층 물이 있는 동안 일정량이 바닥 밖으로 빠지게 한다. 이 구조는 사용자의 선택이다. \href{\detokenize{https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100P2NY.TXT}}{EPA SWMM Reference Manual III}의 §6.2.1, Bottom Exfiltration에도 하부 토양의 상세 수분분포를 풀지 않고 일정 전도도로 바닥 유출을 근사하는 선례가 있다. 이는 \textbf{구조의 참고 근거}이며 인천의 배수 속도를 제공하지 않는다.
+
+\begin{equation*}
+D=d_0\quad\text{while water is available};\qquad D=0\quad\text{otherwise}.\tag{W4}
+\end{equation*}
+
+한 시간 동안 아래처럼 움직였다고 가정한다. 모든 숫자는 설명용이며 관측·시뮬레이션 결과가 아니다. 비와 살수는 없고, d0=0.10 mm/h, 상향 이동 0.05 mm/h를 예시로 사용한다.
+
+\begin{description}[leftmargin=0pt,style=nextline]
+\item[처음 물] \textbf{위층:} 3.00; \textbf{아래층:} 2.00; \textbf{두 층 합계 변화:} 합계 5.00
+\item[표면 증발] \textbf{위층:} -0.40; \textbf{아래층:} 0; \textbf{두 층 합계 변화:} -0.40
+\item[아래에서 위로 이동] \textbf{위층:} +0.05; \textbf{아래층:} -0.05; \textbf{두 층 합계 변화:} 0
+\item[바닥 배수] \textbf{위층:} 0; \textbf{아래층:} -0.10; \textbf{두 층 합계 변화:} -0.10
+\item[한 시간 뒤 물] \textbf{위층:} \textbf{2.65}; \textbf{아래층:} \textbf{1.85}; \textbf{두 층 합계 변화:} 합계 \textbf{4.50}
+\end{description}
+
+층간 이동 자체는 전체 물을 줄이지 않는다. 두 물수지를 더하면 정확히 다음 식이 남는다.
+
+\begin{equation*}
+\frac{d(W_s+W_b)}{dt}=I+P-E-D-R.\tag{W5}
+\end{equation*}
+
+남은 아래층 물이 0.03 kg/m²뿐이면 위 예시의 U+D=0.15를 한 시간 내내 빼면 안 된다. 고갈 시점에서 계산을 나누고 두 유출의 합을 제한한다. 위층 고갈과 용량 도달도 같은 방식으로 처리한다. \textbf{d0=0.10은 아직 채택값이 아니다.}
+
+에너지도 점검한다. 기준 온도 T0에서 액체 엔탈피를 \texttt{cw(T-T0)}로 놓으면 총 저장에너지는 \texttt{Σ[Cj,dry+cw Wj](Tj-T0)}다. 외부 에너지수지에는 증발의 \texttt{E[Lv+cw(Ts-T0)]}, 배수의 \texttt{Dcw(Tb-T0)}, 표면 유출의 \texttt{Rcw(Ts-T0)}를 포함한다. T1·T2의 온도식에는 이미 변하는 물 열용량이 반영되어 있으므로 같은 항을 또 넣지 않는다. 층간 물·열 교환은 전체 검산에서 서로 상쇄되어야 한다.
+
+\section{7. 반사와 증발의 이득을 어떻게 비교하는가}
+
+독립 요인 비교는 기존 \texttt{α=0.10, 0.30, 0.50}과 초기 위층 물 \texttt{0, 0.5Ws,max, Ws,max}를 유지한다. 아래층 초기 물은 같은 날짜의 모든 조합에서 같게 둔다. 이것은 \textbf{초기 저장수량 실험}이다. 실제 살수량 실험에서는 따로 살수량·유입 시간·넘친 양·급수 온도를 기록해야 한다. 초기 물 6 mm가 실제 6 L 살수로 곧바로 달성된다고 가정하지 않는다.
+
+\begin{description}[leftmargin=0pt,style=nextline]
+\item[알베도 α] \textbf{직접 보는 에너지 차이:} 흡수 일사 감소 \texttt{(α2-α1)K↓}; \textbf{설명용 숫자:} 일사 700 W/m², α 0.30→0.50이면 \textbf{140 W/m²}
+\item[증발 E] \textbf{직접 보는 에너지 차이:} 증발 잠열 \texttt{LvE}; \textbf{설명용 숫자:} 증발 0.20 mm/h, Lv=2.45 MJ/kg이면 \textbf{약 136 W/m²}
+\end{description}
+
+위 예시는 어느 효과가 더 크다고 미리 판정한 결과가 아니다. 각 항은 기상·온도·남은 물에 따라 변하므로 하루 적분과 표면온도 변화를 함께 비교한다. 물에 따른 열용량 증가와 살수 직후 혼합 냉각도 별도 항으로 보고한다. ‘젖은 경우와 마른 경우의 온도 차이’를 전부 기화열 덕분이라고 해석하지 않는다.
+
+\href{\detokenize{https://doi.org/10.3390/su15108222}}{Lu (2023)}의 일반 투수성 콘크리트는 건조 알베도 0.20-0.35, 습윤 약 0.15를 보고한다. 따라서 고정 α 실험은 효과 분리를 위한 가상 비교이며, 습윤 시 알베도가 낮아지는 민감도 계산을 추가한다. α=0.50이 일반 콘크리트의 실측값이거나 반사 처리가 수분 특성을 바꾸지 않는다고 주장하지 않는다.
+
+습윤 조건에서 어느 층이든 계산 온도가 0°C 이하가 되면 동결 제외 모델의 적용 범위 밖으로 표시한다. 눈이 있는 경우도 제외한다. 기온만으로 비동결을 판정하지 않는다. 모든 시나리오를 비교할 때 공통으로 유효한 평가 시간창을 사용한다.
+
+\section{8. 식의 근거와 다음 확정 지점}
+
+\begin{description}[leftmargin=0pt,style=nextline]
+\item[T1 단파·장파] \textbf{근거:} \href{\detokenize{https://doi.org/10.1186/s43065-023-00090-9}}{Jiang \& Yu (2023)} Eq.13-14; \textbf{우리 모델에서 추가한 가정:} 수평 노출면, 주변 건물의 복사 교환 생략
+\item[T1 현열·잠열·전도] \textbf{근거:} Cortes (2016) Eq.16-19; \textbf{우리 모델에서 추가한 가정:} 원문 표기 문제를 단위·표면 K 온도로 정리
+\item[T1-T2 저장·혼합] \textbf{근거:} \href{\detokenize{https://doi.org/10.3390/ma12162546}}{Dong (2019)} Eq.8의 열 저장·전도, 개방계 에너지보존; \textbf{우리 모델에서 추가한 가정:} 두 층 적분과 유입수 혼합을 우리가 유도
+\item[T3 열용량] \textbf{근거:} Pham (2026) Eq.9; Cortes Eq.11; \textbf{우리 모델에서 추가한 가정:} 공기 열용량 무시, 물·건조 고체 합산
+\item[T3 열저항] \textbf{근거:} Cortes Eq.15의 Fourier 법칙; \textbf{우리 모델에서 추가한 가정:} 층 중심 2점, 접촉저항 생략
+\item[W1·W5] \textbf{근거:} 질량보존; Cortes Eq.4의 층별 적분; \textbf{우리 모델에서 추가한 가정:} 아래층 직접 증발 없음
+\item[E1] \textbf{근거:} Cortes Eq.10·19 저항 구조; Wang (2022)의 콘크리트 실험; \textbf{우리 모델에서 추가한 가정:} 5 cm 평균 수분으로 표면 저항을 근사, 응결 제외
+\item[W2-W3] \textbf{근거:} Darcy형 이동, Cortes Eq.12; \textbf{우리 모델에서 추가한 가정:} 하향 좌표로 재유도, 두 구간 직렬 수리저항
+\item[W4] \textbf{근거:} 사용자 선택; EPA (2016) §6.2.1 유사 근사; \textbf{우리 모델에서 추가한 가정:} 일정 배수, 하부 지반 포화 효과 제외
+\end{description}
+
+이번에 좁힌 것은 \textbf{WCC 표층 유형, RCA 지지층 후보, 같은 행의 열물성 후보, 양방향 물 이동식}이다. 실제 입력 확정에는 다음 네 묶음이 남는다.
+
+\begin{enumerate}
+\item WCC 전체 시편의 건조 열용량·건습 열전도율·유효 보수량. 현재 일반 콘크리트의 대리 열물성을 쓴다면 그 가정과 민감도 범위를 명시해야 한다.
+\item WCC의 증발저항-수분 곡선. Wang (2022)의 특정 시편 임계값 11.8\%를 다른 WCC에 대입하지 않는다.
+\item 두 재료의 흡인력·수리전도도 곡선, RCA의 잔류 수분함량, 아래층 배수 속도. 문헌에 없다면 고정 사실이 아닌 가정 시나리오로 검토해야 한다.
+\item 대류·공기저항과 풍속 높이 처리. 하향 장파는 기존 Brutsaert/Unsworth 후보식을 유지하되 계수·운량·경계의 민감도를 함께 확인한다.
+\end{enumerate}
+
+추가 기상 CSV를 요청하는 단계는 아니다. 남은 정보는 주로 \textbf{재료와 물 이동에 관한 정보}다. 이번에는 원문에 없는 계수를 채워 냉각온도나 최적 살수량을 산출하지 않았다. 실험 검증을 수행하지 못하므로 이후에도 보존·수렴 검사는 수치 검증으로, 물성 변경 비교는 민감도로 보고한다.
+
+\end{document}

@@ -1,6 +1,6 @@
 // Render the review document to a self-contained LaTeX source and an HTML
 // print master. The PDF is printed from the latter with local KaTeX assets.
-// Run with: node scripts/render_core_equations.mjs
+// Run with: node scripts/render_core_equations.mjs [document-stem]
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -27,9 +27,11 @@ try {
 }
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const markdownPath = path.join(root, 'docs/core-equations.md');
-const texPath = path.join(root, 'docs/core-equations.tex');
-const htmlPath = path.join(root, 'tmp/pdfs/core-equations.html');
+const stem = process.argv[2] ?? 'core-equations';
+if (!/^[a-z0-9-]+$/.test(stem)) throw new Error('Document stem must use lowercase letters, digits and hyphens.');
+const markdownPath = path.join(root, `docs/${stem}.md`);
+const texPath = path.join(root, `docs/${stem}.tex`);
+const htmlPath = path.join(root, `tmp/pdfs/${stem}.html`);
 const markdown = fs.readFileSync(markdownPath, 'utf8');
 
 // Extract whole-block display math. This avoids a Markdown renderer treating
@@ -121,7 +123,7 @@ function blockTeX(blocks, nested = false) {
   return out.join('\n');
 }
 
-const tex = String.raw`% Generated from docs/core-equations.md. Compile with XeLaTeX and kotex.
+const tex = String.raw`% Generated from docs/${stem}.md. Compile with XeLaTeX and kotex.
 \documentclass[11pt,a4paper]{article}
 \usepackage{kotex}
 \usepackage{amsmath,amssymb}
@@ -158,8 +160,9 @@ body = body.replace(/<p>@@MATH(\d+)@@<\/p>/g, (_all, number) => {
 if (/@@MATH\d+@@/.test(body)) throw new Error('Unrendered math placeholder remains in HTML.');
 
 const sourceLinks = Object.entries(tokens.links).filter(([_key, link]) => link && typeof link.href === 'string');
+const escapeHTML = (value) => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const references = sourceLinks.map(([key, link]) =>
-  `<li><strong>${key.toUpperCase()}</strong> — <a href="${link.href}">${link.href}</a></li>`,
+  `<li><strong>${escapeHTML(link.title || key.toUpperCase())}</strong> - <a href="${escapeHTML(link.href)}">${escapeHTML(link.href)}</a></li>`,
 ).join('\n');
 const html = `<!doctype html>
 <html lang="ko"><head><meta charset="utf-8">
@@ -172,11 +175,11 @@ body { margin: 0; font-size: 9.8pt; line-height: 1.48; }
 h1 { font-size: 21pt; line-height: 1.25; color: #193d64; margin: 0 0 12mm; border-bottom: 2px solid #376b9b; padding-bottom: 4mm; }
 h2 { font-size: 14.2pt; color: #1c527b; margin: 8mm 0 2.7mm; border-bottom: 0.5px solid #bfd0de; padding-bottom: 1.2mm; break-after: avoid; }
 h3 { font-size: 11.5pt; color: #315873; margin: 5mm 0 2mm; break-after: avoid; }
-p { margin: 0 0 3mm; }
+p { margin: 0 0 3mm; orphans: 3; widows: 3; }
 a { color: #1c5990; text-decoration: none; }
 strong { font-weight: 680; }
 code { font-family: Menlo, monospace; font-size: .86em; background: #edf1f5; padding: 0 2px; border-radius: 2px; white-space: normal; }
-table { border-collapse: collapse; width: 100%; margin: 2.5mm 0 4mm; font-size: 8.3pt; line-height: 1.4; }
+table { border-collapse: collapse; width: 100%; margin: 2.5mm 0 4mm; font-size: 8.3pt; line-height: 1.4; break-inside: avoid; }
 thead { display: table-header-group; }
 th, td { border-bottom: 0.4px solid #c7d1da; padding: 1.5mm 1.3mm; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
 th { background: #eaf1f7; color: #234b6a; font-weight: 700; }
@@ -186,9 +189,10 @@ li { margin-bottom: .8mm; }
 .equation { margin: 3.5mm 0 4.5mm; padding: 2.8mm 2mm; background: #f5f8fb; border-left: 2px solid #4c83b3; font-size: 10.4pt; break-inside: avoid; }
 .equation .katex-display { margin: 0; }
 .equation .katex-html { white-space: nowrap; }
-.references { margin-top: 5mm; padding-top: 2mm; border-top: 1px solid #9aacbb; font-size: 7.8pt; }
+.references { margin-top: 3mm; padding-top: 2mm; border-top: 1px solid #9aacbb; font-size: 7.8pt; }
+.references h2 { margin: 2mm 0; }
 .references a { overflow-wrap: anywhere; }
-.references li { margin-bottom: 2mm; }
+.references li { margin-bottom: 1mm; }
 @media screen { body { max-width: 850px; margin: 24px auto; padding: 0 20px; } }
 </style></head><body>
 ${body}
